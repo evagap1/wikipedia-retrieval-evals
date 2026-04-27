@@ -1,0 +1,200 @@
+[
+  {
+    "title": "Chuandian Jinsha River Bridge",
+    "char_count": 666,
+    "lead": "The Chuandian Jinsha River Bridge (Chinese: 川滇金沙江特大桥) is a suspension bridge under construction over the Jinsha River between Ningnan County, Sichuan and Qiaojia County, Yunnan, China. The bridge is one of the longest suspension bridges with a main span of 1,060 m (3,480 ft).\nThe bridge is less than one kilometer from the older Baihetan Jinsha River Bridge (Chinese: 白鹤滩金沙江大桥). The Baihetan Dam formed a reservoir on the Jinsha River.",
+    "types_detected": [
+      "suspension"
+    ],
+    "length_strings_in_lead": [
+      "1060 m",
+      "3480 ft"
+    ],
+    "category": "Bridges completed in 2026"
+  },
+  {
+    "title": "Dala Bridge",
+    "char_count": 861,
+    "lead": "The Dala Bridge (Burmese: ဒလတံတား), officially known as the Myanmar–Korea Friendship Bridge (Burmese: မြန်မာ-ကိုရီးယား ချစ်ကြည်ရေးတံတား), is a bridge spanning across the Yangon River in Myanmar. It connects downtown Yangon with Dala Township. It is the country's longest and largest steel cable-stayed bridge.\nThe project was first proposed in 2012 during a state visit by then President U Thein Sein to South Korea. During the visit, the South Korean government agreed to support the infrastructure ",
+    "types_detected": [
+      "cable-stayed",
+      "steel"
+    ],
+    "length_strings_in_lead": [],
+    "category": "Bridges completed in 2026"
+  },
+  {
+    "title": "Fuxing Yangtze River Bridge",
+    "char_count": 447,
+    "lead": "The Fuxing Yangtze River Bridge (Chinese: 复兴长江大桥) is a suspension bridge under construction over the Yangtze river in Yunyang County, Chongqing, China. The bridge is one of the longest suspension bridges with a main span of 1,208 m (3,963 ft).",
+    "types_detected": [
+      "suspension"
+    ],
+    "length_strings_in_lead": [
+      "1208 m",
+      "3963 ft"
+    ],
+    "category": "Bridges completed in 2026"
+  },
+  {
+    "title": "Guanyinsi Yangtze River Bridge",
+    "char_count": 678,
+    "lead": "The Guanyinsi Yangtze River Bridge (Chinese: 观音寺长江大桥) is a cable-stayed bridge spanning the Yangtze River near Gong'an County, Hubei in China. It will be the second longest cable-stayed bridge in the world when completed with a main span of 1,160 m (3,810 ft).\nThe bridge is about 31.3 kilometres (19.4 mi) from the upstream Jingzhou Yangtze River Bridge and about 13.7 kilometres (8.5 mi) from the lower Gong'an Yangtze River Bridge.",
+    "types_detected": [
+      "cable-stayed"
+    ],
+    "length_strings_in_lead": [
+      "1160 m",
+      "3810 ft",
+      "31.3 kilometres",
+      "13.7 kilometres"
+    ],
+    "category": "Bridges completed in 2026"
+  },
+  {
+    "title": "Jinqi Bridge",
+    "char_count": 532,
+    "lead": "The Jinqi Bridge (Chinese: 金旗特大桥) is a bridge between Qingzhen and Xiuwen County, Guizhou, China over the Maotiao River.\nWith a height of 300.6 metres (986 ft), the north tower is one of the tallest bridge structure in the world, it is also one of the highest bridge in the world with a deck 258 metres (846 ft) above the river.\nThe span arrangement is 169–320–169 metres (554–1,050–554 ft).",
+    "types_detected": [],
+    "length_strings_in_lead": [
+      "300.6 metres",
+      "986 ft",
+      "258 metres",
+      "846 ft",
+      "169 metres",
+      "554 ft"
+    ],
+    "category": "Bridges completed in 2026"
+  },
+  {
+    "title": "Kahaluo Jinsha River Bridge",
+    "char_count": 618,
+    "lead": "The Kahaluo Jinsha River Bridge (Chinese: 卡哈洛金沙江大桥) is a suspension bridge under construction over the Jinsha River between Leibo County, Sichuan and Yongshan County, Yunnan, China. The bridge is one of the longest suspension bridges with a main span of 1,030 m (3,380 ft). The Xiluodu Dam domwnstream has increased the height of the Jinsha River.",
+    "types_detected": [
+      "suspension"
+    ],
+    "length_strings_in_lead": [
+      "1030 m",
+      "3380 ft"
+    ],
+    "category": "Bridges completed in 2026"
+  },
+  {
+    "title": "Ma'anshan Yangtze River Rail-Road Bridge",
+    "char_count": 763,
+    "lead": "The Ma'anshan Yangtze River Rail-Road Bridge (Chinese: 马鞍山公铁两用长江大桥) is a cable-stayed bridge under construction near the city of Ma'anshan, in Anhui province, China, it crosses the Yangtze river between the Wuhu Yangtze River Bridge upstream and the Ma'anshan Yangtze River Bridge just two kilometers downstream.\nWhen it opened, it is the longest double span cable-stayed bridge with two 1,120-metre (3,670 ft) main spans and one of the tallest bridge structures in the world with a height of 345 met",
+    "types_detected": [
+      "cable-stayed",
+      "rail",
+      "road"
+    ],
+    "length_strings_in_lead": [
+      "3670 ft",
+      "345 metres",
+      "1132 ft"
+    ],
+    "category": "Bridges completed in 2026"
+  },
+  {
+    "title": "Mandurah Estuary Bridge",
+    "char_count": 523,
+    "lead": "The Mandurah Estuary Bridge carries Mandurah Road over the Peel Inlet in Mandurah, Western Australia.",
+    "types_detected": [
+      "road"
+    ],
+    "length_strings_in_lead": [],
+    "category": "Bridges completed in 2026"
+  },
+  {
+    "title": "Nichupté Vehicular Bridge",
+    "char_count": 1289,
+    "lead": "The Nichupté Vehicular Bridge (Spanish: Puente Vehicular Nichupté) is a concrete bridge that connects Cancún's Downtown to the Hotel Zone. It is one of the longest bridges in Mexico.  ",
+    "types_detected": [
+      "concrete"
+    ],
+    "length_strings_in_lead": [],
+    "category": "Bridges completed in 2026"
+  },
+  {
+    "title": "Portal North Bridge",
+    "char_count": 7805,
+    "lead": "The Portal North Bridge is a railroad bridge that carries the Northeast Corridor (NEC) over the Hackensack River in Hudson County, New Jersey. It is located in Secaucus west of Secaucus Junction and Kearny east of the Sawtooth Bridges. The bridge, used by Amtrak and NJ Transit, entered into service on March 13, 2026.\nThe bridge is part of the Gateway Program to rehabilitate and expand the NEC between Newark Penn Station and New York Penn Station and replace the 115 year-old swing-span Portal Bri",
+    "types_detected": [
+      "arch",
+      "swing",
+      "rail",
+      "road",
+      "steel"
+    ],
+    "length_strings_in_lead": [
+      "50 feet",
+      "15 m",
+      "140 km"
+    ],
+    "category": "Bridges completed in 2026"
+  },
+  {
+    "title": "Shohadaye Ashrafol-Belad Behshahr Bridge",
+    "char_count": 3813,
+    "lead": "Shohadaye Ashrafol-Belad Behshahr Bridge (Persian: پل شهدای اشرف‌البلاد بهشهر), also known as Gelvard Bridge, is a steel through arch bridge in Behshahr County, Mazandaran Province, Iran. It is the largest bridge in northern Iran, located on the Valam River (Rudbar), which is the catchment area of the Gelvard Dam.\nThe bridge is 281 metres (922 ft) long, 12 metres (39 ft) wide, and stands 100 metres (330 ft) above the river bed. It serves as the final piece of the great Gelvard Dam project, and w",
+    "types_detected": [
+      "arch",
+      "steel"
+    ],
+    "length_strings_in_lead": [
+      "281 metres",
+      "922 ft",
+      "12 metres",
+      "39 ft",
+      "100 metres",
+      "330 ft"
+    ],
+    "category": "Bridges completed in 2026"
+  },
+  {
+    "title": "Shuangliu Yangtze River Bridge",
+    "char_count": 492,
+    "lead": "The Shuangliu Yangtze River Bridge (Chinese: 双柳长江大桥) is a suspension bridge under construction over the Yangtze river between Wuhan and Ezhou in China. The bridge is one of the longest suspension bridges with a main span of 1,430 m (4,690 ft).",
+    "types_detected": [
+      "suspension"
+    ],
+    "length_strings_in_lead": [
+      "1430 m",
+      "4690 ft"
+    ],
+    "category": "Bridges completed in 2026"
+  },
+  {
+    "title": "Stal̕əw̓asəm Bridge",
+    "char_count": 3637,
+    "lead": "The stal̕əw̓asəm Bridge ( stah-loh-AH-səm; Halkomelem: [stɑlˀəwˀˈɑːsəm]), also known as the Riverview Bridge, is a cable-stayed bridge spanning the Fraser River. The crossing officially opened on February 14, 2026, and links the cities of New Westminster and Surrey in Metro Vancouver. Prior to its official opening, one northbound lane of the bridge was opened to vehicle traffic in 2025 in order to fulfill a commitment made by the provincial government. The bridge received its Halkomelem name fro",
+    "types_detected": [
+      "cable-stayed",
+      "arch",
+      "road"
+    ],
+    "length_strings_in_lead": [],
+    "category": "Bridges completed in 2026"
+  },
+  {
+    "title": "Xindu Jinsha River Bridge",
+    "char_count": 581,
+    "lead": "The Xindu Jinsha River Bridge (Chinese: 新渡金沙江大桥), previously called Xinshi Jinsha River Bridge (Chinese: 新市金沙江大桥), is a bridge between Pingshan County, Yibin City Sichuan and Suijiang County, Yunnan, China. It is one of the tallest bridge structure in the world with a sout tower 297.5 metres (976 ft) tall. It was opened to traffic on 1 January 2026.",
+    "types_detected": [],
+    "length_strings_in_lead": [
+      "297.5 metres",
+      "976 ft"
+    ],
+    "category": "Bridges completed in 2026"
+  },
+  {
+    "title": "Yanji Yangtze River Bridge",
+    "char_count": 951,
+    "lead": "The Yanji Yangtze River Bridge (Chinese: 燕矶长江大桥) is an under construction suspension bridge over the Yangtze, China.",
+    "types_detected": [
+      "suspension"
+    ],
+    "length_strings_in_lead": [],
+    "category": "Bridges completed in 2026"
+  }
+]

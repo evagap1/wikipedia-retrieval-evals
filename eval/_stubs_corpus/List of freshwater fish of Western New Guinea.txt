@@ -1,0 +1,274 @@
+This is a list of freshwater fish species found in Western New Guinea, Indonesia. This list also includes freshwater fish found on small islands around Western New Guinea, such as Biak Archipelago, Yapen, Raja Ampat Islands, Aru Islands and Yos Sudarso Island. Island names written in brackets indicate that the species is endemic to that island, or is only known to occur on that island. The listing below is based on the taxonomic treatment of FishBase.
+
+
+== Order Carcharhiniformes ==
+
+
+=== Family Carcharhinidae ===
+Carcharhinus leucas (Müller & Henle, 1839)
+Glyphis glyphis Müller & Henle, 1839
+
+
+== Order Rhinopristiformes ==
+
+
+=== Family Pristidae ===
+Pristis pristis (Linnaeus, 1758)
+
+
+== Order Myliobatiformes ==
+
+
+=== Family Dasyatidae ===
+Urogymnus dalyensis (Last & Manjaji-Matsumoto, 2008)
+
+
+== Order Osteoglossiformes ==
+
+
+=== Family Osteoglossidae ===
+Scleropages jardinii (Saville-Kent, 1892)
+
+
+== Order Elopiformes ==
+
+
+=== Family Elopidae ===
+Elops hawaiensis Regan, 1909
+
+
+=== Family Megalopidae ===
+Megalops cyprinoides  (Broussonet, 1782)
+
+
+== Order Anguilliformes ==
+
+
+=== Family Anguillidae ===
+Anguilla bicolor McClelland, 1844
+Anguilla marmorata Quoy & Gaimard, 1824
+Anguilla obscura Günther, 1872
+Anguilla reinhardtii Steindachner, 1867
+
+
+=== Family Muraenidae ===
+Gymnothorax polyuranodon (Bleeker, 1854)
+
+
+=== Family Ophichthidae ===
+Lamnostoma kampeni (Weber & de Beaufort, 1916) 
+
+
+== Order Clupeiformes ==
+
+
+=== Family Ehiravidae ===
+Nematalosa flyensis Wongratana, 1983
+Nematalosa papuensis (Munro, 1964)
+
+
+=== Family Ehiravidae ===
+Clupeoides papuensis (Ramsay & Ogilby, 1886)
+Clupeoides venulosus Weber & de Beaufort, 1912
+
+
+=== Family Engraulididae ===
+Thryssa rastrosa Roberts, 1978
+Thryssa scratchleyi (Ramsay & Ogilby, 1886) 
+
+
+== Order Gonorynchiformes ==
+
+
+=== Family Chanidae ===
+Chanos chanos (Forsskål, 1775)
+
+
+== Order Siluriformes ==
+
+
+=== Family Ariidae ===
+
+
+=== Family Plotosidae ===
+Neosilurus ater (Perugia, 1894)
+Neosilurus brevidorsalis (Günther, 1867)
+Neosilurus equinus (Weber, 1913)
+Neosilurus idenburgi (Nichols, 1940)
+Neosilurus novaeguineae (Weber, 1907)
+Oloplotosus mariae Weber, 1913
+Plotosus papuensis Weber, 1910
+Porochilus meraukensis (Weber, 1913)
+Porochilus obbesi Weber, 1913
+
+
+== Order Lophiiformes ==
+
+
+=== Family Antennariidae ===
+Antennarius biocellatus Cuvier, 1817
+
+
+== Order Beloniformes ==
+
+
+=== Family Hemiramphidae ===
+Arrhamphus sclerolepis Günther, 1866
+
+
+=== Family Zenarchopteridae ===
+Zenarchopterus alleni (Collette, 1982)
+Zenarchopterus caudovittatus (Weber, 1907)
+Zenarchopterus kampeni (Weber, 1913)
+Zenarchopterus novaeguineae (Weber, 1913)
+Zenarchopterus ornithocephala (Collette, 1985)
+
+
+=== Family Belonidae ===
+Strongylura krefftii (Günther, 1866)
+
+
+== Order Atheriniformes ==
+
+
+=== Family Melanotaeniidae ===
+
+
+=== Family Pseudomugilidae ===
+Pseudomugil gertrudae Weber, 1911
+Pseudomugil inconspicuus Roberts, 1978
+Pseudomugil ivantsoffi Allen & Renyaan, 1999
+Pseudomugil luminatus Allen, Unmack & Hadiaty, 2016
+Pseudomugil novaeguineae Weber, 1907
+Pseudomugil paludicola Allen & Moore, 1981
+Pseudomugil pellucidus Allen & Ivantsoff, 1998
+Pseudomugil reticulatus Allen & Ivantsoff, 1986
+Pseudomugil tenellus Taylor, 1964
+
+
+=== Family Telmatherinidae ===
+Kalyptatherina helodes (Ivantsoff & Allen, 1984)
+
+
+=== Family Atherinidae ===
+Craterocephalus fistularis Crowley, Ivantsoff & Allen, 1995
+Craterocephalus nouhuysi (Weber, 1910)
+Craterocephalus randi Nichols & Raven, 1934
+Sashatherina gigantea Ivantsoff & Allen, 2011
+
+
+== Order Mugiliformes ==
+
+
+=== Family Mugilidae ===
+Cestraeus goldiei (Macleay, 1883)
+Chelon melinopterus (Valenciennes, 1836)
+Ellochelon vaigiensis (Quoy & Gaimard, 1825)
+Moolgarda buchanani (Bleeker, 1853)
+Moolgarda heterocheilos (Bleeker, 1855)
+Moolgarda seheli (Forsskål, 1775)
+Moolgarda tade (Fabricius, 1775)
+Mugil cephalus Linnaeus, 1758
+Planiliza alata (Steindachner, 1892)
+Planiliza macrolepis (Smith, 1846)
+Planiliza subviridis (Valenciennes, 1836)
+
+
+== Order Syngnathiformes ==
+
+
+=== Family Syngnathidae ===
+Hippichthys heptagonus Bleeker, 1849
+Hippichthys spicifer (Ruppel, 1838)
+Microphis brachyurus (Bleeker, 1854)
+Microphis brevidorsalis (de Beaufort, 1913)
+Microphis caudocarinatus (Weber, 1907)
+Microphis leiaspis (Bleeker, 1854)
+Microphis manadensis (Bleeker, 1856)
+Microphis retzii (Bleeker, 1856)
+
+
+== Order Synbranchiformes ==
+
+
+=== Family Synbranchidae ===
+Ophisternon bengalense McClelland, 1844
+
+
+== Order Kurtiformes ==
+
+
+=== Family Apogonidae ===
+Fibramia amboinensis (Bleeker, 1853)
+Glossamia aprion (Richardson, 1842)
+Glossamia arguni Hadiaty & Allen, 2011
+Glossamia beauforti (Weber, 1907)
+Glossamia gjellerupi (Weber & de Beaufort, 1929)
+Glossamia sandei (Weber, 1907)
+Glossamia timika Allen, Hortle & Renyaan, 2000
+Glossamia trifasciata (Weber, 1913)
+Glossamia wichmanni (Weber, 1907)
+Yarica hyalosoma (Bleeker, 1852)
+
+
+=== Family Kurtidae ===
+Kurtus gulliveri Castelnau, 1878
+
+
+== incertae sedis ==
+
+
+=== Series Carangaria ===
+
+
+==== Family Latidae ====
+Lates calcarifer (Bloch, 1790)
+
+
+==== Family Toxotidae ====
+Protoxotes lorentzi (Weber, 1910)
+Toxotes chatareus (Hamilton, 1822)
+Toxotes jaculatrix (Pallas, 1767)
+
+
+=== Series Ovalentaria ===
+
+
+==== Family Ambassidae ====
+Ambassis buruensis Bleeker, 1856
+Ambassis interrupta Bleeker, 1853
+Ambassis macracanthus Bleeker, 1849
+Ambassis miops Günther, 1872
+Pseudoambassis agrammus (Günther, 1867)
+Parambassis altipinnis Allen, 1982
+Parambassis confinis (Weber, 1913)
+Parambassis gulliveri (Castelnau, 1878)
+
+
+==== Family Pomacentridae ====
+Neopomacentrus taeniurus Bleeker, 1856
+
+
+=== Series Eupercaria ===
+
+
+==== Family Gerreidae ====
+Gerres filamentosus Cuvier, 1829
+
+
+==== Family Lutjanidae ====
+Lutjanus argentimaculatus (Forsskål, 1775)
+Lutjanus fuscescens (Valenciennes, 1830)
+
+
+==== Family Monodactylidae ====
+Monodactylus argenteus (Linnaeus, 1758)
+
+
+==== Family Sciaenidae ====
+Nibea soldado (Lacepède, 1802)
+Nibea squamosa Sasaki, 1992
+
+
+==== Family Sparidae ====
+Acanthopagrus berda (Fabriciu

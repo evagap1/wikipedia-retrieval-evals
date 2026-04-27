@@ -1,0 +1,46 @@
+Will Tracz is an American computer scientist and software engineer best known for his work in software architecture and the institutionalization of software reuse. He is a Lockheed Martin Fellow Emeritus and served as the Chair of the Association for Computing Machinery (ACM) Special Interest Group on Software Engineering (SIGSOFT) from 2012 to 2015.
+
+
+== Education ==
+Tracz completed his academic training across several institutions:
+
+B.S. in Mathematics, SUNY Geneseo (1972)
+M.S. in Computer Science, Pennsylvania State University (1974)
+M.S. in Computer and Electrical Engineering, Syracuse University (1979)
+Ph.D. in Electrical Engineering, Stanford University (1997)
+
+
+== Career ==
+Tracz's professional career spanned nearly four decades within the evolving corporate structure of IBM Federal Systems, which later became Loral Federal Systems and finally Lockheed Martin. 
+He retired in 2012 as a Principal Software Engineer and Application Architect for the Global Combat Support System - Air Force (GCSS-AF). His work frequently intersected with high-level defense research, including serving as a Principal Investigator (PI) for several DARPA programs such as DSSA (Domain-Specific Software Architecture). In 1997, Tracz was granted a U.S. patent for a system identifying and linking domain information.
+
+
+== Professional Leadership ==
+Tracz has held prominent roles in both the IEEE Computer Society and the ACM. 
+
+ACM SIGSOFT: He served as the Editor-in-Chief of Software Engineering Notes (SEN) from 1994 to 2012.
+IEEE: He served as the Vice Chair for Awards for the IEEE Technical Council on Software Engineering (TCSE) and is a Golden Core Member of the IEEE Computer Society.
+Conferences: He chaired several major international symposia, including the International Conference on Software Engineering (ICSE) in 2002.
+
+
+== Contributions to Software Reuse ==
+Tracz is widely recognized for his 1995 book, Confessions of a Used Program Salesman: Institutionalizing Software Reuse. The book is noted for using humor and analogies to address the non-technical barriers—social, psychological, and economic—to reusing software components in large organizations. 
+
+
+== Selected Awards ==
+ACM Distinguished Engineer (2009)
+ACM SIGSOFT Distinguished Service Award (2004)
+IEEE Golden Core Member (2000)
+IBM Outstanding Achievement Award (1982)
+
+
+== Bibliography ==
+Tracz, W. (1995). Confessions of a Used Program Salesman: Institutionalizing Software Reuse. Addison-Wesley. ISBN 978-0201633696.
+Tracz, W. (1987). Software Reuse: Emerging Technology. IEEE Computer Society Press. ISBN 978-0818608469.
+
+
+== References ==
+
+
+== External links ==
+Will Tracz Professional Site

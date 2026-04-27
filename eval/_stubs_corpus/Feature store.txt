@@ -1,0 +1,16 @@
+A feature store is a centralized repository used in machine learning to store, manage, and serve features for model training and inference. It provides a unified interface for data scientists and engineers to access curated, reusable features derived from raw data, ensuring consistency between training and production environments. Feature stores typically support batch and real-time data pipelines, enabling efficient feature computation, storage, and retrieval at scale.
+Feature stores play a critical role in operationalizing machine learning systems by improving reproducibility, reducing data leakage, and promoting collaboration across teams. They often have features like feature versioning, metadata management, and access control that help keep data quality and governance high.
+
+
+== See also ==
+Machine learning
+Feature engineering
+Data pipeline
+Data warehouse
+Data lake
+MLOps
+Data preprocessing
+Big data
+
+
+== References ==

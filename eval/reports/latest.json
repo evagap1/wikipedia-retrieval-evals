@@ -1,0 +1,2322 @@
+{
+  "meta": {
+    "timestamp": "2026-04-27T19:30:17Z",
+    "prompt_version": "v1",
+    "agent_model": "claude-sonnet-4-6",
+    "judge_model": "claude-opus-4-7",
+    "elapsed_s": 76,
+    "n_cases": 20
+  },
+  "summary": {
+    "n_cases": 20,
+    "agent": {
+      "pass_rate": 100.0,
+      "avg_accuracy": 2.0,
+      "avg_faithfulness": 2.0,
+      "avg_citations": 2.0,
+      "avg_refusal_calibration": 2.0,
+      "avg_premise_handling": 2.0
+    },
+    "closed_book": {
+      "pass_rate": 0.0,
+      "avg_accuracy": 0.4,
+      "avg_faithfulness": 1.5,
+      "avg_citations": 0.0,
+      "avg_refusal_calibration": 0.4,
+      "avg_premise_handling": 1.85
+    },
+    "by_category": {
+      "casualty_impact": {
+        "n": 3,
+        "agent_pass_rate": 100.0,
+        "agent_accuracy": 2.0,
+        "closed_book_pass_rate": 0.0,
+        "closed_book_accuracy": 0.0
+      },
+      "comparative_attribute": {
+        "n": 1,
+        "agent_pass_rate": 100.0,
+        "agent_accuracy": 2.0,
+        "closed_book_pass_rate": 0.0,
+        "closed_book_accuracy": 1.0
+      },
+      "comparative_numerical": {
+        "n": 1,
+        "agent_pass_rate": 100.0,
+        "agent_accuracy": 2.0,
+        "closed_book_pass_rate": 0.0,
+        "closed_book_accuracy": 1.0
+      },
+      "infobox_attribute": {
+        "n": 8,
+        "agent_pass_rate": 100.0,
+        "agent_accuracy": 2.0,
+        "closed_book_pass_rate": 0.0,
+        "closed_book_accuracy": 0.0
+      },
+      "tectonic_attribute": {
+        "n": 5,
+        "agent_pass_rate": 100.0,
+        "agent_accuracy": 2.0,
+        "closed_book_pass_rate": 0.0,
+        "closed_book_accuracy": 1.0
+      },
+      "tectonic_multihop": {
+        "n": 1,
+        "agent_pass_rate": 100.0,
+        "agent_accuracy": 2.0,
+        "closed_book_pass_rate": 0.0,
+        "closed_book_accuracy": 1.0
+      },
+      "tsunami": {
+        "n": 1,
+        "agent_pass_rate": 100.0,
+        "agent_accuracy": 2.0,
+        "closed_book_pass_rate": 0.0,
+        "closed_book_accuracy": 0.0
+      }
+    },
+    "failure_modes": {},
+    "tool_use_stats": {
+      "avg_searches": 2.2,
+      "avg_fetches": 1.45,
+      "avg_turns": 3.1,
+      "avg_input_tokens": 8755.75,
+      "avg_output_tokens": 506.3
+    },
+    "overall_pass_rate": 100.0,
+    "avg_accuracy": 2.0,
+    "avg_faithfulness": 2.0,
+    "avg_citations": 2.0,
+    "avg_refusal_calibration": 2.0,
+    "avg_premise_handling": 2.0
+  },
+  "results": [
+    {
+      "case": {
+        "id": "eq-01",
+        "category": "infobox_attribute",
+        "question": "What moment magnitude (Mw) and hypocentral depth did the United States Geological Survey report for the thrust-fault earthquake that struck off the northeastern coast of Honshu, Japan, along the Japan Trench at 16:53 JST (07:53 UTC) on 20 April 2026?",
+        "gold_articles": [
+          "2026 Sanriku earthquake"
+        ],
+        "expected_behavior": "USGS measured Mw 7.4 at a hypocentral depth of 35 km (22 mi). Source: Wikipedia article '2026 Sanriku earthquake'."
+      },
+      "prompt_version": "v1",
+      "agent_run": {
+        "question": "What moment magnitude (Mw) and hypocentral depth did the United States Geological Survey report for the thrust-fault earthquake that struck off the northeastern coast of Honshu, Japan, along the Japan Trench at 16:53 JST (07:53 UTC) on 20 April 2026?",
+        "answer": "The United States Geological Survey (USGS) reported the earthquake — a thrust-fault event along the Japan Trench off the Sanriku Coast of northeastern Honshu — at a moment magnitude of **Mw 7.4**, caused by an east-northeast-dipping, southwest–northeast-striking thrust fault at a hypocentral depth of **35 km (22 mi)** [2026 Sanriku earthquake].\n\nSources:\n- 2026 Sanriku earthquake",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-6",
+        "turns": 3,
+        "stop_reason": "end_turn",
+        "input_tokens": 7306,
+        "output_tokens": 241,
+        "total_latency_ms": 7753,
+        "error": null,
+        "tool_calls": [
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "earthquake Honshu Japan April 2026"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 Sanriku earthquake",
+                "2011 Tōhoku earthquake and tsunami",
+                "List of earthquakes in Japan",
+                "Honshu",
+                "2024 Noto earthquake"
+              ]
+            },
+            "latency_ms": 375
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2026 Sanriku earthquake"
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2026 Sanriku earthquake",
+              "char_count": 4839,
+              "truncated": true
+            },
+            "latency_ms": 164
+          }
+        ]
+      },
+      "closed_book_answer": "This event — an earthquake reported by the USGS at 16:53 JST on 20 April 2026 — is after my knowledge cutoff date, so I don't have any information about it. I cannot provide the moment magnitude or hypocentral depth, and I won't fabricate details. Please check the USGS Earthquake Hazards Program website or another authoritative source for accurate information.",
+      "reference_answer": "According to the USGS, the earthquake measured Mw 7.4 with a hypocentral depth of 35 km (22 mi). It was attributed to an east-northeast-dipping, southwest–northeast-striking thrust fault [2026 Sanriku earthquake].",
+      "judge": {
+        "accuracy": 2,
+        "faithfulness": 2,
+        "citations": 2,
+        "refusal_calibration": 2,
+        "premise_handling": 2,
+        "overall_pass": true,
+        "failure_modes": [],
+        "comment": "OK"
+      },
+      "closed_book_judge": {
+        "accuracy": 0,
+        "faithfulness": 2,
+        "citations": 0,
+        "refusal_calibration": 0,
+        "premise_handling": 2,
+        "overall_pass": false,
+        "failure_modes": [
+          "over_refused",
+          "no_search",
+          "missing_citation"
+        ],
+        "comment": "The system over-refused based on knowledge cutoff without searching Wikipedia, where the article '2026 Sanriku earthquake' contains the answer."
+      },
+      "case_latency_ms": 24349
+    },
+    {
+      "case": {
+        "id": "eq-02",
+        "category": "tectonic_attribute",
+        "question": "Beneath which microplate is the Pacific plate subducting in the area of the magnitude 7.5 thrust-fault earthquake that struck off northeastern Honshu on 20 April 2026, and what is the convergence rate range across that boundary?",
+        "gold_articles": [
+          "2026 Sanriku earthquake"
+        ],
+        "expected_behavior": "Pacific plate subducting beneath the Okhotsk microplate; convergence rate 7.9–9.2 cm per year. Source: '2026 Sanriku earthquake' (Tectonic setting)."
+      },
+      "prompt_version": "v1",
+      "agent_run": {
+        "question": "Beneath which microplate is the Pacific plate subducting in the area of the magnitude 7.5 thrust-fault earthquake that struck off northeastern Honshu on 20 April 2026, and what is the convergence rate range across that boundary?",
+        "answer": "The Wikipedia articles provide a clear and complete answer.\n\nThe magnitude 7.5 thrust-fault earthquake that struck off the **Sanriku Coast** of northeastern Honshu on 20 April 2026 occurred along the **Japan Trench**, where the **Pacific plate** is subducting beneath the **Okhotsk microplate** [2026 Sanriku earthquake][Japan Trench]. The Okhotsk microplate is a microplate formerly considered part of the North American plate [Japan Trench].\n\nThe convergence rate across this Pacific–Okhotsk boundary is in the range of **7.9 to 9.2 cm per year** [2026 Sanriku earthquake][Japan Trench].\n\nSources:\n- 2026 Sanriku earthquake\n- Japan Trench",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-6",
+        "turns": 3,
+        "stop_reason": "end_turn",
+        "input_tokens": 9339,
+        "output_tokens": 446,
+        "total_latency_ms": 12289,
+        "error": null,
+        "tool_calls": [
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "2026 northeastern Honshu earthquake April thrust fault"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 Sanriku earthquake",
+                "2025 Aomori earthquake",
+                "2011 Tōhoku earthquake and tsunami",
+                "2024 Noto earthquake",
+                "2021 Fukushima earthquake"
+              ]
+            },
+            "latency_ms": 326
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "Okhotsk microplate Pacific plate subduction convergence rate"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "North American plate",
+                "Japan Trench",
+                "Nankai megathrust earthquakes",
+                "Kamchatka earthquakes",
+                "Atlantic Ocean"
+              ]
+            },
+            "latency_ms": 443
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2026 Sanriku earthquake"
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2026 Sanriku earthquake",
+              "char_count": 4839,
+              "truncated": true
+            },
+            "latency_ms": 150
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "Japan Trench"
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "Japan Trench",
+              "char_count": 10567,
+              "truncated": true
+            },
+            "latency_ms": 196
+          }
+        ]
+      },
+      "closed_book_answer": "The April 20, 2026 earthquake is after my knowledge cutoff (early 2025), so I cannot speak to the specific event you're describing.\n\nHowever, I can offer relevant tectonic context for northeastern Honshu (Tohoku region): in that area, the Pacific plate subducts westward beneath the **Okhotsk microplate** (sometimes treated as part of the North American plate, but more precisely identified as the Okhotsk plate). The convergence rate across that boundary is approximately **8–9 cm/year** (roughly 83–92 mm/yr), making it one of the faster-converging subduction zones globally.\n\nIf the earthquake you mention had specific characteristics pointing to a different segment or boundary, I'd need more information I don't have. But for northeastern Honshu generally, the Pacific–Okhotsk subduction boundary with that convergence rate range is the standard answer.",
+      "reference_answer": "The Pacific plate is subducting beneath the Okhotsk microplate in the area of the 20 April 2026 earthquake, with a convergence rate across that boundary in the range of 7.9–9.2 cm per year [2026 Sanriku earthquake].",
+      "judge": {
+        "accuracy": 2,
+        "faithfulness": 2,
+        "citations": 2,
+        "refusal_calibration": 2,
+        "premise_handling": 2,
+        "overall_pass": true,
+        "failure_modes": [],
+        "comment": "OK"
+      },
+      "closed_book_judge": {
+        "accuracy": 1,
+        "faithfulness": 1,
+        "citations": 0,
+        "refusal_calibration": 1,
+        "premise_handling": 2,
+        "overall_pass": false,
+        "failure_modes": [
+          "no_search",
+          "missing_citation",
+          "over_refused"
+        ],
+        "comment": "System refused based on knowledge cutoff without attempting to search Wikipedia, and provided no citations; tectonic context is roughly correct but convergence range (8-9 cm/yr) doesn't precisely match the 7.9–9.2 cm/yr from the article."
+      },
+      "case_latency_ms": 24418
+    },
+    {
+      "case": {
+        "id": "eq-03",
+        "category": "infobox_attribute",
+        "question": "How many earthquakes exceeding Mw 4.0 occurred as foreshocks before the 20 April 2026 magnitude 7.5 thrust-fault earthquake off northeastern Honshu, when did the foreshock sequence begin, and what was the strongest foreshock?",
+        "gold_articles": [
+          "2026 Sanriku earthquake"
+        ],
+        "expected_behavior": "162 foreshocks exceeding Mw 4.0; sequence began in November 2025; strongest foreshock was Mw 6.8 (with five Mw 6.0+ events overall). Source: '2026 Sanriku earthquake'."
+      },
+      "prompt_version": "v1",
+      "agent_run": {
+        "question": "How many earthquakes exceeding Mw 4.0 occurred as foreshocks before the 20 April 2026 magnitude 7.5 thrust-fault earthquake off northeastern Honshu, when did the foreshock sequence begin, and what was the strongest foreshock?",
+        "answer": "The Wikipedia article on the 2026 Sanriku earthquake answers all three parts of your question directly:\n\n1. **Number of foreshocks exceeding Mw 4.0:** **162 foreshocks** exceeding Mw 4.0 occurred before the mainshock [2026 Sanriku earthquake].\n\n2. **When the foreshock sequence began:** The sequence started in **November 2025** — roughly five months before the 20 April 2026 mainshock [2026 Sanriku earthquake].\n\n3. **Strongest foreshock:** The strongest foreshock measured **Mw 6.8**; overall, five foreshocks reached Mw 6.0 or above [2026 Sanriku earthquake].\n\nSources:\n- 2026 Sanriku earthquake",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-6",
+        "turns": 3,
+        "stop_reason": "end_turn",
+        "input_tokens": 8446,
+        "output_tokens": 431,
+        "total_latency_ms": 11288,
+        "error": null,
+        "tool_calls": [
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "2026 earthquake northeastern Honshu magnitude 7.5"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 Sanriku earthquake",
+                "2025 Aomori earthquake",
+                "2011 Tōhoku earthquake and tsunami",
+                "List of earthquakes in Japan",
+                "List of earthquakes in 2024"
+              ]
+            },
+            "latency_ms": 371
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "April 2026 Japan earthquake thrust fault"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 Sanriku earthquake",
+                "2011 Tōhoku earthquake and tsunami",
+                "2025 Kamchatka earthquake",
+                "2025 Aomori earthquake",
+                "2026 Jorm earthquake"
+              ]
+            },
+            "latency_ms": 356
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2026 Sanriku earthquake",
+              "max_chars": 12000
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2026 Sanriku earthquake",
+              "char_count": 4839,
+              "truncated": false
+            },
+            "latency_ms": 145
+          }
+        ]
+      },
+      "closed_book_answer": "The event you're describing — a magnitude 7.5 thrust-fault earthquake off northeastern Honshu on 20 April 2026 — is after my knowledge cutoff date (early 2025), so I have no information about it. I cannot provide details about its foreshock sequence, as I would be fabricating data. Please consult a real-time seismological source such as the USGS Earthquake Hazards Program or the Japan Meteorological Agency for accurate information.",
+      "reference_answer": "The foreshock sequence preceding the 20 April 2026 Sanriku earthquake began in November 2025. A total of 162 foreshocks exceeding Mw 4.0 occurred, including five events of Mw 6.0 or greater. The strongest foreshock measured Mw 6.8 [2026 Sanriku earthquake].",
+      "judge": {
+        "accuracy": 2,
+        "faithfulness": 2,
+        "citations": 2,
+        "refusal_calibration": 2,
+        "premise_handling": 2,
+        "overall_pass": true,
+        "failure_modes": [],
+        "comment": "OK"
+      },
+      "closed_book_judge": {
+        "accuracy": 0,
+        "faithfulness": 2,
+        "citations": 0,
+        "refusal_calibration": 0,
+        "premise_handling": 1,
+        "overall_pass": false,
+        "failure_modes": [
+          "over_refused",
+          "no_search",
+          "missing_citation"
+        ],
+        "comment": "The system refused based on knowledge cutoff without attempting to search Wikipedia, where the article '2026 Sanriku earthquake' contains the answer."
+      },
+      "case_latency_ms": 21562
+    },
+    {
+      "case": {
+        "id": "eq-04",
+        "category": "tsunami",
+        "question": "What was the highest observed tsunami wave height following the 20 April 2026 magnitude 7.5 thrust-fault earthquake off northeastern Honshu, and at which port was it recorded?",
+        "gold_articles": [
+          "2026 Sanriku earthquake"
+        ],
+        "expected_behavior": "80 cm (31 in) at Kuji, Iwate. Source: '2026 Sanriku earthquake'."
+      },
+      "prompt_version": "v1",
+      "agent_run": {
+        "question": "What was the highest observed tsunami wave height following the 20 April 2026 magnitude 7.5 thrust-fault earthquake off northeastern Honshu, and at which port was it recorded?",
+        "answer": "According to Wikipedia's article on the 2026 Sanriku earthquake, the highest observed tsunami wave height following the 20 April 2026 magnitude 7.5 thrust-fault earthquake was **80 centimetres (31 inches)**, recorded at **Kuji, Iwate** [2026 Sanriku earthquake].\n\nSources:\n- 2026 Sanriku earthquake",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-6",
+        "turns": 3,
+        "stop_reason": "end_turn",
+        "input_tokens": 8407,
+        "output_tokens": 364,
+        "total_latency_ms": 8918,
+        "error": null,
+        "tool_calls": [
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "2026 earthquake northeastern Honshu tsunami"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 Sanriku earthquake",
+                "2011 Tōhoku earthquake and tsunami",
+                "2025 Aomori earthquake",
+                "List of earthquakes in Japan",
+                "2024 Noto earthquake"
+              ]
+            },
+            "latency_ms": 346
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "April 2026 magnitude 7.5 earthquake Japan"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 Sanriku earthquake",
+                "List of earthquakes in 2026",
+                "2026 North Maluku earthquake",
+                "2026 Guerrero earthquake",
+                "List of earthquakes in Japan"
+              ]
+            },
+            "latency_ms": 453
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2026 Sanriku earthquake",
+              "max_chars": 12000
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2026 Sanriku earthquake",
+              "char_count": 4839,
+              "truncated": false
+            },
+            "latency_ms": 156
+          }
+        ]
+      },
+      "closed_book_answer": "The date you're referring to — April 20, 2026 — is in the future relative to my knowledge cutoff, and I have no information about this event. I cannot provide details about it, and I won't fabricate figures. If this earthquake occurred, please consult official sources such as the Japan Meteorological Agency or USGS for verified data.",
+      "reference_answer": "The highest observed tsunami wave height was 80 centimeters (31 in), recorded at Kuji, Iwate [2026 Sanriku earthquake].",
+      "judge": {
+        "accuracy": 2,
+        "faithfulness": 2,
+        "citations": 2,
+        "refusal_calibration": 2,
+        "premise_handling": 2,
+        "overall_pass": true,
+        "failure_modes": [],
+        "comment": "OK"
+      },
+      "closed_book_judge": {
+        "accuracy": 0,
+        "faithfulness": 1,
+        "citations": 0,
+        "refusal_calibration": 0,
+        "premise_handling": 2,
+        "overall_pass": false,
+        "failure_modes": [
+          "over_refused",
+          "no_search",
+          "missing_citation",
+          "incomplete"
+        ],
+        "comment": "The system refused based on a knowledge cutoff without searching Wikipedia, where the 2026 Sanriku earthquake article exists with the answer."
+      },
+      "case_latency_ms": 20533
+    },
+    {
+      "case": {
+        "id": "eq-05",
+        "category": "infobox_attribute",
+        "question": "At what local time (WIB) and date did a moment magnitude 5.8 (USGS) earthquake strike offshore of Pacitan Regency in East Java, Indonesia, and approximately how far offshore was the epicenter?",
+        "gold_articles": [
+          "2026 Pacitan earthquake"
+        ],
+        "expected_behavior": "01:06:10 WIB on 6 February 2026; epicenter approximately 89–94 km offshore (89 km southeast of Pacitan per BMKG; ~94 km from Trenggalek per the lead). Source: '2026 Pacitan earthquake'."
+      },
+      "prompt_version": "v1",
+      "agent_run": {
+        "question": "At what local time (WIB) and date did a moment magnitude 5.8 (USGS) earthquake strike offshore of Pacitan Regency in East Java, Indonesia, and approximately how far offshore was the epicenter?",
+        "answer": "The **2026 Pacitan earthquake** struck on the night of **6 February 2026 at 01:06:10 WIB** (Western Indonesian Time), which corresponds to 18:06:10 UTC [2026 Pacitan earthquake].\n\nAccording to the **USGS**, the earthquake was recorded at a moment magnitude of **5.8** (Mw), with a depth of 40 km [2026 Pacitan earthquake]. (Note: Indonesia's own meteorological agency, BMKG, recorded it at a higher magnitude of 6.2 after revision.)\n\nThe epicenter was located **offshore, approximately 89 kilometres (55 mi) southeast of Pacitan** — or roughly **94 kilometres (58 mi) from Trenggalek district** — in the Indian Ocean south of East Java [2026 Pacitan earthquake].\n\nSources:\n- 2026 Pacitan earthquake",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-6",
+        "turns": 3,
+        "stop_reason": "end_turn",
+        "input_tokens": 7789,
+        "output_tokens": 425,
+        "total_latency_ms": 10652,
+        "error": null,
+        "tool_calls": [
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "Pacitan Regency East Java earthquake offshore"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 Pacitan earthquake",
+                "List of earthquakes in 2024",
+                "List of earthquakes in 2026",
+                "2026 North Maluku earthquake",
+                "List of beaches in Indonesia"
+              ]
+            },
+            "latency_ms": 318
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "magnitude 5.8 earthquake Pacitan Indonesia USGS"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "List of earthquakes in 2026",
+                "List of earthquakes in 2024",
+                "2026 Pacitan earthquake",
+                "2026 North Maluku earthquake",
+                "List of earthquakes 2021–present"
+              ]
+            },
+            "latency_ms": 345
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2026 Pacitan earthquake"
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2026 Pacitan earthquake",
+              "char_count": 4079,
+              "truncated": true
+            },
+            "latency_ms": 134
+          }
+        ]
+      },
+      "closed_book_answer": "Based on my training data, I need to be careful here. There have been multiple earthquakes offshore Pacitan Regency, East Java, Indonesia over the years.\n\nA notable earthquake offshore Pacitan with a magnitude around 5.8 occurred on **October 5, 2017**, at approximately **05:52 WIB (Western Indonesia Time)**, with the epicenter located roughly **85–100 kilometers offshore** (south of Pacitan) in the Indian Ocean.\n\nHowever, I want to be transparent: I'm not fully confident in the precise details of this specific event. If you have a particular earthquake in mind, could you provide additional context (such as the year) so I can give you more accurate information? I wouldn't want to conflate different seismic events or fabricate specific details.",
+      "reference_answer": "The earthquake struck on 6 February 2026 at 01:06:10 WIB. According to the USGS, it was a moment magnitude 5.8 event, with the epicenter located offshore approximately 94 kilometres (58 mi) from Trenggalek district (BMKG reported it as about 89 km southeast of Pacitan) [2026 Pacitan earthquake].",
+      "judge": {
+        "accuracy": 2,
+        "faithfulness": 2,
+        "citations": 2,
+        "refusal_calibration": 2,
+        "premise_handling": 2,
+        "overall_pass": true,
+        "failure_modes": [],
+        "comment": "OK"
+      },
+      "closed_book_judge": {
+        "accuracy": 0,
+        "faithfulness": 0,
+        "citations": 0,
+        "refusal_calibration": 1,
+        "premise_handling": 2,
+        "overall_pass": false,
+        "failure_modes": [
+          "hallucinated",
+          "no_search",
+          "missing_citation",
+          "wrong_fact"
+        ],
+        "comment": "System failed to search Wikipedia and fabricated details about a 2017 event instead of retrieving the 2026 Pacitan earthquake article."
+      },
+      "case_latency_ms": 25851
+    },
+    {
+      "case": {
+        "id": "eq-06",
+        "category": "infobox_attribute",
+        "question": "What initial magnitude did Indonesia's BMKG (Meteorology, Climatological, and Geophysical Agency) report for the 6 February 2026 thrust-motion earthquake offshore of East Java, what magnitude did BMKG later revise it to, and what magnitude did the USGS report?",
+        "gold_articles": [
+          "2026 Pacitan earthquake"
+        ],
+        "expected_behavior": "BMKG initially recorded magnitude 6.4 and later revised to 6.2; USGS recorded magnitude 5.8 (with depth 40 km vs BMKG's 58 km). Source: '2026 Pacitan earthquake'."
+      },
+      "prompt_version": "v1",
+      "agent_run": {
+        "question": "What initial magnitude did Indonesia's BMKG (Meteorology, Climatological, and Geophysical Agency) report for the 6 February 2026 thrust-motion earthquake offshore of East Java, what magnitude did BMKG later revise it to, and what magnitude did the USGS report?",
+        "answer": "Here is the full answer, directly from Wikipedia:\n\nAccording to the Wikipedia article on the **2026 Pacitan earthquake**, for the 6 February 2026 thrust-motion earthquake offshore of East Java:\n\n- **BMKG's initial magnitude:** **6.4**\n- **BMKG's revised magnitude:** **6.2** (updated in a later parameter release)\n- **USGS reported magnitude:** **5.8** (at a depth of 40 km)\n\nBMKG's director of earthquakes and tsunamis, Daryono, confirmed that source mechanism analysis indicated a **thrust motion** for the event [2026 Pacitan earthquake].\n\nSources:\n- 2026 Pacitan earthquake",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-6",
+        "turns": 3,
+        "stop_reason": "end_turn",
+        "input_tokens": 8140,
+        "output_tokens": 447,
+        "total_latency_ms": 23262,
+        "error": null,
+        "tool_calls": [
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "2026 East Java earthquake BMKG"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "List of earthquakes in 2026",
+                "2026 Pacitan earthquake",
+                "2026 North Maluku earthquake",
+                "List of earthquakes in 2025",
+                "List of earthquakes in Indonesia"
+              ]
+            },
+            "latency_ms": 319
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "February 2026 Indonesia earthquake offshore East Java"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 Pacitan earthquake",
+                "2026 Sanriku earthquake",
+                "List of earthquakes in 2026",
+                "2026 North Maluku earthquake",
+                "List of earthquakes in 2025"
+              ]
+            },
+            "latency_ms": 450
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2026 Pacitan earthquake"
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2026 Pacitan earthquake",
+              "char_count": 4079,
+              "truncated": true
+            },
+            "latency_ms": 154
+          }
+        ]
+      },
+      "closed_book_answer": "The earthquake you're describing — dated 6 February 2026 — is after my knowledge cutoff date of early 2025, so I have no information about this event. I cannot provide the BMKG initial magnitude, the revised magnitude, or the USGS magnitude, as I have no data on this earthquake. Please check current news sources or the official BMKG and USGS websites for accurate information.",
+      "reference_answer": "BMKG initially recorded the 6 February 2026 offshore East Java (Pacitan) earthquake at magnitude 6.4, then revised it to magnitude 6.2. The USGS reported the earthquake at magnitude 5.8 [2026 Pacitan earthquake].",
+      "judge": {
+        "accuracy": 2,
+        "faithfulness": 2,
+        "citations": 2,
+        "refusal_calibration": 2,
+        "premise_handling": 2,
+        "overall_pass": true,
+        "failure_modes": [],
+        "comment": "OK"
+      },
+      "closed_book_judge": {
+        "accuracy": 0,
+        "faithfulness": 2,
+        "citations": 0,
+        "refusal_calibration": 0,
+        "premise_handling": 2,
+        "overall_pass": false,
+        "failure_modes": [
+          "over_refused",
+          "no_search",
+          "missing_citation"
+        ],
+        "comment": "The system refused based on a knowledge cutoff without attempting to search Wikipedia, where the article '2026 Pacitan earthquake' exists with the answer."
+      },
+      "case_latency_ms": 31264
+    },
+    {
+      "case": {
+        "id": "eq-07",
+        "category": "tectonic_attribute",
+        "question": "At the convergent boundary marked by the Sunda Trench off the southern coast of Java — site of the 6 February 2026 Mw 5.8 thrust-motion earthquake — which plate subducts beneath which, and what is the convergence rate at the western and eastern parts of the trench?",
+        "gold_articles": [
+          "2026 Pacitan earthquake"
+        ],
+        "expected_behavior": "The Australian Plate subducts northward beneath the Sunda Plate. Convergence rate is about 6 cm/yr in the western part and 4.9 cm/yr in the eastern part. The article also notes the Sunda subduction zone is capable of generating megathrust earthquakes up to magnitude 8.7. Source: '2026 Pacitan earthquake' (Tectonic setting)."
+      },
+      "prompt_version": "v1",
+      "agent_run": {
+        "question": "At the convergent boundary marked by the Sunda Trench off the southern coast of Java — site of the 6 February 2026 Mw 5.8 thrust-motion earthquake — which plate subducts beneath which, and what is the convergence rate at the western and eastern parts of the trench?",
+        "answer": "I now have all the information needed. Here is the complete answer:\n\n---\n\n## Sunda Trench: Subducting Plates and Convergence Rates\n\n**Which plate subducts beneath which:**\nThe Sunda Trench marks an active convergent boundary between the **Australian Plate** (to the south) and the **Sunda Plate** (to the north). The northward-moving Australian Plate subducts beneath the Sunda Plate [2026 Pacitan earthquake]. This subduction involves relatively old oceanic crust and is accompanied by a deepening of the Benioff Zone (steepening dip angle) [2026 Pacitan earthquake].\n\n**Convergence rates:**\n- **Western part** of the trench (Java section): approximately **6 cm (2.4 in) per year**\n- **Eastern part** of the trench (Java section, toward Bali): approximately **4.9 cm (1.9 in) per year**\n\n[2026 Pacitan earthquake]\n\n**About the earthquake itself:**\nThe 6 February 2026 event (Mw 5.8 per USGS, though initially recorded higher by Indonesia's BMKG) struck Pacitan Regency, East Java, with its epicenter ~89 km southeast of Pacitan at a depth of ~40–58 km. Source mechanism analysis confirmed **thrust motion**, consistent with the compressional nature of this subduction zone [2026 Pacitan earthquake].\n\nSources:\n- 2026 Pacitan earthquake",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-6",
+        "turns": 3,
+        "stop_reason": "end_turn",
+        "input_tokens": 8278,
+        "output_tokens": 654,
+        "total_latency_ms": 12775,
+        "error": null,
+        "tool_calls": [
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "Sunda Trench subduction plate convergence rate"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "Burma plate",
+                "Oceanic trench",
+                "Australian plate",
+                "Cotabato Trench",
+                "Sumatra Trench"
+              ]
+            },
+            "latency_ms": 370
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "6 February 2026 earthquake Java Sunda Trench"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 Pacitan earthquake",
+                "2004 Indian Ocean earthquake and tsunami",
+                "List of earthquakes in Indonesia",
+                "Mount Rinjani",
+                "Mount Tambora"
+              ]
+            },
+            "latency_ms": 585
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2026 Pacitan earthquake",
+              "max_chars": 6000
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2026 Pacitan earthquake",
+              "char_count": 4079,
+              "truncated": false
+            },
+            "latency_ms": 133
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "Sunda Trench Java Trench tectonic plates subduction"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "Sunda Trench",
+                "Oceanic trench",
+                "Manila Trench",
+                "Cotabato Trench",
+                "Sumatra Trench"
+              ]
+            },
+            "latency_ms": 389
+          }
+        ]
+      },
+      "closed_book_answer": "The 6 February 2026 earthquake you mention falls after my knowledge cutoff (early 2025), so I cannot confirm details about that specific event.\n\nHowever, I can answer the tectonic setting question from established knowledge:\n\n## Sunda Trench Subduction Zone\n\n**Which plate subducts beneath which:**\nThe **Indo-Australian Plate** (or more precisely the Indian/Australian plate) subducts beneath the **Eurasian Plate** (Sunda microplate/block) along the Sunda Trench (also called the Java Trench).\n\n## Convergence Rates\n\nThe convergence rate varies significantly along the trench:\n\n- **Western part (off Sumatra):** approximately **52–60 mm/yr**, with a significant oblique component — this obliquity is partly accommodated by the Sumatran Fault (strike-slip) running onshore.\n- **Eastern part (off Java):** approximately **60–70 mm/yr**, with convergence being more **orthogonal** (perpendicular) to the trench compared to the Sumatra segment.\n\nThe direction of convergence rotates from more northeastward motion in the west to more northward/northwestward motion in the east, and the rate generally increases eastward along the Java segment.\n\nThese figures come from geodetic and plate motion model studies (e.g., NUVEL-1A, MORVEL).",
+      "reference_answer": "At the Sunda Trench off southern Java, the northward-moving Australian Plate subducts beneath the Sunda Plate. Convergence of relatively old oceanic crust occurs at a rate of 6 cm (2.4 in) per year in the western part and 4.9 cm (1.9 in) per year in the eastern part of the trench [2026 Pacitan earthquake].",
+      "judge": {
+        "accuracy": 2,
+        "faithfulness": 2,
+        "citations": 2,
+        "refusal_calibration": 2,
+        "premise_handling": 2,
+        "overall_pass": true,
+        "failure_modes": [],
+        "comment": "OK"
+      },
+      "closed_book_judge": {
+        "accuracy": 0,
+        "faithfulness": 0,
+        "citations": 0,
+        "refusal_calibration": 1,
+        "premise_handling": 2,
+        "overall_pass": false,
+        "failure_modes": [
+          "no_search",
+          "hallucinated",
+          "wrong_fact",
+          "missing_citation"
+        ],
+        "comment": "System refused to look up the event but then provided convergence rates (52-70 mm/yr) that contradict the Wikipedia figures (6 cm/yr west, 4.9 cm/yr east) without any citations or article fetches."
+      },
+      "case_latency_ms": 22970
+    },
+    {
+      "case": {
+        "id": "eq-08",
+        "category": "casualty_impact",
+        "question": "How many people were injured in the Special Region of Yogyakarta as a result of the 6 February 2026 Mw 5.8 thrust-motion earthquake offshore of East Java, and where did the single recorded fatality occur?",
+        "gold_articles": [
+          "2026 Pacitan earthquake"
+        ],
+        "expected_behavior": "47 people injured in Yogyakarta; one person died from shock in Ngadirojo, Pacitan. Source: '2026 Pacitan earthquake' (Impact)."
+      },
+      "prompt_version": "v1",
+      "agent_run": {
+        "question": "How many people were injured in the Special Region of Yogyakarta as a result of the 6 February 2026 Mw 5.8 thrust-motion earthquake offshore of East Java, and where did the single recorded fatality occur?",
+        "answer": "Based on the Wikipedia article on the 2026 Pacitan earthquake:\n\n- **47 people were injured** in the Special Region of Yogyakarta as a result of the earthquake [2026 Pacitan earthquake].\n- The **single recorded fatality** occurred in **Ngadirojo, Pacitan** (East Java), where one person died from shock [2026 Pacitan earthquake].\n\nSources:\n- 2026 Pacitan earthquake",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-6",
+        "turns": 3,
+        "stop_reason": "end_turn",
+        "input_tokens": 6887,
+        "output_tokens": 230,
+        "total_latency_ms": 7797,
+        "error": null,
+        "tool_calls": [
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "2026 East Java earthquake February 6"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 Pacitan earthquake",
+                "2026 Sanriku earthquake",
+                "List of earthquakes in 2026",
+                "2026 Guerrero earthquake",
+                "2026 in Indonesia"
+              ]
+            },
+            "latency_ms": 493
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2026 Pacitan earthquake"
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2026 Pacitan earthquake",
+              "char_count": 4079,
+              "truncated": true
+            },
+            "latency_ms": 134
+          }
+        ]
+      },
+      "closed_book_answer": "My training data doesn't cover events from February 2026 — that date is beyond my knowledge cutoff. I cannot provide details about this earthquake or its casualties. Please consult a current news source or seismological database for accurate information.",
+      "reference_answer": "According to the excerpts, at least 47 people were injured in the Special Region of Yogyakarta as a result of the earthquake [2026 Pacitan earthquake]. The single recorded fatality occurred in Ngadirojo, Pacitan (East Java), where one person died from shock [2026 Pacitan earthquake].",
+      "judge": {
+        "accuracy": 2,
+        "faithfulness": 2,
+        "citations": 2,
+        "refusal_calibration": 2,
+        "premise_handling": 2,
+        "overall_pass": true,
+        "failure_modes": [],
+        "comment": "OK"
+      },
+      "closed_book_judge": {
+        "accuracy": 0,
+        "faithfulness": 2,
+        "citations": 0,
+        "refusal_calibration": 0,
+        "premise_handling": 2,
+        "overall_pass": false,
+        "failure_modes": [
+          "over_refused",
+          "no_search",
+          "missing_citation"
+        ],
+        "comment": "The system refused based on training cutoff instead of searching Wikipedia, which has the article on the 2026 Pacitan earthquake."
+      },
+      "case_latency_ms": 23642
+    },
+    {
+      "case": {
+        "id": "eq-09",
+        "category": "infobox_attribute",
+        "question": "What was the date and Mw range (BMKG vs USGS) of the reverse-faulting earthquake that struck the Molucca Sea between North Sulawesi and North Maluku Provinces, Indonesia, with an offshore epicenter near the Batang Dua Islands at a depth of 35 km?",
+        "gold_articles": [
+          "2026 North Maluku earthquake"
+        ],
+        "expected_behavior": "2 April 2026; BMKG reported Mw 7.3 and USGS reported Mww 7.4 at 35.0 km depth. Source: '2026 North Maluku earthquake'."
+      },
+      "prompt_version": "v1",
+      "agent_run": {
+        "question": "What was the date and Mw range (BMKG vs USGS) of the reverse-faulting earthquake that struck the Molucca Sea between North Sulawesi and North Maluku Provinces, Indonesia, with an offshore epicenter near the Batang Dua Islands at a depth of 35 km?",
+        "answer": "Here are the details of that earthquake:\n\nThe event was the **2026 North Maluku earthquake**, which struck on **2 April 2026**. The magnitude reported differed slightly between the two agencies:\n\n- **BMKG** (Indonesia's Meteorology, Climatology, and Geophysical Agency) reported a magnitude of **Mw 7.3**\n- **USGS** (United States Geological Survey) reported a magnitude of **Mww 7.4**\n\nThe earthquake's epicenter was located offshore near the **Batang Dua Islands** in the Molucca Sea — between North Sulawesi and North Maluku Provinces, Indonesia — at a depth of **35 km**. Its focal mechanism corresponded to **reverse faulting**, moderately dipping toward either the northwest or the southeast, consistent with the general seismic trend of the region [2026 North Maluku earthquake].\n\nSources:\n- 2026 North Maluku earthquake",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-6",
+        "turns": 3,
+        "stop_reason": "end_turn",
+        "input_tokens": 7220,
+        "output_tokens": 459,
+        "total_latency_ms": 10247,
+        "error": null,
+        "tool_calls": [
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "Molucca Sea earthquake Batang Dua Islands North Sulawesi North Maluku reverse fault"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 1,
+              "titles": [
+                "2026 North Maluku earthquake"
+              ]
+            },
+            "latency_ms": 333
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "2023 Molucca Sea earthquake Indonesia BMKG USGS"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 3,
+              "titles": [
+                "List of earthquakes in Indonesia",
+                "List of earthquakes in 2021",
+                "List of tsunamis"
+              ]
+            },
+            "latency_ms": 322
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2026 North Maluku earthquake"
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2026 North Maluku earthquake",
+              "char_count": 3937,
+              "truncated": false
+            },
+            "latency_ms": 144
+          }
+        ]
+      },
+      "closed_book_answer": "Based on my training data, you're referring to the **Molucca Sea earthquake of November 14, 2019**.\n\n- **Date:** November 14, 2019\n- **Magnitude:** BMKG reported **Mw 7.1**, while USGS reported **Mw 7.1** as well — though initial reports varied slightly, with some agencies citing values in the **Mw 6.9–7.1** range between the two agencies.\n- **Depth:** approximately **35 km**\n- **Mechanism:** reverse faulting\n- **Epicenter:** offshore in the Molucca Sea, near the **Batang Dua Islands**, between North Sulawesi and North Maluku Provinces, Indonesia.\n\nIf you need the precise split between BMKG and USGS magnitudes to the decimal, I'd recommend verifying against official agency records, as my recollection of the exact agency-by-agency breakdown may not be perfectly precise.",
+      "reference_answer": "The earthquake struck on 2 April 2026. BMKG reported a magnitude of Mw 7.3, while the USGS reported Mww 7.4 [2026 North Maluku earthquake].",
+      "judge": {
+        "accuracy": 2,
+        "faithfulness": 2,
+        "citations": 2,
+        "refusal_calibration": 2,
+        "premise_handling": 2,
+        "overall_pass": true,
+        "failure_modes": [],
+        "comment": "OK"
+      },
+      "closed_book_judge": {
+        "accuracy": 0,
+        "faithfulness": 0,
+        "citations": 0,
+        "refusal_calibration": 0,
+        "premise_handling": 2,
+        "overall_pass": false,
+        "failure_modes": [
+          "hallucinated",
+          "no_search",
+          "missing_citation",
+          "wrong_fact"
+        ],
+        "comment": "The system answered from training data without searching, gave the wrong date and magnitudes, and provided no citations."
+      },
+      "case_latency_ms": 21861
+    },
+    {
+      "case": {
+        "id": "eq-10",
+        "category": "tectonic_attribute",
+        "question": "The Molucca Sea region — site of a Mw 7.3–7.4 reverse-faulting earthquake on 2 April 2026 — is described as the only global example of which type of tectonic setting, and which two microplates subsume the Molucca Sea plate?",
+        "gold_articles": [
+          "2026 North Maluku earthquake"
+        ],
+        "expected_behavior": "Only global example of an active arc–arc collision consuming an oceanic basin via subduction in two directions (the 'Molucca Sea Collision Zone'). The Halmahera plate and the Sangihe plate subsume the Molucca Sea plate. Source: '2026 North Maluku earthquake' (Tectonic setting)."
+      },
+      "prompt_version": "v1",
+      "agent_run": {
+        "question": "The Molucca Sea region — site of a Mw 7.3–7.4 reverse-faulting earthquake on 2 April 2026 — is described as the only global example of which type of tectonic setting, and which two microplates subsume the Molucca Sea plate?",
+        "answer": "Both articles provide clear, complementary answers. Here is the full picture:\n\nThe Molucca Sea region is described as **the only global example of an active arc-arc collision** — specifically, one that consumes an oceanic basin via subduction in *two opposite directions* (a process known as **divergent double subduction, or DDS**) [2026 North Maluku earthquake][Molucca Sea plate]. The Molucca Sea plate is the only known example of this divergent double subduction, where a single oceanic plate is subducted on both of its sides simultaneously [Molucca Sea plate].\n\nThe Molucca Sea plate is subsumed by two tectonic microplates: the **Halmahera plate** (situated along its eastern boundary, moving northwest) and the **Sangihe plate** (situated along its western boundary, moving southeast) [2026 North Maluku earthquake][Molucca Sea plate].\n\nSources:\n- 2026 North Maluku earthquake\n- Molucca Sea plate",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-6",
+        "turns": 3,
+        "stop_reason": "end_turn",
+        "input_tokens": 8951,
+        "output_tokens": 508,
+        "total_latency_ms": 13131,
+        "error": null,
+        "tool_calls": [
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "Molucca Sea tectonic setting"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "Molucca Sea plate",
+                "Sea",
+                "Dead Sea",
+                "2026 North Maluku earthquake",
+                "1938 Banda Sea earthquake"
+              ]
+            },
+            "latency_ms": 281
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "Molucca Sea plate microplates"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "Molucca Sea plate",
+                "Molucca Sea",
+                "List of tectonic plates",
+                "Halmahera plate",
+                "Philippine Mobile Belt"
+              ]
+            },
+            "latency_ms": 267
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2026 North Maluku earthquake"
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2026 North Maluku earthquake",
+              "char_count": 3937,
+              "truncated": false
+            },
+            "latency_ms": 160
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "Molucca Sea plate"
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "Molucca Sea plate",
+              "char_count": 3729,
+              "truncated": false
+            },
+            "latency_ms": 172
+          }
+        ]
+      },
+      "closed_book_answer": "I need to be transparent here: the earthquake you describe — a Mw 7.3–7.4 reverse-faulting event on 2 April 2026 in the Molucca Sea — occurred after my knowledge cutoff, so I cannot confirm details about that specific event.\n\nHowever, I can answer the tectonic background question from my training data:\n\n**Tectonic setting:** The Molucca Sea is classically described as the only known example of a **double subduction zone** (or bivergent/double-sided subduction), where the Molucca Sea plate is being simultaneously subducted in **opposite directions** — westward beneath the Sangihe Arc and eastward beneath the Halmahera Arc. This makes it a unique \"tectonic vise\" or **double-arc collision** setting.\n\n**The two microplates:** The Molucca Sea plate is being consumed by (and caught between) the **Sangihe microplate** (to the west) and the **Halmahera microplate** (to the east).",
+      "reference_answer": "The Molucca Sea region is described as the only global example of an active arc-arc collision consuming an oceanic basin via subduction in two directions. The Molucca Sea plate is subsumed by two microplates: the Halmahera plate and the Sangihe plate. This complex zone is known as the Molucca Sea Collision Zone [2026 North Maluku earthquake].",
+      "judge": {
+        "accuracy": 2,
+        "faithfulness": 2,
+        "citations": 2,
+        "refusal_calibration": 2,
+        "premise_handling": 2,
+        "overall_pass": true,
+        "failure_modes": [],
+        "comment": "OK"
+      },
+      "closed_book_judge": {
+        "accuracy": 2,
+        "faithfulness": 2,
+        "citations": 0,
+        "refusal_calibration": 1,
+        "premise_handling": 2,
+        "overall_pass": false,
+        "failure_modes": [
+          "missing_citation",
+          "no_search"
+        ],
+        "comment": "Substantively correct on tectonic setting and microplates, but no search was performed and no citations or Sources list provided."
+      },
+      "case_latency_ms": 26566
+    },
+    {
+      "case": {
+        "id": "eq-11",
+        "category": "infobox_attribute",
+        "question": "How many aftershocks followed the 2 April 2026 Mw 7.3–7.4 reverse-faulting earthquake in the Molucca Sea, how many of them were felt, and what was the largest aftershock magnitude?",
+        "gold_articles": [
+          "2026 North Maluku earthquake"
+        ],
+        "expected_behavior": "At least 1,378 aftershocks (25 of them felt); largest aftershock Mwb 6.2. Source: '2026 North Maluku earthquake'."
+      },
+      "prompt_version": "v1",
+      "agent_run": {
+        "question": "How many aftershocks followed the 2 April 2026 Mw 7.3–7.4 reverse-faulting earthquake in the Molucca Sea, how many of them were felt, and what was the largest aftershock magnitude?",
+        "answer": "Here is a precise answer based on the Wikipedia article:\n\nFollowing the 2 April 2026 Mw 7.3–7.4 reverse-faulting earthquake in the Molucca Sea, **at least 1,378 aftershocks** were recorded. Of those, **25 were felt**. The **largest aftershock had a magnitude of Mwb 6.2** [2026 North Maluku earthquake].\n\nSources:\n- 2026 North Maluku earthquake",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-6",
+        "turns": 3,
+        "stop_reason": "end_turn",
+        "input_tokens": 7938,
+        "output_tokens": 344,
+        "total_latency_ms": 8740,
+        "error": null,
+        "tool_calls": [
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "2026 Molucca Sea earthquake"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 North Maluku earthquake",
+                "Sea of Marmara",
+                "List of earthquakes in Indonesia",
+                "List of earthquakes in 2008",
+                "List of earthquakes in 2005"
+              ]
+            },
+            "latency_ms": 247
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "Molucca Sea earthquake April 2026"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 North Maluku earthquake",
+                "Sea of Marmara",
+                "List of earthquakes in 2010",
+                "List of earthquakes in 2008",
+                "Black Sea"
+              ]
+            },
+            "latency_ms": 325
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2026 North Maluku earthquake",
+              "max_chars": 8000
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2026 North Maluku earthquake",
+              "char_count": 3937,
+              "truncated": false
+            },
+            "latency_ms": 169
+          }
+        ]
+      },
+      "closed_book_answer": "The event you're describing — a 2 April 2026 earthquake in the Molucca Sea — falls after my knowledge cutoff of early 2025. I have no information about this earthquake or its aftershock sequence, and I cannot fabricate details about it.",
+      "reference_answer": "The earthquake was followed by at least 1,378 aftershocks, of which 25 were felt, with the largest aftershock having a magnitude of Mwb 6.2 [2026 North Maluku earthquake].",
+      "judge": {
+        "accuracy": 2,
+        "faithfulness": 2,
+        "citations": 2,
+        "refusal_calibration": 2,
+        "premise_handling": 2,
+        "overall_pass": true,
+        "failure_modes": [],
+        "comment": "OK"
+      },
+      "closed_book_judge": {
+        "accuracy": 0,
+        "faithfulness": 2,
+        "citations": 0,
+        "refusal_calibration": 0,
+        "premise_handling": 2,
+        "overall_pass": false,
+        "failure_modes": [
+          "no_search",
+          "missed_refusal",
+          "wrong_fact"
+        ],
+        "comment": "The system refused based on knowledge cutoff without attempting to search Wikipedia, where the article exists."
+      },
+      "case_latency_ms": 19970
+    },
+    {
+      "case": {
+        "id": "eq-12",
+        "category": "casualty_impact",
+        "question": "Following the 2 April 2026 Mw 7.3–7.4 reverse-faulting earthquake in the Molucca Sea, how many people were displaced in the Batang Dua Islands, and how many homes there collapsed?",
+        "gold_articles": [
+          "2026 North Maluku earthquake"
+        ],
+        "expected_behavior": "1,966 people displaced; 104 homes collapsed (with 85 moderately damaged and 79 slightly damaged). Source: '2026 North Maluku earthquake' (Impact)."
+      },
+      "prompt_version": "v1",
+      "agent_run": {
+        "question": "Following the 2 April 2026 Mw 7.3–7.4 reverse-faulting earthquake in the Molucca Sea, how many people were displaced in the Batang Dua Islands, and how many homes there collapsed?",
+        "answer": "According to the Wikipedia article on the **2026 North Maluku earthquake**, in the **Batang Dua Islands** — located near the rupture area of the quake — **1,966 people were displaced** and **104 homes collapsed** [2026 North Maluku earthquake]. An additional 85 homes were moderately damaged and 79 were slightly damaged in the same area [2026 North Maluku earthquake].\n\nSources:\n- 2026 North Maluku earthquake",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-6",
+        "turns": 3,
+        "stop_reason": "end_turn",
+        "input_tokens": 7863,
+        "output_tokens": 305,
+        "total_latency_ms": 10071,
+        "error": null,
+        "tool_calls": [
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "2026 Molucca Sea earthquake April"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 North Maluku earthquake",
+                "Sea of Marmara",
+                "List of earthquakes in 2010",
+                "List of earthquakes in 2008",
+                "Black Sea"
+              ]
+            },
+            "latency_ms": 338
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "Batang Dua Islands earthquake 2026"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 North Maluku earthquake",
+                "List of earthquakes in 2026",
+                "List of earthquakes in 2024",
+                "Joko Widodo",
+                "2024 in Indonesia"
+              ]
+            },
+            "latency_ms": 296
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2026 North Maluku earthquake",
+              "max_chars": 8000
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2026 North Maluku earthquake",
+              "char_count": 3937,
+              "truncated": false
+            },
+            "latency_ms": 122
+          }
+        ]
+      },
+      "closed_book_answer": "My training data doesn't cover events from April 2026. My knowledge cutoff means I cannot reliably report on a specific earthquake on 2 April 2026 in the Molucca Sea. I cannot provide the figures you're asking about without risking fabricating information.",
+      "reference_answer": "According to [2026 North Maluku earthquake], in the Batang Dua Islands, 1,966 people were displaced and 104 homes collapsed (with an additional 85 moderately damaged and 79 slightly damaged).",
+      "judge": {
+        "accuracy": 2,
+        "faithfulness": 2,
+        "citations": 2,
+        "refusal_calibration": 2,
+        "premise_handling": 2,
+        "overall_pass": true,
+        "failure_modes": [],
+        "comment": "OK"
+      },
+      "closed_book_judge": {
+        "accuracy": 0,
+        "faithfulness": 2,
+        "citations": 0,
+        "refusal_calibration": 0,
+        "premise_handling": 2,
+        "overall_pass": false,
+        "failure_modes": [
+          "over_refused",
+          "no_search",
+          "missing_citation"
+        ],
+        "comment": "The system refused based on training cutoff without attempting to search Wikipedia, where the article '2026 North Maluku earthquake' contains the requested figures."
+      },
+      "case_latency_ms": 20464
+    },
+    {
+      "case": {
+        "id": "eq-13",
+        "category": "infobox_attribute",
+        "question": "On 3 April 2026, a Mw 5.8 earthquake struck the Hindu Kush region of northeastern Afghanistan with an unusually deep hypocenter. What was the depth of the hypocenter, how far south of Jorm was the epicenter, and how many people were killed?",
+        "gold_articles": [
+          "2026 Jorm earthquake"
+        ],
+        "expected_behavior": "Depth 186.4 km (116 mi); epicenter 35 km (22 mi) south of Jorm in Badakhshan province; twelve people were killed and six others were injured (the lead and impact section together — initial six injuries; impact section notes four). Source: '2026 Jorm earthquake'."
+      },
+      "prompt_version": "v1",
+      "agent_run": {
+        "question": "On 3 April 2026, a Mw 5.8 earthquake struck the Hindu Kush region of northeastern Afghanistan with an unusually deep hypocenter. What was the depth of the hypocenter, how far south of Jorm was the epicenter, and how many people were killed?",
+        "answer": "Here are the details of the 3 April 2026 Jorm earthquake:\n\n- **Depth of the hypocenter:** 186.4 km (116 mi), making it an unusually deep earthquake consistent with the region's pattern of intermediate-to-deep seismicity caused by the Indian plate diving beneath the Hindu Kush [2026 Jorm earthquake].\n- **Distance south of Jorm:** The epicenter was located **35 kilometres (22 mi) south of Jorm**, in Badakhshan province [2026 Jorm earthquake].\n- **Fatalities:** **Twelve people were killed** (and four others were injured) in Afghanistan [2026 Jorm earthquake].\n\nSources:\n- 2026 Jorm earthquake",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-6",
+        "turns": 3,
+        "stop_reason": "end_turn",
+        "input_tokens": 7165,
+        "output_tokens": 348,
+        "total_latency_ms": 9738,
+        "error": null,
+        "tool_calls": [
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "2026 Hindu Kush earthquake Afghanistan April"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 Jorm earthquake",
+                "2026 in Afghanistan",
+                "Geography of Afghanistan",
+                "Afghanistan",
+                "Demographics of Afghanistan"
+              ]
+            },
+            "latency_ms": 337
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "Jorm Afghanistan Hindu Kush earthquake 2026"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 3,
+              "titles": [
+                "2026 Jorm earthquake",
+                "Lists of 21st-century earthquakes",
+                "List of earthquakes 2021–present"
+              ]
+            },
+            "latency_ms": 314
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2026 Jorm earthquake"
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2026 Jorm earthquake",
+              "char_count": 3160,
+              "truncated": false
+            },
+            "latency_ms": 130
+          }
+        ]
+      },
+      "closed_book_answer": "My training data cutoff is early 2025, so I don't have information about events that occurred in April 2026. I cannot provide details about this earthquake without risking fabricating information. Please check a reliable source such as the USGS Earthquake Hazards Program or a news archive for accurate details.",
+      "reference_answer": "The hypocenter was at a depth of 186.4 km (116 mi), the epicenter was located 35 kilometres (22 mi) south of Jorm in Badakhshan province, and twelve people were killed [2026 Jorm earthquake].",
+      "judge": {
+        "accuracy": 2,
+        "faithfulness": 2,
+        "citations": 2,
+        "refusal_calibration": 2,
+        "premise_handling": 2,
+        "overall_pass": true,
+        "failure_modes": [],
+        "comment": "OK"
+      },
+      "closed_book_judge": {
+        "accuracy": 0,
+        "faithfulness": 2,
+        "citations": 0,
+        "refusal_calibration": 0,
+        "premise_handling": 2,
+        "overall_pass": false,
+        "failure_modes": [
+          "over_refused",
+          "no_search",
+          "missing_citation"
+        ],
+        "comment": "The system refused based on training cutoff without attempting to search Wikipedia, where the article exists."
+      },
+      "case_latency_ms": 22540
+    },
+    {
+      "case": {
+        "id": "eq-14",
+        "category": "tectonic_attribute",
+        "question": "According to the Wikipedia article describing the 3 April 2026 Mw 5.8 deep-focus earthquake near Jorm, Afghanistan, the very deep hypocenters (170–280 km) in the Hindu Kush region are sourced from within which tectonic plate as it descends, and what process leads to stress accommodation that produces the earthquakes?",
+        "gold_articles": [
+          "2026 Jorm earthquake"
+        ],
+        "expected_behavior": "Sourced from within the Indian Plate as it dives beneath the Hindu Kush. As the slab descends at a near-vertical angle into the mantle, it stretches and 'tears', eventually leading to slab detachment; this stress accommodation along faults produces the earthquakes. Source: '2026 Jorm earthquake' (Tectonic setting)."
+      },
+      "prompt_version": "v1",
+      "agent_run": {
+        "question": "According to the Wikipedia article describing the 3 April 2026 Mw 5.8 deep-focus earthquake near Jorm, Afghanistan, the very deep hypocenters (170–280 km) in the Hindu Kush region are sourced from within which tectonic plate as it descends, and what process leads to stress accommodation that produces the earthquakes?",
+        "answer": "According to the Wikipedia article on the 2026 Jorm earthquake, the very deep hypocenters (170–280 km) in the Hindu Kush region are sourced from **within the Indian plate** as it dives beneath the Hindu Kush [2026 Jorm earthquake]. As the tectonic slab of the Indian plate descends at a near-vertical angle into the mantle, it stretches and begins to \"tear,\" eventually leading to a **slab detachment**. This action results in **stress accommodation along faults**, which produces earthquakes when those faults rupture [2026 Jorm earthquake].\n\nSources:\n- 2026 Jorm earthquake",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-6",
+        "turns": 3,
+        "stop_reason": "end_turn",
+        "input_tokens": 6715,
+        "output_tokens": 306,
+        "total_latency_ms": 7200,
+        "error": null,
+        "tool_calls": [
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "2026 Jorm Afghanistan earthquake April Mw 5.8"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 Jorm earthquake",
+                "2026 Sanriku earthquake",
+                "2026 North Maluku earthquake",
+                "List of earthquakes in 2026",
+                "2026 Guerrero earthquake"
+              ]
+            },
+            "latency_ms": 358
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2026 Jorm earthquake",
+              "max_chars": 12000
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2026 Jorm earthquake",
+              "char_count": 3160,
+              "truncated": false
+            },
+            "latency_ms": 159
+          }
+        ]
+      },
+      "closed_book_answer": "This event (3 April 2026) is after my knowledge cutoff date of early 2025, and I have no access to Wikipedia or any other external sources. I cannot retrieve or quote from that article. I'd recommend checking the Wikipedia article directly for the information you're seeking.",
+      "reference_answer": "According to the article, the very deep hypocenters (170–280 km) in the Hindu Kush region are sourced from within the Indian plate as it dives beneath the Hindu Kush, rather than at a plate boundary. As the tectonic slab descends at a near-vertical angle into the mantle, it stretches and begins to \"tear,\" eventually leading to slab detachment. This action results in stress accommodation along faults, which produces earthquakes when those faults rupture [2026 Jorm earthquake].",
+      "judge": {
+        "accuracy": 2,
+        "faithfulness": 2,
+        "citations": 2,
+        "refusal_calibration": 2,
+        "premise_handling": 2,
+        "overall_pass": true,
+        "failure_modes": [],
+        "comment": "OK"
+      },
+      "closed_book_judge": {
+        "accuracy": 0,
+        "faithfulness": 2,
+        "citations": 0,
+        "refusal_calibration": 0,
+        "premise_handling": 2,
+        "overall_pass": false,
+        "failure_modes": [
+          "over_refused",
+          "no_search",
+          "missing_citation"
+        ],
+        "comment": "The system refused to search despite the article being available on Wikipedia, failing to retrieve the requested information."
+      },
+      "case_latency_ms": 21400
+    },
+    {
+      "case": {
+        "id": "eq-15",
+        "category": "tectonic_multihop",
+        "question": "The 3 April 2026 Mw 5.8 deep-focus earthquake near Jorm in northeastern Afghanistan is sourced from within a tectonic plate that is descending into the mantle beneath the Hindu Kush. According to the Wikipedia article on that plate itself (NOT the earthquake article), with which other major tectonic plate is it converging at the Himalayas, and at approximately what convergence rate?",
+        "gold_articles": [
+          "2026 Jorm earthquake",
+          "Indian Plate"
+        ],
+        "expected_behavior": "The plate is the Indian Plate. From the Indian Plate Wikipedia article: it is converging with the Eurasian Plate at the Himalayas, at approximately 5 cm/year (the article's stated rate; accept 4–5 cm/year as long as the answer cites the Indian Plate article). The agent must fetch the 'Indian Plate' article to answer correctly. Sources: '2026 Jorm earthquake' (to identify the plate from context) and 'Indian Plate' (for the convergence rate)."
+      },
+      "prompt_version": "v1",
+      "agent_run": {
+        "question": "The 3 April 2026 Mw 5.8 deep-focus earthquake near Jorm in northeastern Afghanistan is sourced from within a tectonic plate that is descending into the mantle beneath the Hindu Kush. According to the Wikipedia article on that plate itself (NOT the earthquake article), with which other major tectonic plate is it converging at the Himalayas, and at approximately what convergence rate?",
+        "answer": "I now have everything I need from both articles. Here is the answer:\n\nThe earthquake is sourced from within the **Indian Plate**, which is descending (subducting) at a near-vertical angle into the mantle beneath the Hindu Kush [2026 Jorm earthquake].\n\nAccording to the Wikipedia article on the **Indian Plate** itself, it is converging with the **Eurasian Plate** at the Himalayas. Specifically, the Indian Plate is currently moving north-east at **5 cm (2.0 in) per year**, while the Eurasian Plate is moving north at only **2 cm (0.79 in) per year**, giving a relative convergence on the order of approximately **~5 cm per year** (with the Eurasian plate deforming and the Indian plate compressing at a rate of 4 mm/year) [Indian plate]. The northerly boundary of the Indian Plate is described as a convergent boundary with the Eurasian Plate forming the Himalaya and Hindu Kush mountains, along the **Main Himalayan Thrust** [Indian plate].\n\nSources:\n- 2026 Jorm earthquake\n- Indian plate",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-6",
+        "turns": 4,
+        "stop_reason": "end_turn",
+        "input_tokens": 11875,
+        "output_tokens": 767,
+        "total_latency_ms": 17195,
+        "error": null,
+        "tool_calls": [
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "Jorm Afghanistan Hindu Kush deep focus earthquake tectonic plate subduction"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 0,
+              "titles": []
+            },
+            "latency_ms": 248
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "Hindu Kush subduction descending plate mantle"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 1,
+              "titles": [
+                "Slab detachment"
+              ]
+            },
+            "latency_ms": 235
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "Hindu Kush seismic zone subduction Indian plate"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "Indian plate",
+                "2004 Indian Ocean earthquake and tsunami",
+                "Himalayas",
+                "Alpide belt",
+                "2025 Balkh earthquake"
+              ]
+            },
+            "latency_ms": 350
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "2026 Afghanistan earthquake Jorm"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 Jorm earthquake",
+                "List of earthquakes in 2026",
+                "2026 Sanriku earthquake",
+                "2026 North Maluku earthquake",
+                "2026 Pacitan earthquake"
+              ]
+            },
+            "latency_ms": 358
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "Indian plate",
+              "max_chars": 8000
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "Indian plate",
+              "char_count": 5529,
+              "truncated": false
+            },
+            "latency_ms": 139
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2026 Jorm earthquake",
+              "max_chars": 4000
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2026 Jorm earthquake",
+              "char_count": 3160,
+              "truncated": false
+            },
+            "latency_ms": 143
+          }
+        ]
+      },
+      "closed_book_answer": "I need to be straightforward here: the April 3, 2026 earthquake you're describing occurred after my knowledge cutoff (early 2025), so I have no information about that specific event.\n\nHowever, the Hindu Kush deep-focus seismic zone is well-known and associated with the **Indian Plate**, which is subducting or descending into the mantle in that region. The deep earthquakes beneath the Hindu Kush are generally attributed to the Indian Plate (or possibly a remnant Tethyan slab).\n\nRegarding the Indian Plate's Wikipedia article and its convergence with the **Eurasian Plate** at the Himalayas: the Indian Plate is converging with the Eurasian Plate at approximately **40–50 mm per year** (commonly cited as around 40 mm/yr in the Himalayan collision zone).\n\nBut since you're asking specifically about a 2026 earthquake article and what the Wikipedia article on *that plate* says — and I cannot access Wikipedia or verify the exact wording of any article, especially post-cutoff — I'd caution that I'm drawing on my general training knowledge rather than the specific Wikipedia source you're referencing. The answer based on my knowledge is: the **Eurasian Plate**, at roughly **40–50 mm/year**.",
+      "reference_answer": "According to the Wikipedia article on the Indian Plate, it is converging with the Eurasian plate at the Himalayas (along the Main Himalayan Thrust). The Indian plate moves northeast at about 5 cm (2.0 in) per year, while the Eurasian plate moves north at about 2 cm (0.79 in) per year, causing the Indian plate to compress at a rate of about 4 mm per year [Indian Plate].",
+      "judge": {
+        "accuracy": 2,
+        "faithfulness": 2,
+        "citations": 2,
+        "refusal_calibration": 2,
+        "premise_handling": 2,
+        "overall_pass": true,
+        "failure_modes": [],
+        "comment": "OK"
+      },
+      "closed_book_judge": {
+        "accuracy": 1,
+        "faithfulness": 1,
+        "citations": 0,
+        "refusal_calibration": 1,
+        "premise_handling": 2,
+        "overall_pass": false,
+        "failure_modes": [
+          "no_search",
+          "missing_citation"
+        ],
+        "comment": "System did not fetch any Wikipedia articles and relied on training knowledge, providing no citations and a rate (40-50 mm/yr) that doesn't match the Indian Plate article's stated ~5 cm/year framing."
+      },
+      "case_latency_ms": 32990
+    },
+    {
+      "case": {
+        "id": "eq-16",
+        "category": "infobox_attribute",
+        "question": "On 19 January 2026 at 11:21:12 PST, a Mw 5.6 earthquake struck near Barishal, in the far north of which Pakistani administrative territory? Which valley in Hunza district was severely affected, and how many people were killed?",
+        "gold_articles": [
+          "2026 Gilgit-Baltistan earthquake"
+        ],
+        "expected_behavior": "Barishal is in Gilgit-Baltistan, Pakistan. The Chapursan valley in Hunza district was severely affected. Two people were killed and five others were injured. Source: '2026 Gilgit-Baltistan earthquake'."
+      },
+      "prompt_version": "v1",
+      "agent_run": {
+        "question": "On 19 January 2026 at 11:21:12 PST, a Mw 5.6 earthquake struck near Barishal, in the far north of which Pakistani administrative territory? Which valley in Hunza district was severely affected, and how many people were killed?",
+        "answer": "Here is a full answer based on the Wikipedia article:\n\nThe **Mw 5.6 earthquake on 19 January 2026 at 11:21:12 PST** struck near Barishal, in the far north of **Gilgit-Baltistan**, a Pakistani administrative territory near the Afghanistan–China border and the Durand Line [2026 Gilgit-Baltistan earthquake].\n\nThe valley of **Chapursan**, in **Hunza district**, was severely affected — the access road was blocked at multiple locations, over 600 houses were affected (with 300 damaged beyond repair), large cracks developed across parts of the valley, and roads and water channels were damaged [2026 Gilgit-Baltistan earthquake].\n\n**Two people were killed** (and five others were injured) as a result of the earthquake [2026 Gilgit-Baltistan earthquake].\n\nSources:\n- 2026 Gilgit-Baltistan earthquake",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-6",
+        "turns": 3,
+        "stop_reason": "end_turn",
+        "input_tokens": 7258,
+        "output_tokens": 397,
+        "total_latency_ms": 8436,
+        "error": null,
+        "tool_calls": [
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "2026 Barishal earthquake Pakistan"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "List of earthquakes in 2026",
+                "2026 Gilgit-Baltistan earthquake",
+                "List of earthquakes 2021–present",
+                "Bangladesh Navy",
+                "Bengal Presidency"
+              ]
+            },
+            "latency_ms": 271
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "Barishal Pakistan administrative territory"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "Hijra (South Asia)",
+                "Divisions of Bangladesh",
+                "A. K. Fazlul Huq",
+                "Bangladesh",
+                "Public university"
+              ]
+            },
+            "latency_ms": 362
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2026 Gilgit-Baltistan earthquake"
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2026 Gilgit-Baltistan earthquake",
+              "char_count": 2326,
+              "truncated": false
+            },
+            "latency_ms": 143
+          }
+        ]
+      },
+      "closed_book_answer": "This event — a Mw 5.6 earthquake near Barishal on 19 January 2026 — falls after my knowledge cutoff (early 2025), so I don't have information about it. I cannot provide details about the location, affected valley, or casualty figures without risking fabrication.",
+      "reference_answer": "On 19 January 2026, a Mw 5.6 earthquake struck near Barishal in the far north of **Gilgit-Baltistan**, Pakistan, near the Afghanistan–China border. The **Chapursan valley** in Hunza district was severely affected. **Two people were killed** (and five others injured) [2026 Gilgit-Baltistan earthquake].",
+      "judge": {
+        "accuracy": 2,
+        "faithfulness": 2,
+        "citations": 2,
+        "refusal_calibration": 2,
+        "premise_handling": 2,
+        "overall_pass": true,
+        "failure_modes": [],
+        "comment": "OK"
+      },
+      "closed_book_judge": {
+        "accuracy": 0,
+        "faithfulness": 2,
+        "citations": 0,
+        "refusal_calibration": 0,
+        "premise_handling": 2,
+        "overall_pass": false,
+        "failure_modes": [
+          "over_refused",
+          "no_search",
+          "missing_citation"
+        ],
+        "comment": "The system over-refused based on training cutoff without attempting to search Wikipedia, where the article '2026 Gilgit-Baltistan earthquake' exists."
+      },
+      "case_latency_ms": 19180
+    },
+    {
+      "case": {
+        "id": "eq-17",
+        "category": "casualty_impact",
+        "question": "Following the 19 January 2026 Mw 5.6 earthquake in the far north of Pakistan, how many houses were affected and how many were damaged beyond repair, and which major international highway was blocked by triggered landslides?",
+        "gold_articles": [
+          "2026 Gilgit-Baltistan earthquake"
+        ],
+        "expected_behavior": "Over 600 houses affected, 300 damaged beyond repair. The Karakoram Highway and several other roads were blocked by landslides. Source: '2026 Gilgit-Baltistan earthquake' (Impact)."
+      },
+      "prompt_version": "v1",
+      "agent_run": {
+        "question": "Following the 19 January 2026 Mw 5.6 earthquake in the far north of Pakistan, how many houses were affected and how many were damaged beyond repair, and which major international highway was blocked by triggered landslides?",
+        "answer": "Here is a full answer based on the Wikipedia article:\n\nFollowing the **19 January 2026 Mw 5.6 earthquake** near Barishal, Gilgit-Baltistan, Pakistan:\n\n- **Over 600 houses were affected** in total [2026 Gilgit-Baltistan earthquake].\n- **300 of those houses were damaged beyond repair** [2026 Gilgit-Baltistan earthquake].\n- The earthquake triggered landslides that blocked the **Karakoram Highway**, along with several other roads. Machinery from the Gilgit-Baltistan Communication and Works Department was mobilised to clear the blockages, and the highway was subsequently reopened for traffic [2026 Gilgit-Baltistan earthquake].\n\nSources:\n- 2026 Gilgit-Baltistan earthquake",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-6",
+        "turns": 3,
+        "stop_reason": "end_turn",
+        "input_tokens": 7445,
+        "output_tokens": 375,
+        "total_latency_ms": 9618,
+        "error": null,
+        "tool_calls": [
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "2026 Pakistan earthquake January Mw 5.6"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 Guerrero earthquake",
+                "2026 Sanriku earthquake",
+                "2026 Jorm earthquake",
+                "2026 Gilgit-Baltistan earthquake",
+                "List of earthquakes in 2026"
+              ]
+            },
+            "latency_ms": 346
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "January 19 2026 earthquake Pakistan far north"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 Gilgit-Baltistan earthquake",
+                "2026 Afghanistan–Pakistan war",
+                "2024 Noto earthquake",
+                "Lists of earthquakes",
+                "2011 Tōhoku earthquake and tsunami"
+              ]
+            },
+            "latency_ms": 471
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2026 Gilgit-Baltistan earthquake"
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2026 Gilgit-Baltistan earthquake",
+              "char_count": 2326,
+              "truncated": false
+            },
+            "latency_ms": 141
+          }
+        ]
+      },
+      "closed_book_answer": "My training data doesn't include detailed information about a January 19, 2026 earthquake in northern Pakistan. My knowledge cutoff is July 2025, so I don't have information about events that occurred after that date.\n\nI cannot provide the specific figures you're asking about regarding affected/destroyed houses or the blocked highway, as I would be fabricating details about an event outside my knowledge.",
+      "reference_answer": "Following the 19 January 2026 Mw 5.6 earthquake near Barishal, Gilgit-Baltistan, over 600 houses were affected, with 300 of them damaged beyond repair. The earthquake triggered landslides that blocked the Karakoram Highway, along with several other roads [2026 Gilgit-Baltistan earthquake].",
+      "judge": {
+        "accuracy": 2,
+        "faithfulness": 2,
+        "citations": 2,
+        "refusal_calibration": 2,
+        "premise_handling": 2,
+        "overall_pass": true,
+        "failure_modes": [],
+        "comment": "OK"
+      },
+      "closed_book_judge": {
+        "accuracy": 0,
+        "faithfulness": 2,
+        "citations": 0,
+        "refusal_calibration": 0,
+        "premise_handling": 2,
+        "overall_pass": false,
+        "failure_modes": [
+          "no_search",
+          "over_refused",
+          "missing_citation"
+        ],
+        "comment": "The system refused based on training cutoff instead of searching Wikipedia, which has the article on the 2026 Gilgit-Baltistan earthquake."
+      },
+      "case_latency_ms": 17468
+    },
+    {
+      "case": {
+        "id": "eq-18",
+        "category": "tectonic_attribute",
+        "question": "On 10 June 1836, an estimated magnitude 6.8 earthquake occurred along a strike-slip fault zone in what was then Mexican-administered Alta California, causing damage at Mission San Jose and Mission Santa Clara de Asís. Along which fault zone did it occur, and what is the regional plate-boundary type the fault is part of?",
+        "gold_articles": [
+          "1836 Hayward earthquake"
+        ],
+        "expected_behavior": "Hayward Fault Zone, part of the San Andreas Fault system — a major transform boundary between the Pacific Plate and the North American Plate. Earthquakes along this system are typically strike-slip. Source: '1836 Hayward earthquake'."
+      },
+      "prompt_version": "v1",
+      "agent_run": {
+        "question": "On 10 June 1836, an estimated magnitude 6.8 earthquake occurred along a strike-slip fault zone in what was then Mexican-administered Alta California, causing damage at Mission San Jose and Mission Santa Clara de Asís. Along which fault zone did it occur, and what is the regional plate-boundary type the fault is part of?",
+        "answer": "I now have everything needed to answer the question fully.\n\nThe June 10, 1836 earthquake occurred along the **Hayward Fault Zone** [1836 Hayward earthquake]. The Hayward Fault Zone is a right-lateral strike-slip fault zone running roughly 74 miles (119 km) along the western base of the hills on the east side of San Francisco Bay, passing through areas such as Fremont (where Mission San José is located) [Hayward Fault Zone].\n\nIn terms of the broader regional tectonics, the Hayward Fault Zone is part of the **San Andreas Fault system**, which forms a **transform plate boundary** between the Pacific Plate and the North American Plate [Hayward Fault Zone][1836 Hayward earthquake]. While the San Andreas Fault is the principal transform boundary between the two plates, the Hayward Fault is one of the secondary faults in this diffuse transform zone that together accommodate the overall relative displacement between the Pacific and North American plates [Hayward Fault Zone].\n\nSources:\n- 1836 Hayward earthquake\n- Hayward Fault Zone",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-6",
+        "turns": 4,
+        "stop_reason": "end_turn",
+        "input_tokens": 12312,
+        "output_tokens": 606,
+        "total_latency_ms": 15931,
+        "error": null,
+        "tool_calls": [
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "1836 earthquake Alta California Mission San Jose"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "Mission San José (California)",
+                "Spanish missions in California",
+                "Mission San Fernando Rey de España",
+                "Mission Santa Clara de Asís",
+                "Mission Santa Barbara"
+              ]
+            },
+            "latency_ms": 387
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "Hayward fault zone California strike-slip"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "Hayward Fault Zone",
+                "San Andreas Fault",
+                "List of fault zones",
+                "1868 Hayward earthquake",
+                "List of earthquakes in California"
+              ]
+            },
+            "latency_ms": 380
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "Hayward Fault Zone"
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "Hayward Fault Zone",
+              "char_count": 38249,
+              "truncated": true
+            },
+            "latency_ms": 270
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "1836 Hayward earthquake California magnitude"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "1836 Hayward earthquake",
+                "1838 San Andreas earthquake",
+                "List of historical earthquakes",
+                "Berkeley, California",
+                "Mission San José (California)"
+              ]
+            },
+            "latency_ms": 359
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "1836 Hayward earthquake"
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "1836 Hayward earthquake",
+              "char_count": 1046,
+              "truncated": false
+            },
+            "latency_ms": 139
+          }
+        ]
+      },
+      "closed_book_answer": "The earthquake occurred along the **Hayward Fault** (or the fault zone now known as the Hayward Fault). It is part of the **San Andreas Fault system**, which represents a **transform (strike-slip) plate boundary** between the Pacific Plate and the North American Plate.",
+      "reference_answer": "The 1836 earthquake occurred along the Hayward Fault Zone, which is part of the San Andreas Fault system—a major transform plate boundary between the Pacific Plate and the North American Plate [1836 Hayward earthquake].",
+      "judge": {
+        "accuracy": 2,
+        "faithfulness": 2,
+        "citations": 2,
+        "refusal_calibration": 2,
+        "premise_handling": 2,
+        "overall_pass": true,
+        "failure_modes": [],
+        "comment": "OK"
+      },
+      "closed_book_judge": {
+        "accuracy": 2,
+        "faithfulness": 2,
+        "citations": 0,
+        "refusal_calibration": 1,
+        "premise_handling": 2,
+        "overall_pass": false,
+        "failure_modes": [
+          "missing_citation",
+          "no_search"
+        ],
+        "comment": "Answer is factually correct but lacks any inline citations or Sources list, and no articles were fetched."
+      },
+      "case_latency_ms": 21667
+    },
+    {
+      "case": {
+        "id": "eq-19",
+        "category": "comparative_numerical",
+        "question": "Among the post-September-2025 Wikipedia-documented earthquakes — specifically the 2 April 2026 Molucca Sea event (BMKG Mw 7.3 / USGS Mww 7.4) and the 20 April 2026 off-Honshu event along the Japan Trench (Mw 7.4–7.5) — which one had the higher moment magnitude? Then compare the larger of those two 2026 events to the 2011 Tōhoku earthquake along the same Japan-Trench plate boundary: by how many Mw units does the 2011 event exceed it, and given that an increase of 1.0 in Mw corresponds to roughly 31.6× more seismic-moment energy released, what is the approximate energy ratio?",
+        "gold_articles": [
+          "2026 North Maluku earthquake",
+          "2026 Sanriku earthquake",
+          "2011 Tōhoku earthquake and tsunami"
+        ],
+        "expected_behavior": "The 20 April 2026 off-Honshu event was the larger of the two 2026 events (Mw 7.4–7.5 vs Mw 7.3–7.4). The 2011 Tōhoku earthquake was Mw 9.0–9.1, roughly 1.5–1.7 Mw units larger. Energy ratio: 31.6^1.5 ≈ 178× to 31.6^1.7 ≈ 250× more energy released. The agent must fetch the 2011 Tōhoku article to ground the comparison. Sources: '2026 North Maluku earthquake', '2026 Sanriku earthquake', and '2011 Tōhoku earthquake and tsunami'."
+      },
+      "prompt_version": "v1",
+      "agent_run": {
+        "question": "Among the post-September-2025 Wikipedia-documented earthquakes — specifically the 2 April 2026 Molucca Sea event (BMKG Mw 7.3 / USGS Mww 7.4) and the 20 April 2026 off-Honshu event along the Japan Trench (Mw 7.4–7.5) — which one had the higher moment magnitude? Then compare the larger of those two 2026 events to the 2011 Tōhoku earthquake along the same Japan-Trench plate boundary: by how many Mw units does the 2011 event exceed it, and given that an increase of 1.0 in Mw corresponds to roughly 31.6× more seismic-moment energy released, what is the approximate energy ratio?",
+        "answer": "I now have all the information I need from Wikipedia. Here is the full, grounded answer:\n\n---\n\n## Comparing the Two 2026 Earthquakes\n\n**2 April 2026 — 2026 North Maluku earthquake (Molucca Sea):**\nBMKG reported **Mw 7.3**; USGS reported **Mww 7.4** [2026 North Maluku earthquake].\n\n**20 April 2026 — 2026 Sanriku earthquake (off Honshu, Japan Trench):**\nUSGS reported **Mw 7.4**; the Global Centroid Moment Tensor (GCMT) assigned **Mw 7.5**; JMA's final figure was **MJMA 7.5** [2026 Sanriku earthquake].\n\n**Which had the higher moment magnitude?** The **2026 Sanriku earthquake** had the higher moment magnitude. Even at its lower-bound estimate (Mw 7.4, matching the USGS Molucca Sea figure), the GCMT's authoritative centroid-moment-tensor solution placed it at **Mw 7.5**, making it the larger event [2026 Sanriku earthquake][2026 North Maluku earthquake].\n\n---\n\n## Comparing the Sanriku Event to the 2011 Tōhoku Earthquake\n\n**2011 Tōhoku earthquake:** Mw **9.1** (per the USGS final figure, upgraded on 11 July 2016), making it the most powerful earthquake ever recorded in Japan and the fourth most powerful recorded worldwide since 1900 [2011 Tōhoku earthquake and tsunami].\n\n**Magnitude difference:**\nUsing the Sanriku event's best-estimate magnitude of **Mw 7.5** (GCMT):\n\n> 9.1 − 7.5 = **1.6 Mw units**\n\n---\n\n## Energy Ratio\n\nThe Mw scale is logarithmic: each **1.0 unit increase ≈ 31.6× more seismic-moment energy**. For a difference of **1.6 units**, the energy ratio is:\n\n> 31.6^1.6 ≈ **~178×**\n\nMore precisely: 31.6^1.6 = e^(1.6 × ln 31.6) = e^(1.6 × 3.454) = e^5.526 ≈ **~250×**\n\nLet's be careful here using the standard formula. Each 1.0 Mw = 31.623× in seismic moment energy, so:\n\n- 31.623^1.6 = (10^1.5)^1.6 = 10^(1.5 × 1.6) = 10^2.4 ≈ **~251×**\n\nSo the 2011 Tōhoku earthquake released approximately **~250 times** more seismic-moment energy than the 2026 Sanriku earthquake.\n\n---\n\n## Summary Table\n\n| Event | Magnitude | Plate Boundary |\n|---|---|---|\n| 2026 North Maluku (Molucca Sea) | Mw 7.3–7.4 | Arc-arc collision (Molucca Sea) |\n| **2026 Sanriku (off Honshu)** | **Mw 7.4–7.5** | Japan Trench |\n| 2011 Tōhoku | **Mw 9.1** | Japan Trench |\n\n- **Larger 2026 event:** 2026 Sanriku earthquake (Mw 7.5 per GCMT)\n- **Tōhoku exceeds it by:** 1.6 Mw units\n- **Approximate energy ratio (Tōhoku ÷ Sanriku):** 10^(1.5 × 1.6) = 10^2.4 ≈ **~251×**\n\n---\n\nSources:\n- 2026 North Maluku earthquake\n- 2026 Sanriku earthquake\n- 2011 Tōhoku earthquake and tsunami",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-6",
+        "turns": 3,
+        "stop_reason": "end_turn",
+        "input_tokens": 12417,
+        "output_tokens": 1374,
+        "total_latency_ms": 24498,
+        "error": null,
+        "tool_calls": [
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "2026 Molucca Sea earthquake April"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 North Maluku earthquake",
+                "Sea of Marmara",
+                "List of earthquakes in 2010",
+                "List of earthquakes in 2008",
+                "Black Sea"
+              ]
+            },
+            "latency_ms": 345
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "2026 off Honshu earthquake Japan Trench April"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 Sanriku earthquake",
+                "2011 Tōhoku earthquake and tsunami",
+                "2025 Aomori earthquake",
+                "2025 Kamchatka earthquake",
+                "2024 Noto earthquake"
+              ]
+            },
+            "latency_ms": 406
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "2011 Tōhoku earthquake magnitude"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2011 Tōhoku earthquake and tsunami",
+                "List of foreshocks and aftershocks of the 2011 Tōhoku earthquake",
+                "Lists of 21st-century earthquakes",
+                "2026 Sanriku earthquake",
+                "List of earthquakes in Japan"
+              ]
+            },
+            "latency_ms": 327
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2026 North Maluku earthquake"
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2026 North Maluku earthquake",
+              "char_count": 3937,
+              "truncated": false
+            },
+            "latency_ms": 165
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2026 Sanriku earthquake"
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2026 Sanriku earthquake",
+              "char_count": 4839,
+              "truncated": true
+            },
+            "latency_ms": 131
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2011 Tōhoku earthquake and tsunami"
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2011 Tōhoku earthquake and tsunami",
+              "char_count": 70432,
+              "truncated": true
+            },
+            "latency_ms": 227
+          }
+        ]
+      },
+      "closed_book_answer": "I need to be transparent with you: my training data has a cutoff of early 2025, and I have no knowledge of events after that point. I cannot verify, confirm, or reason from the specific details you've described about:\n\n- A 2 April 2026 Molucca Sea earthquake\n- A 20 April 2026 off-Honshu earthquake\n\nThese events fall after my knowledge cutoff, and I have no parametric knowledge of them. I cannot confirm the magnitudes you've cited (Mw 7.3/7.4 for Molucca Sea, Mw 7.4–7.5 for Honshu) as they are presented as facts I should validate.\n\n**What I can tell you from my actual training data:**\n\nThe 2011 Tōhoku earthquake had a moment magnitude of **Mw 9.0–9.1** (USGS recorded Mw 9.0).\n\n**If I simply accept your stated figures at face value for the arithmetic portion:**\n\n- The larger of your two 2026 events would be approximately Mw 7.4–7.5\n- The 2011 Tōhoku earthquake (Mw 9.0) would exceed it by roughly **1.5–1.6 Mw units**\n- Energy ratio: 31.6^1.5 ≈ **~178×**, or 31.6^1.6 ≈ **~280×** more seismic moment energy\n\nBut I want to be explicit: **I am not confirming those 2026 earthquakes occurred or had those magnitudes.** I'm only doing the arithmetic on the numbers you supplied. If you're testing whether I'll fabricate knowledge of post-cutoff events — I won't.",
+      "reference_answer": "The 20 April 2026 Sanriku earthquake, with Mw 7.4–7.5 (GCMT assigned Mw 7.5) [2026 Sanriku earthquake], had a higher moment magnitude than the 2 April 2026 Molucca Sea event, which measured BMKG Mw 7.3 / USGS Mww 7.4 [2026 North Maluku earthquake].\n\nComparing the Sanriku event (Mw 7.5) to the 2011 Tōhoku earthquake (Mw 9.0–9.1) [2011 Tōhoku earthquake and tsunami], the difference is approximately 1.5–1.6 Mw units (using Mw 9.1 − 7.5 = 1.6).\n\nUsing the given conversion (1.0 Mw ≈ 31.6× more seismic-moment energy), an increase of ~1.6 Mw corresponds to roughly 31.6^1.6 ≈ 178× more energy. So the 2011 Tōhoku earthquake released on the order of ~180 times more seismic-moment energy than the April 2026 Sanriku event.",
+      "judge": {
+        "accuracy": 2,
+        "faithfulness": 2,
+        "citations": 2,
+        "refusal_calibration": 2,
+        "premise_handling": 2,
+        "overall_pass": true,
+        "failure_modes": [],
+        "comment": "The answer correctly identifies the larger 2026 event, the magnitude difference, and notes the discrepancy in energy ratio calculation (correctly arriving at ~250× using 31.6=10^1.5), which is within the reasonable range."
+      },
+      "closed_book_judge": {
+        "accuracy": 1,
+        "faithfulness": 2,
+        "citations": 0,
+        "refusal_calibration": 1,
+        "premise_handling": 1,
+        "overall_pass": false,
+        "failure_modes": [
+          "no_search",
+          "missing_citation",
+          "over_refused"
+        ],
+        "comment": "System refused to search Wikipedia for the 2026 events despite tools presumably being available, did the arithmetic correctly but provided no citations or sources."
+      },
+      "case_latency_ms": 32448
+    },
+    {
+      "case": {
+        "id": "eq-20",
+        "category": "comparative_attribute",
+        "question": "Across four of the post-September-2025 Wikipedia-documented earthquakes — the 19 January 2026 Mw 5.6 event near Barishal in Pakistan's far north; the 6 February 2026 Mw 5.8 event offshore East Java; the 3 April 2026 Mw 5.8 event south of Jorm, Afghanistan; and the 20 April 2026 Mw 7.5 event off northeastern Honshu — which two had the SAME moment magnitude, and which one of those four had the deepest reported hypocenter (with what depth)?",
+        "gold_articles": [
+          "2026 Gilgit-Baltistan earthquake",
+          "2026 Pacitan earthquake",
+          "2026 Jorm earthquake",
+          "2026 Sanriku earthquake"
+        ],
+        "expected_behavior": "The 6 February 2026 East Java event (USGS Mw 5.8) and the 3 April 2026 Jorm event (Mw 5.8) shared the same magnitude. The Jorm event had the deepest hypocenter at 186.4 km. (The Honshu event was 35 km, the East Java event 40 km USGS / 58 km BMKG, the Gilgit-Baltistan event was Mw 5.6.) Sources: all four named earthquake articles."
+      },
+      "prompt_version": "v1",
+      "agent_run": {
+        "question": "Across four of the post-September-2025 Wikipedia-documented earthquakes — the 19 January 2026 Mw 5.6 event near Barishal in Pakistan's far north; the 6 February 2026 Mw 5.8 event offshore East Java; the 3 April 2026 Mw 5.8 event south of Jorm, Afghanistan; and the 20 April 2026 Mw 7.5 event off northeastern Honshu — which two had the SAME moment magnitude, and which one of those four had the deepest reported hypocenter (with what depth)?",
+        "answer": "I now have all the information needed. Here is a thorough, sourced answer:\n\n---\n\n**Important caveat up front:** The question contains a factual error about one of the four events. The 19 January 2026 Barishal event is **not** in \"Pakistan's far north\" in any geographically ambiguous way — it *is* in Gilgit-Baltistan — but more critically, the question mis-describes one magnitude: the 20 April 2026 Sanriku earthquake off northeastern Honshu is recorded by USGS at **Mw 7.4** and by GCMT at **Mw 7.5**, *not* a clean Mw 7.5 [2026 Sanriku earthquake]. With that noted, here are the verified facts:\n\n| Event | Date | Mw | Depth |\n|---|---|---|---|\n| Barishal, Gilgit-Baltistan, Pakistan | 19 Jan 2026 | **5.6** | not stated in article |\n| Pacitan, offshore East Java | 6 Feb 2026 | **5.8** | 40 km (per USGS) |\n| South of Jorm, Afghanistan (Hindu Kush) | 3 Apr 2026 | **5.8** | **186.4 km** |\n| Sanriku Coast, off NE Honshu, Japan | 20 Apr 2026 | **7.4–7.5** | 35 km |\n\n**The two events with the same moment magnitude (Mw 5.8)** are the **6 February 2026 Pacitan earthquake** (offshore East Java) and the **3 April 2026 Jorm earthquake** (Hindu Kush, Afghanistan) [2026 Pacitan earthquake][2026 Jorm earthquake].\n\n**Of those four earthquakes, the deepest hypocenter by far belongs to the 3 April 2026 Jorm, Afghanistan earthquake**, at a reported depth of **186.4 km (116 mi)** [2026 Jorm earthquake]. This makes geological sense, as Hindu Kush earthquakes are characteristically deep intermediate-focus events sourced from within the Indian plate as it subducts steeply beneath the region [2026 Jorm earthquake]. By comparison, the Pacitan event was at ~40 km [2026 Pacitan earthquake] and the Sanriku event at ~35 km [2026 Sanriku earthquake].\n\n---\n\nSources:\n- 2026 Gilgit-Baltistan earthquake\n- 2026 Pacitan earthquake\n- 2026 Jorm earthquake\n- 2026 Sanriku earthquake",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-6",
+        "turns": 3,
+        "stop_reason": "end_turn",
+        "input_tokens": 13364,
+        "output_tokens": 1099,
+        "total_latency_ms": 21040,
+        "error": null,
+        "tool_calls": [
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "2026 earthquake Barishal Pakistan January"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "List of earthquakes in 2026",
+                "2026 Gilgit-Baltistan earthquake",
+                "List of earthquakes 2021–present",
+                "Bangladesh Navy",
+                "Bengal Presidency"
+              ]
+            },
+            "latency_ms": 324
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "2026 earthquake East Java February offshore"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 Pacitan earthquake",
+                "2026 Sanriku earthquake",
+                "List of earthquakes in 2026",
+                "2026 North Maluku earthquake",
+                "List of earthquakes in 2024"
+              ]
+            },
+            "latency_ms": 391
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "2026 earthquake Jorm Afghanistan April"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 Jorm earthquake",
+                "2026 Sanriku earthquake",
+                "List of earthquakes in 2026",
+                "Lists of 21st-century earthquakes",
+                "2026 Guerrero earthquake"
+              ]
+            },
+            "latency_ms": 313
+          },
+          {
+            "name": "search_wikipedia",
+            "arguments": {
+              "query": "2026 earthquake northeastern Honshu April Mw 7.5"
+            },
+            "result_summary": {
+              "kind": "search",
+              "n_hits": 5,
+              "titles": [
+                "2026 Sanriku earthquake",
+                "2011 Tōhoku earthquake and tsunami",
+                "List of earthquakes in 2024",
+                "2024 Noto earthquake",
+                "List of earthquakes in Japan"
+              ]
+            },
+            "latency_ms": 358
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2026 Gilgit-Baltistan earthquake"
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2026 Gilgit-Baltistan earthquake",
+              "char_count": 2326,
+              "truncated": false
+            },
+            "latency_ms": 341
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2026 Pacitan earthquake"
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2026 Pacitan earthquake",
+              "char_count": 4079,
+              "truncated": true
+            },
+            "latency_ms": 173
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2026 Jorm earthquake"
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2026 Jorm earthquake",
+              "char_count": 3160,
+              "truncated": false
+            },
+            "latency_ms": 161
+          },
+          {
+            "name": "fetch_wikipedia_article",
+            "arguments": {
+              "title": "2026 Sanriku earthquake"
+            },
+            "result_summary": {
+              "kind": "fetch",
+              "title": "2026 Sanriku earthquake",
+              "char_count": 4839,
+              "truncated": true
+            },
+            "latency_ms": 167
+          }
+        ]
+      },
+      "closed_book_answer": "I need to be straightforward with you: my training data does not reliably cover specific earthquake events from January–April 2026 with the level of detail you're describing (exact magnitudes, locations, and hypocenter depths from Wikipedia documentation post-September 2025).\n\nI cannot verify or confirm the details you've listed — including whether the magnitudes you've stated are accurate, which two share the same magnitude, or what the deepest hypocenter was. The question contains embedded \"facts\" that I cannot independently corroborate from my training data.\n\nWhat I can note from the question as you've framed it: you've already stated that the 6 February 2026 East Java event and the 3 April 2026 Afghanistan event are both **Mw 5.8**, so those two share the same moment magnitude as presented in your question. But I cannot confirm whether the hypocenter depths or any other details are accurate, so I won't fabricate a depth figure for any of these events.\n\nIf you have access to those Wikipedia articles, I'd encourage you to verify the details directly there. I won't guess at depth values I don't have in my training data.",
+      "reference_answer": "The 6 February 2026 Pacitan earthquake (offshore East Java) and the 3 April 2026 Jorm earthquake both had a moment magnitude of Mw 5.8 [2026 Pacitan earthquake; 2026 Jorm earthquake].\n\nOf the four earthquakes, the Jorm event had the deepest reported hypocenter, at 186.4 km (116 mi) [2026 Jorm earthquake]. By comparison, the Pacitan earthquake was at 40 km depth and the Sanriku earthquake at 35 km [2026 Pacitan earthquake; 2026 Sanriku earthquake]. (The Gilgit-Baltistan excerpt does not specify a depth.)",
+      "judge": {
+        "accuracy": 2,
+        "faithfulness": 2,
+        "citations": 2,
+        "refusal_calibration": 2,
+        "premise_handling": 2,
+        "overall_pass": true,
+        "failure_modes": [],
+        "comment": "OK"
+      },
+      "closed_book_judge": {
+        "accuracy": 1,
+        "faithfulness": 1,
+        "citations": 0,
+        "refusal_calibration": 1,
+        "premise_handling": 1,
+        "overall_pass": false,
+        "failure_modes": [
+          "no_search",
+          "missing_citation",
+          "incomplete"
+        ],
+        "comment": "System refused to search/fetch the available Wikipedia articles and instead deferred to the user, missing the Jorm depth answer despite the articles being retrievable."
+      },
+      "case_latency_ms": 28459
+    }
+  ]
+}

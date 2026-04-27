@@ -1,0 +1,254 @@
+[
+  {
+    "title": "One Battle After Another",
+    "release_date": "2025-09-08",
+    "post_sept_2025": true,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": false,
+    "char_count": 44136
+  },
+  {
+    "title": "Frankenstein (2025 film)",
+    "release_date": "2025-08-30",
+    "post_sept_2025": false,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": false,
+    "char_count": 19565
+  },
+  {
+    "title": "Bugonia (film)",
+    "release_date": "2025-08-28",
+    "post_sept_2025": false,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": false,
+    "char_count": 18305
+  },
+  {
+    "title": "Wicked: For Good",
+    "release_date": "2025-11-04",
+    "post_sept_2025": true,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": false,
+    "char_count": 27839
+  },
+  {
+    "title": "Avatar: Fire and Ash",
+    "release_date": "2025-12-01",
+    "post_sept_2025": true,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": true,
+    "char_count": 31730
+  },
+  {
+    "title": "Zootopia 2",
+    "release_date": "2025-11-13",
+    "post_sept_2025": true,
+    "has_cast_section": false,
+    "has_plot_section": true,
+    "has_box_office": true,
+    "char_count": 16848
+  },
+  {
+    "title": "The Smashing Machine (2025 film)",
+    "release_date": "2025-09-01",
+    "post_sept_2025": true,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": true,
+    "char_count": 6440
+  },
+  {
+    "title": "Tron: Ares",
+    "release_date": "2025-10-06",
+    "post_sept_2025": true,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": true,
+    "char_count": 23985
+  },
+  {
+    "title": "Predator: Badlands",
+    "release_date": "2025-11-03",
+    "post_sept_2025": true,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": false,
+    "char_count": 19232
+  },
+  {
+    "title": "Sentimental Value",
+    "release_date": null,
+    "post_sept_2025": false,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": false,
+    "char_count": 9229
+  },
+  {
+    "title": "Marty Supreme",
+    "release_date": "2025-10-06",
+    "post_sept_2025": true,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": false,
+    "char_count": 24184
+  },
+  {
+    "title": "Now You See Me: Now You Don't",
+    "release_date": "2025-11-11",
+    "post_sept_2025": true,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": true,
+    "char_count": 10002
+  },
+  {
+    "title": "Anaconda (2025 film)",
+    "release_date": "2025-12-13",
+    "post_sept_2025": true,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": true,
+    "char_count": 8170
+  },
+  {
+    "title": "Scream 7",
+    "release_date": "2026-02-25",
+    "post_sept_2025": true,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": false,
+    "char_count": 17973
+  },
+  {
+    "title": "Spider-Man: Brand New Day",
+    "release_date": "2026-07-31",
+    "post_sept_2025": true,
+    "has_cast_section": true,
+    "has_plot_section": false,
+    "has_box_office": false,
+    "char_count": 32523
+  },
+  {
+    "title": "The Super Mario Galaxy Movie",
+    "release_date": "2026-03-28",
+    "post_sept_2025": true,
+    "has_cast_section": false,
+    "has_plot_section": true,
+    "has_box_office": true,
+    "char_count": 17352
+  },
+  {
+    "title": "Michael (2026 film)",
+    "release_date": "2026-04-10",
+    "post_sept_2025": true,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": true,
+    "char_count": 17327
+  },
+  {
+    "title": "Caught Stealing",
+    "release_date": "2025-08-29",
+    "post_sept_2025": false,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": true,
+    "char_count": 8066
+  },
+  {
+    "title": "Eddington (film)",
+    "release_date": "2025-05-16",
+    "post_sept_2025": false,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": true,
+    "char_count": 11716
+  },
+  {
+    "title": "The Long Walk (2025 film)",
+    "release_date": "2025-09-12",
+    "post_sept_2025": true,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": true,
+    "char_count": 11792
+  },
+  {
+    "title": "Black Phone 2",
+    "release_date": "2025-09-20",
+    "post_sept_2025": true,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": true,
+    "char_count": 8781
+  },
+  {
+    "title": "Roofman",
+    "release_date": "2025-09-06",
+    "post_sept_2025": true,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": true,
+    "char_count": 7052
+  },
+  {
+    "title": "A House of Dynamite",
+    "release_date": "2025-09-02",
+    "post_sept_2025": true,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": false,
+    "char_count": 11415
+  },
+  {
+    "title": "Wake Up Dead Man",
+    "release_date": "2025-09-06",
+    "post_sept_2025": true,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": false,
+    "char_count": 11631
+  },
+  {
+    "title": "Five Nights at Freddy's 2 (film)",
+    "release_date": "2025-12-02",
+    "post_sept_2025": true,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": true,
+    "char_count": 16497
+  },
+  {
+    "title": "Springsteen: Deliver Me from Nowhere",
+    "release_date": "2025-08-29",
+    "post_sept_2025": false,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": true,
+    "char_count": 8880
+  },
+  {
+    "title": "Mortal Kombat II (film)",
+    "release_date": "2026-05-08",
+    "post_sept_2025": true,
+    "has_cast_section": true,
+    "has_plot_section": false,
+    "has_box_office": false,
+    "char_count": 5000
+  },
+  {
+    "title": "Sinners (2025 film)",
+    "release_date": "2025-04-03",
+    "post_sept_2025": false,
+    "has_cast_section": true,
+    "has_plot_section": true,
+    "has_box_office": false,
+    "char_count": 25365
+  }
+]
