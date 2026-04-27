@@ -21,7 +21,7 @@ from wiki_eval.tools import TOOL_SCHEMAS, dispatch_tool
 
 DEFAULT_AGENT_MODEL = "claude-sonnet-4-6"
 DEFAULT_MAX_TOKENS = 2048
-DEFAULT_MAX_TURNS = 10  # hard cap on tool-use rounds — protects against loops
+DEFAULT_MAX_TURNS = 15  # hard cap on tool-use rounds — protects against loops
 
 PROMPTS_DIR = Path(__file__).parent / "prompts"
 
@@ -134,16 +134,28 @@ def run_agent(
 
     for turn in range(max_turns):
         run.turns = turn + 1
-        try:
-            response = client.messages.create(
-                model=model,
-                max_tokens=max_tokens,
-                system=system_prompt,
-                tools=TOOL_SCHEMAS,
-                messages=messages,
-            )
-        except anthropic.APIError as e:
-            run.error = f"Anthropic API error: {e}"
+        response = None
+        delay = 2.0
+        for attempt in range(5):
+            try:
+                response = client.messages.create(
+                    model=model,
+                    max_tokens=max_tokens,
+                    system=system_prompt,
+                    tools=TOOL_SCHEMAS,
+                    messages=messages,
+                )
+                break
+            except anthropic.RateLimitError:
+                if attempt == 4:
+                    run.error = "Rate-limited 5x; giving up"
+                    break
+                time.sleep(delay)
+                delay *= 2
+            except anthropic.APIError as e:
+                run.error = f"Anthropic API error: {e}"
+                break
+        if response is None:
             break
 
         run.input_tokens += response.usage.input_tokens
