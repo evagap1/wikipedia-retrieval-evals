@@ -121,7 +121,11 @@ def run_agent(
 ) -> AgentRun:
     """Run the Wikipedia agent on a question and return a full trace."""
     system_prompt = load_prompt(prompt_version)
-    client = client or anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    # max_retries lets the SDK honor the rate-limit Retry-After header, which is
+    # both correct (uses the server's hint, not a guessed exponential) and fast.
+    client = client or anthropic.Anthropic(
+        api_key=os.environ["ANTHROPIC_API_KEY"], max_retries=6
+    )
 
     messages: list[dict[str, Any]] = [{"role": "user", "content": question}]
     run = AgentRun(
@@ -134,28 +138,16 @@ def run_agent(
 
     for turn in range(max_turns):
         run.turns = turn + 1
-        response = None
-        delay = 2.0
-        for attempt in range(5):
-            try:
-                response = client.messages.create(
-                    model=model,
-                    max_tokens=max_tokens,
-                    system=system_prompt,
-                    tools=TOOL_SCHEMAS,
-                    messages=messages,
-                )
-                break
-            except anthropic.RateLimitError:
-                if attempt == 4:
-                    run.error = "Rate-limited 5x; giving up"
-                    break
-                time.sleep(delay)
-                delay *= 2
-            except anthropic.APIError as e:
-                run.error = f"Anthropic API error: {e}"
-                break
-        if response is None:
+        try:
+            response = client.messages.create(
+                model=model,
+                max_tokens=max_tokens,
+                system=system_prompt,
+                tools=TOOL_SCHEMAS,
+                messages=messages,
+            )
+        except anthropic.APIError as e:
+            run.error = f"Anthropic API error: {e}"
             break
 
         run.input_tokens += response.usage.input_tokens

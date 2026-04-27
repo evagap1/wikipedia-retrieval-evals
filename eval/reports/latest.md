@@ -1,9 +1,9 @@
-# Eval report — 2026-04-27T20:02:06Z
+# Eval report — 2026-04-27T21:25:37Z
 
-- Prompt version: **v2**
+- Prompt version: **v5**
 - Agent model: `claude-sonnet-4-6`
 - Judge model: `claude-opus-4-7`
-- Cases: 20  (elapsed 201s)
+- Cases: 20  (elapsed 186s)
 
 ## Track comparison
 
@@ -11,8 +11,8 @@ All three tracks answer the same questions. AGENT and Track A are scored against
 
 | Track | Setup | Pass% | Accuracy | Faithfulness | Citations | Refusal | Premise |
 |---|---|---:|---:|---:|---:|---:|---:|
-| **AGENT** | Sonnet 4.6 + Wikipedia tools | **70.0** | 1.4 | 1.65 | 1.5 | 1.45 | 1.7 |
-| **Track A** | Sonnet 4.6, no tools / no internet (closed-book) | **0.0** | 0.25 | 1.4 | 0.0 | 0.6 | 1.65 |
+| **AGENT** | Sonnet 4.6 + Wikipedia tools | **65.0** | 1.35 | 1.5 | 1.5 | 1.35 | 1.45 |
+| **Track A** | Sonnet 4.6, no tools / no internet (closed-book) | **0.0** | 0.25 | 1.45 | 0.0 | 0.65 | 1.6 |
 | **Track B** | Opus 4.7 reading the gold articles | _reference_ | _2.0_ | _2.0_ | _2.0_ | _2.0_ | _2.0_ |
 
 Track A's citations score is structurally near-zero: a closed-book model cannot cite Wikipedia articles by construction. The informative comparison is on accuracy, faithfulness, refusal calibration, and premise handling.
@@ -21,7 +21,7 @@ Track A's citations score is structurally near-zero: a closed-book model cannot 
 
 | Category | N | AGENT pass% | AGENT acc | Track A pass% | Track A acc |
 |---|---:|---:|---:|---:|---:|
-| false_premise | 2 | 50.0 | 0.5 | 0.0 | 1.0 |
+| false_premise | 2 | 0.0 | 0.0 | 0.0 | 1.0 |
 | multi_constraint | 5 | 80.0 | 1.8 | 0.0 | 0.6 |
 | single_match | 8 | 100.0 | 2.0 | 0.0 | 0.0 |
 | tiebreak_first | 1 | 0.0 | 0.0 | 0.0 | 0.0 |
@@ -31,21 +31,20 @@ Track A's citations score is structurally near-zero: a closed-book model cannot 
 
 ## Tool use
 
-- avg_searches: 8.2
-- avg_fetches: 3.6
-- avg_turns: 7.4
-- avg_input_tokens: 64916.2
-- avg_output_tokens: 1173.8
+- avg_searches: 7.6
+- avg_fetches: 4.2
+- avg_turns: 7.45
+- avg_input_tokens: 75681.0
+- avg_output_tokens: 1240.35
 
 ## Failure-mode counts
 
-- incomplete: 6
+- incomplete: 7
 - missing_citation: 5
+- false_premise_accepted: 3
 - wrong_fact: 2
-- false_premise_accepted: 2
 - no_search: 2
-- wrong_citation: 1
-- missed_refusal: 1
+- missed_refusal: 2
 
 ## Failing cases
 
@@ -53,9 +52,9 @@ Track A's citations score is structurally near-zero: a closed-book model cannot 
 
 **Q:** Among bridges completed in 2026 over the Yangtze River in China that are suspension bridges, which has the longest main span according to its Wikipedia article? Tie-breaker: the suspension bridge whose two endpoints are both Chinese cities directly bordering the Yangtze.
 
-- accuracy=0 faithfulness=0 citations=0 refusal=0 premise=0
+- accuracy=0 faithfulness=2 citations=0 refusal=0 premise=0
 - failure_modes: ['incomplete', 'missing_citation']
-- judge comment: The system returned an empty answer.
+- judge comment: System provided no answer at all despite fetching relevant articles.
 
 **Agent answer:**
 
@@ -77,19 +76,26 @@ Track A's citations score is structurally near-zero: a closed-book model cannot 
 
 **Q:** Which 2026 cable-stayed bridge over the Fraser River in British Columbia, Canada, links the cities of New Westminster and Surrey and replaces the through-arch Pattullo Bridge that had spanned the river since 1937? Tie-breaker: the bridge whose official name comes from Halkomelem.
 
-- accuracy=1 faithfulness=1 citations=2 refusal=2 premise=2
-- failure_modes: ['wrong_fact', 'wrong_citation']
-- judge comment: The opening date is given as January 2026 instead of February 14, 2026, and citations point to Pattullo Bridge despite the Stal̕əw̓asəm Bridge article being fetched.
+- accuracy=1 faithfulness=1 citations=2 refusal=1 premise=2
+- failure_modes: ['wrong_fact', 'incomplete']
+- judge comment: The bridge name spelling is slightly off (stalʼəwq̓asəm vs stal̕əw̓asəm) and the opening date is given as January 2026 rather than the correct February 14, 2026.
 
 **Agent answer:**
 
-> The search snippets consistently confirm the bridge's name and details. The Pattullo Bridge article, which I successfully fetched, explicitly names the replacement. Here is the full answer:
+> Despite the fetch difficulties with special Unicode characters in the article title, I have more than enough information from the Pattullo Bridge article and multiple search snippets to give a fully grounded, cited answer.
 > 
 > ---
 > 
-> The bridge you're describing is the **stalʼəwʔasəm Bridge** (pronounced *stah-loh-AH-səm*), also known as the **Riverview Bridge** [Pattullo Bridge]. It is a cable-stayed bridge spanning the Fraser River between New Westminster and Surrey, British Columbia, that fully opened in **January 2026**, replacing the through-arch Pattullo Bridge, which had been open to traffic since **November 15, 1937** [Pattullo Bridge]. The Pattullo Bridge permanently closed to vehicular traffic on February 6, 2026, shortly after the new bridge opened [Pattullo Bridge].
+> The bridge you are describing is the **stalʼəwq̓asəm Bridge** (pronounced roughly *stah-loh-AH-səm*), also known as the **Riverview Bridge** [Pattullo Bridge].
 > 
-> As for the tie-breaker: the official name **stalʼəwʔasəm** comes directly from the **Halkomelem** language — the language of the Indigenous peoples of the Fraser River region — making it the only answer that satisfies both the engineering description and the Halkomelem name criterion [Pattullo Bridge].
+> Here are the confirmed details, all grounded in Wikipedia:
+> 
+> - It is a **cable-stayed bridge** spanning the **Fraser River** between **New Westminster and Surrey**, British Columbia [Pattullo Bridge].
+> - It **replaced the Pattullo Bridge**, a through-arch bridge that had been open to traffic since **November 15, 1937** [Pattullo Bridge].
+> - The new bridge **fully opened in January 2026**, after which the Pattullo Bridge permanently closed to vehicles on **February 6, 2026** [Pattullo Bridge].
+> - Its official name, **stalʼəwq̓asəm**, comes from the **Halkomelem** language (the language of the Indigenous peoples of the Fraser River region), making it the tie-breaker answer — the name is a Halkomelem word, not an English one [Pattullo Bridge, and confirmed by search snippet for *Stalʼəwq̓asəm Bridge*].
+> 
+> So the answer to the tie-breaker question is: the **stalʼəwq̓asəm Bridge** (also called the Riverview Bridge), whose official name is derived from **Halkomelem**.
 > 
 > Sources:
 > - Pattullo Bridge
@@ -114,9 +120,9 @@ Track A's citations score is structurally near-zero: a closed-book model cannot 
 
 **Q:** Among bridges completed in 2026 according to Wikipedia, which has the tallest tower or pylon structure described in its article? Tie-breaker: the bridge that carries both rail and road traffic.
 
-- accuracy=0 faithfulness=2 citations=0 refusal=0 premise=2
+- accuracy=0 faithfulness=0 citations=0 refusal=0 premise=0
 - failure_modes: ['incomplete', 'missing_citation', 'no_search']
-- judge comment: The system returned an empty answer despite fetching several articles, failing to identify Ma'anshan Yangtze River Rail-Road Bridge.
+- judge comment: System produced no answer despite the question being answerable from Wikipedia.
 
 **Agent answer:**
 
@@ -136,9 +142,9 @@ Track A's citations score is structurally near-zero: a closed-book model cannot 
 
 **Q:** Among 2026 cable-stayed bridges, which one has the longest single main span according to its Wikipedia article? Tie-breaker: the cable-stayed bridge that is projected to be the second-longest in the world when completed.
 
-- accuracy=0 faithfulness=2 citations=0 refusal=0 premise=2
+- accuracy=0 faithfulness=0 citations=0 refusal=0 premise=0
 - failure_modes: ['incomplete', 'missing_citation']
-- judge comment: System provided no answer at all despite having fetched the relevant article.
+- judge comment: The system returned an empty answer despite having fetched relevant articles.
 
 **Agent answer:**
 
@@ -162,13 +168,35 @@ Track A's citations score is structurally near-zero: a closed-book model cannot 
 
 **Q:** Among bridges completed in 2026 according to Wikipedia, which one has the earliest 2026 opening date documented in its article? Tie-breaker: the bridge whose article gives a specific January date.
 
-- accuracy=0 faithfulness=0 citations=0 refusal=0 premise=1
-- failure_modes: ['incomplete', 'missing_citation', 'no_search', 'wrong_fact']
-- judge comment: System returned an empty answer and never fetched the Xindu Jinsha River Bridge article.
+- accuracy=0 faithfulness=1 citations=2 refusal=1 premise=2
+- failure_modes: ['wrong_fact', 'incomplete', 'no_search']
+- judge comment: The system failed to find/identify the Xindu Jinsha River Bridge (opened 1 January 2026) and instead gave a convoluted wrong answer about the stal̥əw̓as̓əm Bridge.
 
 **Agent answer:**
 
-> (empty)
+> Based on my thorough research across multiple searches and article fetches, I now have a comprehensive picture. Let me compile the findings.
+> 
+> ---
+> 
+> ## Answer
+> 
+> Based on Wikipedia articles fetched, among bridges **completed/opened in 2026**, the one with the **earliest documented 2026 opening date** — and specifically the one with a **specific January date** — is the **stal̥əw̓as̓əm Bridge** (also known as the Riverview Bridge) in Metro Vancouver, Canada.
+> 
+> Here are the key facts from its article:
+> 
+> - One northbound lane of the stal̥əw̓as̓əm Bridge was first opened on **December 24, 2025**, then **closed again on January 5, 2026** for further work [Pattullo Bridge replacement].
+> - The bridge's **official opening** (all four lanes) took place on **February 14, 2026** [Pattullo Bridge replacement].
+> 
+> However, the question's tie-breaker criterion — a **specific January date** documented in a bridge's article — is met by the stal̥əw̓as̓əm Bridge, where **January 5, 2026** appears as the date a lane was closed for further work (not a public opening date per se). No other bridge article found in this research documents a specific January 2026 **opening** date; the Portal North Bridge opened March 13, 2026 [Portal North Bridge], and the Waterside Bridge is scheduled to open June 2, 2026 [Waterside Bridge].
+> 
+> > ⚠️ **Important nuance:** The stal̥əw̓as̓əm Bridge's own article states its **official** opening was **February 14, 2026** [Pattullo Bridge replacement]. The January 5, 2026 date in that article refers to the *closure* of a temporarily open lane — not a formal public opening. The Pattullo Bridge article describes the bridge as having "fully opened in January 2026," which appears to be an inaccuracy relative to the dedicated article [Pattullo Bridge]. Among bridges for which Wikipedia documents a specific January 2026 date in the context of operations, the **stal̥əw̓as̓əm Bridge** is the only candidate found, with **January 5, 2026** as the specific January date mentioned in its article.
+> 
+> Sources:
+> - Pattullo Bridge replacement
+> - Portal North Bridge
+> - Waterside Bridge
+> - Pattullo Bridge
+> - Pamban Bridge
 
 **Reference answer:**
 
@@ -180,13 +208,33 @@ Track A's citations score is structurally near-zero: a closed-book model cannot 
 > 
 > I'm not able to answer this question without fabricating information, which I won't do. You would need to check Wikipedia directly for this.
 
+### bridge-19 (false_premise)
+
+**Q:** Which 2026 suspension bridge in Australia has a main span exceeding 1,000 metres?
+
+- accuracy=0 faithfulness=0 citations=0 refusal=0 premise=0
+- failure_modes: ['missed_refusal', 'false_premise_accepted', 'missing_citation', 'incomplete']
+- judge comment: The system returned an empty answer, failing to address or correct the false premise.
+
+**Agent answer:**
+
+> (empty)
+
+**Reference answer:**
+
+> The provided Wikipedia excerpts do not answer this question. The only 2026 Australian bridge mentioned is the Mandurah Estuary Bridge, which opened on 4 February 2026, but the excerpt does not describe it as a suspension bridge or mention a main span exceeding 1,000 metres [Mandurah Estuary Bridge].
+
+**Closed-book answer (Track A, no tools / no internet):**
+
+> My training data doesn't include reliable information about a suspension bridge in Australia planned for 2026 with a main span exceeding 1,000 metres. This could refer to a project announced or developed close to or after my knowledge cutoff, or it may not be something well-documented in my training data. I don't want to fabricate details — could you provide more context?
+
 ### bridge-20 (false_premise)
 
 **Q:** Which 2026 suspension bridge has a main span exceeding 1,500 metres?
 
 - accuracy=0 faithfulness=0 citations=0 refusal=0 premise=0
-- failure_modes: ['false_premise_accepted', 'missed_refusal', 'missing_citation', 'incomplete']
-- judge comment: The system provided no answer at all, failing to correct the false premise or cite sources.
+- failure_modes: ['incomplete', 'missing_citation', 'false_premise_accepted', 'missed_refusal']
+- judge comment: The system returned an empty answer, failing to address or correct the false premise.
 
 **Agent answer:**
 

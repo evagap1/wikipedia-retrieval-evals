@@ -1,0 +1,132 @@
+[
+  {
+    "title": "Camp Hill line",
+    "char_count": 10389,
+    "lead": "The Camp Hill line is a railway line in Birmingham between Kings Norton and Birmingham New Street. Its official ELR designation is the St Andrews Junction to Kings Norton line, as the line piggybacks the station approach of the Rugby–Birmingham–Stafford line (accessed via St Andrews Junction and Grand Junction) to enter Birmingham New Street.\nThe line was once the terminal approach of the Birmingham and Gloucester Railway to Curzon Street before it was incorporated into the Midland Railway and s",
+    "types_detected": [
+      "freight"
+    ],
+    "length_strings_in_lead": [],
+    "category": "Railway lines opened in 2026"
+  },
+  {
+    "title": "GRU Airport People Mover",
+    "char_count": 2402,
+    "lead": "The GRU Airport People Mover is a people mover at the São Paulo/Guarulhos International Airport to connect the nearby CPTM railway station to the airport's terminals.\nThis line is approximately 2.6 km (1.6 mi) long and has 4 stations, beginning at the Aeroporto-Guarulhos station (with connection to Line 13-Jade) and continuing to separate stations at each of the three terminals.\nExpression of interest were first invited in August 2019.\nDuring the opening of the second access on Oscar Freire stat",
+    "types_detected": [
+      "metro",
+      "tram",
+      "people mover"
+    ],
+    "length_strings_in_lead": [
+      "2.6 km",
+      "1.6 mi"
+    ],
+    "category": "Railway lines opened in 2026"
+  },
+  {
+    "title": "Jinhua–Jiande high-speed railway",
+    "char_count": 684,
+    "lead": "Jinhua–Jiande high-speed railway or Jinjian railway (Chinese: 金建铁路; pinyin: Jīnjiàn Tiělù) is a high-speed railway line in Zhejiang, China. It is operated by China Railway Shanghai Group. It is 64.5 kilometres (40.1 mi) long and has a maximum speed of 250 kilometres per hour (160 mph). Approximately 32% of the line is in tunnels.",
+    "types_detected": [
+      "high-speed"
+    ],
+    "length_strings_in_lead": [
+      "64.5 kilometres",
+      "40.1 mi",
+      "250 kilometres"
+    ],
+    "category": "Railway lines opened in 2026"
+  },
+  {
+    "title": "Lausanne tramway",
+    "char_count": 5292,
+    "lead": "The Lausanne tramway (French: tramway lausannois or French: tramway de Lausanne) is a second generation tramway. Line T1 of the Lausanne tramway will link Lausanne-Flon, in the centre of Lausanne, to Renens, to the west of the agglomeration. Its opening in late 2026 will mark the return of trams (streetcars as opposed to light rail) after the former tram system closed in 1964, over 60 years prior.\nLine T1 is part of the Projet d’Agglomération Lausanne-Morges (PALM), a project that also includes ",
+    "types_detected": [
+      "metro",
+      "tramway",
+      "tram",
+      "light rail"
+    ],
+    "length_strings_in_lead": [],
+    "category": "Railway lines opened in 2026"
+  },
+  {
+    "title": "Line 5 Eglinton",
+    "char_count": 48982,
+    "lead": "Line 5 Eglinton, also known as the Eglinton Crosstown LRT or the Crosstown, is a light rail transit line in Toronto, Ontario, Canada. Operated by the Toronto Transit Commission (TTC) as part of the Toronto subway, it has 25 stations and is 19 kilometres (11.8 mi) long. Service on the line began on February 8, 2026, as part of a phased opening. It uses standard gauge rather than the broad Toronto gauge used by the three older heavy rail subway lines.\nThe line was conceived in 2007 during the admi",
+    "types_detected": [
+      "metro",
+      "subway",
+      "underground",
+      "light rail",
+      "heavy rail",
+      "standard gauge"
+    ],
+    "length_strings_in_lead": [
+      "19 kilometres",
+      "11.8 mi",
+      "12 mi",
+      "5.7 mi"
+    ],
+    "category": "Railway lines opened in 2026"
+  },
+  {
+    "title": "Line 6 (Ningbo Rail Transit)",
+    "char_count": 1378,
+    "lead": "The Line 6 of Ningbo Rail Transit (Chinese: 宁波轨道交通6号线) is a rapid transit line in Ningbo, Zhejiang. It starts from Gulin to Honglian with 23 stations in operation, spanning 39.6 km long. Construction started on 28 December 2022 with total investment is 31.53 billion RMB.",
+    "types_detected": [
+      "rapid transit"
+    ],
+    "length_strings_in_lead": [
+      "39.6 km"
+    ],
+    "category": "Railway lines opened in 2026"
+  },
+  {
+    "title": "Line 17 (São Paulo Metro)",
+    "char_count": 4153,
+    "lead": "Line 17 (Gold) (Portuguese: Linha 17–Ouro) is a monorail for the São Paulo Metro. The line has 14 stations, beginning at the São Paulo-Morumbi station and ending at the Jabaquara station, with a branch to Congonhas station, connected to the São Paulo/Congonhas Airport. It has integration with Line 5-Lilac as well as ViaMobilidade Line 9-Emerald and will be connected to Line 1-Blue and Line 4-Yellow. The line was originally one of the transportation projects supporting the 2014 FIFA World Cup. Ho",
+    "types_detected": [
+      "metro",
+      "monorail"
+    ],
+    "length_strings_in_lead": [],
+    "category": "Railway lines opened in 2026"
+  },
+  {
+    "title": "Monon Corridor",
+    "char_count": 6879,
+    "lead": "The Monon Corridor, also called the West Lake Corridor during project planning and construction, is a commuter rail line in Lake County, Indiana, that is part of the South Shore Line system. The line, which branches south from the main line at Hammond Gateway station along a single-track line, serves the municipalities of Hammond, Munster and Dyer. Trains run directly to Chicago during peak hours, while shuttle trains run between Hammond and Dyer during off-peak hours.\nThe Northern Indiana Commu",
+    "types_detected": [
+      "commuter"
+    ],
+    "length_strings_in_lead": [],
+    "category": "Railway lines opened in 2026"
+  },
+  {
+    "title": "Line S2 (Nanjing Metro)",
+    "char_count": 2173,
+    "lead": "Line S2 (Chinese: 南京地铁S2号线; pinyin: Nánjīng Dìtiě S-Èr Hào Xiàn) is a suburban rapid transit line in the Nanjing Metro system. Line S2 is officially put into operation on 22 April 2026 at 10:00. The line will have passing loops for express and local services with express trains completing travel across the whole line in 30 minutes.. Line S2 is the first inter-provincial subway in Nanjing and also the second in Mainland China (The first is Line 11 of Shanghai Metro connecting Shanghai and Suzhou,",
+    "types_detected": [
+      "metro",
+      "subway",
+      "rapid transit"
+    ],
+    "length_strings_in_lead": [],
+    "category": "Railway lines opened in 2026"
+  },
+  {
+    "title": "Red Line (Mumbai Metro)",
+    "char_count": 18326,
+    "lead": "The Red Line is part of the Mumbai Metro rail network for the city of Mumbai, Maharashtra, India. During construction, the line was divided into three smaller lines - Line 7 (Dahisar (East) to Gundavali), Line 7A (Gundavali to Chhatrapati Shivaji Maharaj International Airport - T2), and Line 9 (Subhash Chandra Bose Stadium to Dahisar (East)). The 31.045 km line connects the region of Mira Bhayandar to the Chhatrapati Shivaji Maharaj International Airport via Andheri (East) and Dahisar (East). Co",
+    "types_detected": [
+      "metro",
+      "underground"
+    ],
+    "length_strings_in_lead": [
+      "31.045 km"
+    ],
+    "category": "Railway lines opened in 2026"
+  }
+]

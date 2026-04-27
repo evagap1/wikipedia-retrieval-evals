@@ -74,3 +74,21 @@ If you're 3 prompt versions deep on the same failure mode, the problem is likely
 ## Don't iterate on these
 
 The original eval (`test_cases.jsonl`, 87.5% AGENT) is mostly saturated for prompt-only fixes. The 6 `no_search` failures there are real but they tend to come back with new prompts unless you explicitly forbid memory-only answers — which then trades for `over_refused` on easy cases. Treat `test_cases.jsonl` as a regression check; do active hill-climbing on movies and bridges.
+
+## Auto-improver (no eval access)
+
+For exploration without rerunning evals, use the meta-agent in `src/wiki_eval/improve_prompt.py`. It uses Opus 4.7 to critique the current prompt for missing edge cases, conflicts, and vague rules — then applies a single targeted fix per round.
+
+```bash
+python -m wiki_eval.improve_prompt --base v2 --rounds 3
+# writes v3.md, v4.md, v5.md
+python -m wiki_eval.improve_prompt --base v2 --rounds 1 --dry-run
+# print the critique without writing anything
+```
+
+Caveats:
+- It cannot measure improvement — only proposes plausible improvements. Run the eval afterward to verify.
+- It tends to plateau or oscillate after 2–3 rounds. Don't crank `--rounds` to 10 expecting linear gains.
+- Each round's revision is anchored to the previous round's output, so a bad early revision compounds. If round 1 looks off, restart from `--base v2` rather than continuing.
+
+Use it as an idea generator. The single-change discipline above still applies — pick the auto-generated version that addresses the failure mode you actually see in the report, not all of them.
