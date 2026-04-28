@@ -79,7 +79,7 @@ def main(argv: list[str] | None = None) -> int:
 
     p_ask = sub.add_parser("ask", help="Ask the agent a single question.")
     p_ask.add_argument("question", help="The question to answer.")
-    p_ask.add_argument("--prompt", default="v1", help="Prompt version (default: v1).")
+    p_ask.add_argument("--prompt", default="v3", help="Prompt version (default: v3, best-performing).")
     p_ask.add_argument("--json", action="store_true", help="Emit run as JSON.")
 
     parser.add_argument(
@@ -89,8 +89,8 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument(
         "--prompt",
-        default="v1",
-        help="Prompt version for --demo mode (default: v1).",
+        default="v3",
+        help="Prompt version for --demo mode (default: v3, best-performing).",
     )
 
     args = parser.parse_args(argv)

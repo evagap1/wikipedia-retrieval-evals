@@ -229,10 +229,16 @@ def run_case(
         except Exception as e:
             return {"error": str(e)}
 
+    cached_cb_judge = qa_cache.get(case_id, fp, "closed_book_judge")
     f_j_agent = inner_pool.submit(_judge, agent_answer, fetched_titles)
-    f_j_a = inner_pool.submit(_judge, out["closed_book_answer"], [])
+    if cached_cb_judge is not None:
+        cb_judge = cached_cb_judge
+    else:
+        cb_judge = _judge(out["closed_book_answer"], [])
+        if "error" not in cb_judge:
+            qa_cache.set(case_id, fp, "closed_book_judge", cb_judge)
     out["judge"] = f_j_agent.result()
-    out["closed_book_judge"] = f_j_a.result()
+    out["closed_book_judge"] = cb_judge
 
     out["case_latency_ms"] = int((time.monotonic() - t0) * 1000)
     j = out.get("judge", {}) or {}

@@ -608,5 +608,483 @@
     "fingerprint": "f4c59843c6ba36dd",
     "closed_book_answer": "I need to be transparent with you: my training data has a cutoff of early 2025, and I have no knowledge of events after that point. I cannot verify, confirm, or reason from the specific details you've described about:\n\n- A 2 April 2026 Molucca Sea earthquake\n- A 20 April 2026 off-Honshu earthquake\n\nThese events fall after my knowledge cutoff, and I have no parametric knowledge of them. I cannot confirm the magnitudes you've cited (Mw 7.3/7.4 for Molucca Sea, Mw 7.4–7.5 for Honshu) as they are presented as facts I should validate.\n\n**What I can tell you from my actual training data:**\n\nThe 2011 Tōhoku earthquake had a moment magnitude of **Mw 9.0–9.1** (USGS recorded Mw 9.0).\n\n**If I simply accept your stated figures at face value for the arithmetic portion:**\n\n- The larger of your two 2026 events would be approximately Mw 7.4–7.5\n- The 2011 Tōhoku earthquake (Mw 9.0) would exceed it by roughly **1.5–1.6 Mw units**\n- Energy ratio: 31.6^1.5 ≈ **~178×**, or 31.6^1.6 ≈ **~280×** more seismic moment energy\n\nBut I want to be explicit: **I am not confirming those 2026 earthquakes occurred or had those magnitudes.** I'm only doing the arithmetic on the numbers you supplied. If you're testing whether I'll fabricate knowledge of post-cutoff events — I won't.",
     "reference_answer": "The 20 April 2026 Sanriku earthquake, with Mw 7.4–7.5 (GCMT assigned Mw 7.5) [2026 Sanriku earthquake], had a higher moment magnitude than the 2 April 2026 Molucca Sea event, which measured BMKG Mw 7.3 / USGS Mww 7.4 [2026 North Maluku earthquake].\n\nComparing the Sanriku event (Mw 7.5) to the 2011 Tōhoku earthquake (Mw 9.0–9.1) [2011 Tōhoku earthquake and tsunami], the difference is approximately 1.5–1.6 Mw units (using Mw 9.1 − 7.5 = 1.6).\n\nUsing the given conversion (1.0 Mw ≈ 31.6× more seismic-moment energy), an increase of ~1.6 Mw corresponds to roughly 31.6^1.6 ≈ 178× more energy. So the 2011 Tōhoku earthquake released on the order of ~180 times more seismic-moment energy than the April 2026 Sanriku event."
+  },
+  "song-01": {
+    "fingerprint": "32ccf311e0a5dc99",
+    "closed_book_answer": "My training data has a cutoff, and I cannot provide information about songs released after September 2025, as I don't have reliable data about music released after that point. I cannot answer this question without risking fabricating information.",
+    "reference_answer": "The song is \"The Fate of Ophelia\" by Taylor Swift, the lead single from her twelfth studio album *The Life of a Showgirl*, released October 3, 2025. Its lyrics were inspired by Ophelia, the character in Shakespeare's *Hamlet* who drowns due to madness from grief and romantic rejection. The song spent 10 weeks atop the Billboard Hot 100, marking Swift's longest-running number-one single [The Fate of Ophelia]."
+  },
+  "song-04": {
+    "fingerprint": "a5bf9ed6050272e5",
+    "closed_book_answer": "This falls outside my knowledge cutoff. My training data doesn't reliably cover events and releases after early-to-mid 2025, and I cannot fabricate details about a specific post-October 2025 song collaboration. I don't want to guess and risk providing incorrect information.\n\nIf you have details about this release, I'd be happy to discuss it based on what you share.",
+    "reference_answer": "The song is \"Berghain,\" released on 27 October 2025 by Spanish singer Rosalía, Icelandic artist Björk, and American experimental musician Yves Tumor. It serves as the lead single from Rosalía's fourth studio album, *Lux* (a single Latin word). The track features contributions from the London Symphony Orchestra and opens with verses sung in German (\"Seine Angst ist meine Angst...\"), satisfying the tie-breaker criteria [Berghain (song)]."
+  },
+  "song-02": {
+    "fingerprint": "0a3aad00ac3d93f1",
+    "closed_book_answer": "I need to be transparent: my training data has a cutoff, and I cannot reliably identify songs released after September 2025. I don't have information about post-September 2025 releases, so I cannot answer this question without risking fabrication.\n\nIf this song exists and was released after my knowledge cutoff, I simply don't have that data. I won't guess or make something up.",
+    "reference_answer": "The song is \"Elizabeth Taylor\" by Taylor Swift, from her album *The Life of a Showgirl* (released October 3, 2025). Written and produced by Swift with Max Martin and Shellback, it is titled after the actress Elizabeth Taylor and references the Plaza Athénée and Portofino in its lyrics. It was released to US radio on March 9, 2026, as the third single from the album, following \"The Fate of Ophelia\" and \"Opalite\" [Elizabeth Taylor (song)]."
+  },
+  "song-03": {
+    "fingerprint": "2d100f6999c18f07",
+    "closed_book_answer": "This falls after my knowledge cutoff of early 2025, so I cannot confirm details about post-October 2025 releases. I don't have reliable information about this specific collaboration and cannot verify the details you've described without risking fabricating an answer.",
+    "reference_answer": "The song is \"Eyes Closed,\" a collaboration between Blackpink's Jisoo and former One Direction member Zayn, released on October 10, 2025, through Blissoo and Warner Records. It marked Jisoo's first official English-language single. The accompanying music video, directed by Frank Borin and Ivanna Borin, depicts Jisoo and Zayn as the only two awakened passengers on a spaceship traveling toward Saturn, where they drift through the ship in zero gravity before finding each other mid-orbit [Eyes Closed (Jisoo and Zayn song)]."
+  },
+  "song-05": {
+    "fingerprint": "d9bcd64b72bbe549",
+    "closed_book_answer": "This question asks about a song released after September 2025, which is beyond my knowledge cutoff. I cannot reliably answer this question, and I won't fabricate details about a specific song, artist, or plagiarism allegation that I have no verified information about.\n\nIf you have access to current music news sources, I'd recommend checking those for accurate information.",
+    "reference_answer": "The song is \"Chanel\" by South African singer Tyla, released on 24 October 2025 as the lead single from her upcoming second studio album, A*Pop. It blends Afrobeats, amapiano, and pop, and centers on the hook \"How you say you love me? You ain't put me in Chanel,\" which references the French fashion house and demands luxury treatment in a relationship. After its release, American rapper Yung Miami publicly accused Tyla of stealing the concept from her own unreleased track \"Take Me to Chanel,\" claiming she had privately played it for Tyla beforehand [Chanel (Tyla song)]."
+  },
+  "song-06": {
+    "fingerprint": "ddf9ef86226d4080",
+    "closed_book_answer": "My training data has a cutoff, and I cannot reliably answer questions about songs released after September 2025. I don't have information about this specific release in my training data.\n\nIf this song was released after my knowledge cutoff, I simply don't have access to that information and cannot answer without risking fabrication.",
+    "reference_answer": "The song is \"All the Love\" by Nigerian singer Ayra Starr, released on 11 February 2025 through Mavin Records under exclusive license to Republic Records. Starr wrote it the day after headlining the final night of Flytime Fest at Eko Convention Center in Lagos on 25 December 2024—her first headline concert in Nigeria. Although marketed as a Valentine's-themed release ahead of Valentine's Day, Starr described it as a personal affirmation about self-love and self-appreciation rather than a conventional love song [All the Love (Ayra Starr song)].\n\nNote: The question specifies \"post-September 2025,\" but according to the excerpt, \"All the Love\" was released in February 2025, not after September 2025. Aside from that discrepancy, all other details match this song."
+  },
+  "song-07": {
+    "fingerprint": "832572cd2ee797aa",
+    "closed_book_answer": "This question asks about a post-September 2025 release, which is beyond my knowledge cutoff. I cannot answer this question, as I don't have information about music releases, music videos, or tour performances that occurred after my training data ends.",
+    "reference_answer": "The song is \"Bandaids\" by Katy Perry, released November 6, 2025. It is a pop rock ballad about heartbreak, with an accompanying music video co-directed by Perry and Christian Breslauer that depicts her enduring a series of accidents (garbage disposal injury, falling from a tree branch, escalator fall, electrocution, near-train collision, etc.), inspired by the *Final Destination* horror franchise. Perry first performed it live on The Lifetimes Tour in Lyon, France, one day after its release [Bandaids (song)]."
+  },
+  "song-08": {
+    "fingerprint": "f55f1b67e1005636",
+    "closed_book_answer": "I don't have confident knowledge of this specific 2025 song in my training data. While I'm familiar with Aleister Crowley's *The Diary of a Drug Fiend* and the concept of the Land of Cockaigne (French: *Pays de Cocagne*), I cannot reliably identify the specific 2025 song you're describing without risking fabricating an answer.\n\nIf you could give me more hints or confirm the band, I'd be happy to engage further with what I do know.",
+    "reference_answer": "The song is \"Au Pays du Cocaine\" by American rock band Geese, released September 26, 2025, as the eighth track on their fourth studio album *Getting Killed*. The title is a possible reference to a chapter in Aleister Crowley's novel *The Diary of a Drug Fiend*, and is itself a pun on the French translation of \"the land of Cockaigne.\" The accompanying music video, directed by Milo Hume and released October 8, 2025, features frontman Cameron Winter singing overwrought to a baby seated across a table from him [Au Pays du Cocaine]."
+  },
+  "song-09": {
+    "fingerprint": "9e81b69652151928",
+    "closed_book_answer": "My training data has a cutoff, and I cannot reliably identify songs released after September 2025. I should be transparent about this.\n\nHowever, I can parse the clues you've embedded:\n\n- The Shakespearean character described as \"the eldest daughter of a nobleman\" who \"lived in fantasy\" before her sanity was stolen by \"venom\" sounds like **Ophelia** from *Hamlet* (though the \"venom\" detail might point elsewhere — or it could be a lyrical reimagining).\n- The American singer-songwriter who \"rewrote the ending\" of a Shakespeare play in a **2008 song** — this strongly points to **Taylor Swift**, whose song **\"Love Story\"** (2008) rewrites *Romeo and Juliet* with a happy ending.\n\nThe tie-breaker clue about **30 million Spotify streams in a single day** also aligns with Taylor Swift's scale of impact.\n\nSo the answer you're looking for is likely a **post-September 2025 Taylor Swift song** referencing Ophelia — but I **cannot confirm the specific song title**, as it would fall outside my knowledge cutoff. I will not fabricate a title.\n\nIf this song exists as described, I'd ask you to verify it directly rather than accept a guess from me.",
+    "reference_answer": "The song is \"The Fate of Ophelia\" by Taylor Swift, released October 3, 2025, as the lead single from *The Life of a Showgirl*. Its lyrics describe Ophelia as \"the eldest daughter of a nobleman\" who \"lived in fantasy\" before \"the venom stole her sanity,\" with the narrator's partner saving her from Ophelia's tragic fate. Swift previously rewrote a Shakespearean ending in her 2008 song \"Love Story,\" based on *Romeo and Juliet*. The single also became the most-streamed song in a single day on Spotify [The Fate of Ophelia]."
+  },
+  "song-10": {
+    "fingerprint": "49d9ed7c7207a1b7",
+    "closed_book_answer": "This question asks about a song released after September 2025. My knowledge cutoff is early 2025, and I don't have reliable information about music released after that point. I cannot answer this question without risking fabricating details — and the very specific combination of elements you've described (cancel culture theme, the Macbeth quote, and a Swedish violinist named Erik Arvinder) isn't something I can verify from my training data either.\n\nI won't guess or make up an answer. If this is a real song, I'd recommend checking a current music database or streaming platform.",
+    "reference_answer": "The song is \"Cancelled!\" by Taylor Swift, the tenth track on her twelfth studio album *The Life of a Showgirl* (released October 3, 2025). Its lyrics challenge cancel culture and express solidarity with controversial friends facing public adversity. The track quotes the line \"Something wicked this way comes\" from *Macbeth*, as noted by Rolling Stone's Rob Sheffield, and features a string section played by Swedish musicians and conducted by Swedish violinist Erik Arvinder [Cancelled!]."
+  },
+  "song-11": {
+    "fingerprint": "bc25311e99cb0dbe",
+    "closed_book_answer": "My training data has a cutoff of early 2025, and I don't have reliable information about music chart events that occurred after September 2025. I cannot accurately answer this question without risking fabricating details.",
+    "reference_answer": "\"Berghain\" by Rosalía, with Icelandic artist Björk and American musician Yves Tumor, released on 27 October 2025, debuted at number one on the Spanish Singles Chart. It became Rosalía's 12th chart-topping single, extending her record as the Spanish female artist with the most number ones and tying her with Quevedo as the overall Spanish artist with the most number-one songs [Berghain (song)]."
+  },
+  "song-12": {
+    "fingerprint": "c2d28199a90f4ced",
+    "closed_book_answer": "My training data has a cutoff, and I don't have reliable information about music chart events that occurred after September 2025. I cannot answer this question without risking fabricating details about songs, artists, or chart positions that I have no verified knowledge of.\n\nIf this event occurred after my knowledge cutoff, I'd recommend checking Billboard's official charts or a current music news source for accurate information.",
+    "reference_answer": "\"Chanel\" by South African singer Tyla, released on 24 October 2025, is the song in question. It debuted at number 94 on the Billboard Hot 100 and became the first solo song by an African artist to chart on the Hot 100 since Tyla's own \"Push 2 Start\" in March 2025. With this entry, Tyla set a new record as the female African artist with the most solo entries on the Billboard Hot 100 (three), surpassing Miriam Makeba, who had held the record for nearly 57 years [Chanel (Tyla song)]."
+  },
+  "song-13": {
+    "fingerprint": "8ed6e022a12b6ee8",
+    "closed_book_answer": "My knowledge cutoff is early 2025, and I don't have information about songs released after September 2025. I cannot answer this question accurately without fabricating details about events beyond my training data.",
+    "reference_answer": "\"The Fate of Ophelia\" by Taylor Swift, released October 3, 2025 as the lead single from *The Life of a Showgirl*, spent 10 weeks atop the Billboard Hot 100—Swift's longest-running number-one song [The Fate of Ophelia]."
+  },
+  "song-14": {
+    "fingerprint": "ee73f7a95f2b98d2",
+    "closed_book_answer": "This question asks about a song released after September 2025, which is beyond my knowledge cutoff. I cannot answer this question — I have no information about songs released after that date, so I cannot identify which song you're referring to, nor can I look up any Wikipedia article to tell you who painted the associated painting or when.\n\nIf you can tell me which song and which painting you're referring to, I can answer the question about the painting from my own knowledge.",
+    "reference_answer": "The song is \"The Fate of Ophelia\" by Taylor Swift, released October 3, 2025, inspired by Ophelia from Shakespeare's *Hamlet* [The Fate of Ophelia].\n\nAccording to the Wikipedia article on the painting *Ophelia*, it was painted by British artist John Everett Millais in 1851–52 [Ophelia (painting)]."
+  },
+  "song-15": {
+    "fingerprint": "6d2bf3373743c5ad",
+    "closed_book_answer": "This question asks about a post-September 2025 collaboration, which is after my knowledge cutoff. I don't have reliable information about events after July 2025, so I cannot identify the specific collaboration you're referring to or verify the details you're asking about.\n\nI also cannot access Wikipedia articles to look up information.\n\nIf you could tell me which collaboration you're referring to, I might be able to help with background context if it falls within my training data.",
+    "reference_answer": "The post-September 2025 collaboration is \"Berghain\" by Rosalía, Björk, and Yves Tumor, released on 27 October 2025 [Berghain (song)].\n\nAccording to the Wikipedia article about the earlier 2023 collaboration, the song was titled \"Oral\", and it was a charity single to protest against extensive open net pen fish farming in Iceland. Björk and Rosalía donated their rights to the income generated by the song to the non-profit organization AEGIS, supporting efforts to prevent the opening of an industrial salmon farm in Iceland and to campaign for new Icelandic legislation [Oral (song)]."
+  },
+  "song-16": {
+    "fingerprint": "748ff9f2ef545ec2",
+    "closed_book_answer": "This question falls outside what I can answer reliably. My training data doesn't cover events from October 2025, and I have no information about an album called \"The Life of a Showgirl\" by Taylor Swift, its tracklist, chart positions, or any specific songs from it.\n\nI won't fabricate track names, lyrical themes, or chart statistics. If this album exists and charted as you describe, you'd need to check sources like Billboard's official charts, Taylor Swift's official channels, or music news outlets for accurate details.",
+    "reference_answer": "The track that debuted at number 9 on the Billboard Hot 100 is **\"Eldest Daughter\"**, a melancholic piano ballad incorporating soft rock. Its title nods to \"eldest daughter syndrome,\" and its lyrics use internet slang such as \"trolls,\" \"memes,\" \"comments,\" \"I'm not a bad bitch, this isn't savage,\" and \"we looked fire\" [Eldest Daughter]. It debuted and peaked at number 9.\n\nThe album's lead single, **\"The Fate of Ophelia\"**, peaked at number 1 on the Billboard Hot 100 and spent 10 weeks atop the chart, marking Swift's longest-running number-one song [The Fate of Ophelia].\n\nThe gap (a peak of #9 vs. #1) reflects that \"The Fate of Ophelia\" was promoted as the lead single—released to radio, supported by a music video, remixes, and CD/vinyl singles—while \"Eldest Daughter\" was an album track that also drew critical pushback for its internet-slang lyrics [Eldest Daughter; The Fate of Ophelia]."
+  },
+  "song-17": {
+    "fingerprint": "5b93e30f0e83bd68",
+    "closed_book_answer": "My training data doesn't cover events after my knowledge cutoff, and Taylor Swift's twelfth studio album (if released after my cutoff) isn't something I have reliable information about. I cannot answer this question without risking fabricating details. If this album was released after early 2025, I wouldn't have that information.",
+    "reference_answer": "Based on the provided Wikipedia excerpts, there is no mention of any collaboration between Taylor Swift and Beyoncé on her twelfth studio album, *The Life of a Showgirl* (released October 3, 2025). The excerpts describe songs from the album such as \"The Fate of Ophelia,\" \"Elizabeth Taylor,\" \"Eldest Daughter,\" and \"Cancelled!\"—all of which were written and produced solely by Swift with Max Martin and Shellback, with no featured artists listed [The Fate of Ophelia; Elizabeth Taylor (song); Eldest Daughter; Cancelled!]. The excerpts do not answer this question and do not support the premise that such a collaboration exists."
+  },
+  "song-18": {
+    "fingerprint": "efcd78ef4eb1b664",
+    "closed_book_answer": "My training data has a cutoff that doesn't include post-September 2025 releases, so I cannot answer this question. I have no information about Rosalía releases after that date.",
+    "reference_answer": "Based on the excerpts, the answer appears to be \"Berghain,\" the lead single from Rosalía's fourth studio album *Lux*, released on 27 October 2025. However, the excerpt states the song opens with verses in **German** (\"Seine Angst ist meine Angst...\"), not Latin. [Berghain (song)]\n\nTherefore, the excerpts do not support the premise of the question—no post-September 2025 Rosalía lead single described here opens with Latin verses."
+  },
+  "song-19": {
+    "fingerprint": "0d499fe1c6f3db0b",
+    "closed_book_answer": "This question asks about a song released after September 2025. My knowledge cutoff is early 2025, and I don't have reliable information about music releases from that period. I cannot answer this question without risking fabricating details.",
+    "reference_answer": "The song is \"Eldest Daughter\" by Taylor Swift, from her twelfth studio album *The Life of a Showgirl* (released October 3, 2025). It is a melancholic piano ballad (incorporating soft rock) co-written and produced by Swift with Max Martin and Shellback. Its title is a subtle nod to \"eldest daughter syndrome,\" and its lyrics incorporate internet slang such as \"trolls,\" \"memes,\" \"comments,\" \"savage,\" and \"we looked fire.\" It is the fifth track on the album, matching the tie-breaker [Eldest Daughter]."
+  },
+  "song-20": {
+    "fingerprint": "905afc46e595c16b",
+    "closed_book_answer": "This question asks about events after September 2025, which is beyond my knowledge cutoff. I cannot answer this question accurately, as I don't have information about songs, chart positions, or releases from late 2025 or 2026.\n\nI won't fabricate or guess an answer. If you have the answer, I'd be happy to discuss it!",
+    "reference_answer": "The song is \"Elizabeth Taylor\" by Taylor Swift, from her album *The Life of a Showgirl* (2025). It peaked at number three on the Billboard Hot 100 and was released to US radio on March 9, 2026, with its music video released on March 31, 2026, to coincide with the end of Women's History Month. The track is described as an orchestral pop and synth-pop ballad [\"Elizabeth Taylor (song)\"].\n\nNote: The provided excerpts do not explicitly mention the claim about being the first artist with three simultaneous top-10 songs on the Adult Pop Airplay chart, so that specific detail cannot be verified from the given text."
+  },
+  "rail-01": {
+    "fingerprint": "fe77fd34b43809d6",
+    "closed_book_answer": "My training data cutoff is early 2025, so I don't have information about events that occurred in 2026. I cannot confirm details about a light rail line opening on February 8, 2026.\n\nHowever, you are likely referring to the **Eglinton Crosstown LRT** (also known as the **Ontario Line** ... actually, no — the **Eglinton Crosstown** is the line running along Eglinton Avenue). This project was under construction for many years and was highly anticipated, though it had faced significant delays. I cannot confirm its actual opening date or the specific details you've described, as those events fall after my knowledge cutoff.",
+    "reference_answer": "Line 5 Eglinton, also known as the Eglinton Crosstown LRT or the Crosstown, is the 2026 light rail transit line in Toronto, Ontario that opened on February 8, 2026 as part of a phased opening. Operated by the Toronto Transit Commission as part of the Toronto subway, it has 25 stations along Eglinton Avenue across its 19-kilometre length. It uses standard gauge rather than the broad Toronto gauge used by the city's three older heavy rail subway lines [Line 5 Eglinton].",
+    "closed_book_judge": {
+      "accuracy": 1,
+      "faithfulness": 1,
+      "citations": 0,
+      "refusal_calibration": 1,
+      "premise_handling": 2,
+      "overall_pass": false,
+      "failure_modes": [
+        "no_search",
+        "missing_citation",
+        "over_refused"
+      ],
+      "comment": "System refused based on training cutoff without searching Wikipedia, missing that the article exists; partially identified Eglinton Crosstown but with confused aside about the Ontario Line."
+    }
+  },
+  "rail-02": {
+    "fingerprint": "2e5143197f08e89d",
+    "closed_book_answer": "My training data doesn't include reliable details about this specific Mumbai Metro extension opening on April 8, 2026. While my knowledge extends into early 2025, I don't have confirmed details about this particular extension's opening or its specific station names to give you an accurate answer. I wouldn't want to fabricate details about this event.",
+    "reference_answer": "The 2026 extension is **Phase 1 of Line 9** of the Red Line. It opened to commercial service on April 8, 2026 (inaugurated April 7, 2026), extending the Red Line northward into the Mira-Bhayandar region with three additional stations beyond Dahisar (East): Pandurang Wadi, Miragaon, and Kashigaon [Red Line (Mumbai Metro)].",
+    "closed_book_judge": {
+      "accuracy": 0,
+      "faithfulness": 2,
+      "citations": 0,
+      "refusal_calibration": 1,
+      "premise_handling": 2,
+      "overall_pass": false,
+      "failure_modes": [
+        "no_search",
+        "missing_citation",
+        "over_refused"
+      ],
+      "comment": "The system refused without attempting to search Wikipedia, where the information is actually documented."
+    }
+  },
+  "rail-04": {
+    "fingerprint": "469178fbd2ee975c",
+    "closed_book_answer": "My training data cutoff is early 2025, and I don't have reliable information about events that occurred in 2026, including the opening of this South Shore Line branch on March 31, 2026. I cannot confirm the name of that branch or details about its opening without risking fabricating information.",
+    "reference_answer": "The branch is the **Monon Corridor** (previously called the West Lake Corridor during planning and construction). It opened on March 31, 2026, branching south from Hammond Gateway station along a single-track line to serve Hammond, Munster, and Dyer in Lake County, Indiana, running about 8 miles to its terminus at Munster/Dyer station [Monon Corridor].",
+    "closed_book_judge": {
+      "accuracy": 0,
+      "faithfulness": 2,
+      "citations": 0,
+      "refusal_calibration": 0,
+      "premise_handling": 2,
+      "overall_pass": false,
+      "failure_modes": [
+        "over_refused",
+        "no_search",
+        "missing_citation"
+      ],
+      "comment": "The system over-refused based on training cutoff without attempting to search Wikipedia, where the Monon Corridor article exists."
+    }
+  },
+  "rail-03": {
+    "fingerprint": "b659cb9886b7361e",
+    "closed_book_answer": "This event — the reopening on April 7, 2026 — is after my knowledge cutoff, so I cannot confirm the details from my training data. However, based on well-known pre-cutoff plans, you are almost certainly referring to the **Camp Hill line** (also known as the Camp Hill chord or the South Birmingham/Camp Hill reopening project), which was long planned for reopening to passenger services as part of the West Midlands rail expansion. The stations you mention — Moseley Village, Kings Heath, and Pineapple Road — were indeed the proposed new stations associated with that reopening.",
+    "reference_answer": "The Camp Hill line in Birmingham reopened to local passenger services on 7 April 2026, after local services had ended in the 1940s (with stations closed in 1941 and permanently confirmed closed in 1946). From then until 2026, the line was used primarily by freight trains and some longer-distance passenger trains. The three reopened stations are named Moseley Village, Kings Heath, and Pineapple Road [Camp Hill line].",
+    "closed_book_judge": {
+      "accuracy": 2,
+      "faithfulness": 1,
+      "citations": 0,
+      "refusal_calibration": 1,
+      "premise_handling": 2,
+      "overall_pass": false,
+      "failure_modes": [
+        "no_search",
+        "missing_citation"
+      ],
+      "comment": "Correctly identifies the Camp Hill line but performed no search and provided no citations or Sources list."
+    }
+  },
+  "rail-05": {
+    "fingerprint": "d1d501a933cfcf0f",
+    "reference_answer": "The tramway in question is **Line T1 of the Lausanne tramway**. Set to open in late 2026, it will be the first tramline in Switzerland to use standard gauge tracks, while all other Swiss tramways use metric gauge. The line will operate 10 Stadler Tramlink trams constructed in Valencia, Spain. Its opening marks the return of streetcars to Lausanne after the former tram system closed in 1964, over 60 years earlier [Lausanne tramway].",
+    "closed_book_answer": "You're describing the **Agglo-Tram** (or **Tram Région Biel/Bienne**) — actually, let me reconsider.\n\nThe details you mention — standard gauge (1435 mm), Stadler Tramlink vehicles built in Valencia, return of trams after closure in 1964, and opening around 2026 — point to the **Tram de Biel/Bienne** (Biel/Bienne tram). Biel/Bienne's previous tram network closed in 1964, and the new line being built is indeed planned to use standard gauge and Stadler Tramlink trams.\n\nThis is the **Tram Biel/Bienne** (also referred to as the **Agglo-Tram Biel**).",
+    "closed_book_judge": {
+      "accuracy": 0,
+      "faithfulness": 0,
+      "citations": 0,
+      "refusal_calibration": 1,
+      "premise_handling": 2,
+      "overall_pass": false,
+      "failure_modes": [
+        "hallucinated",
+        "wrong_fact",
+        "no_search",
+        "missing_citation"
+      ],
+      "comment": "The system hallucinated the answer as Biel/Bienne tram when the correct answer is Lausanne tramway Line T1, with no searches performed and no citations."
+    }
+  },
+  "rail-06": {
+    "fingerprint": "04cc005f55320ed4",
+    "closed_book_answer": "You're referring to **Line 17-Gold** (Linha 17-Ouro) of the São Paulo Metro. It was originally planned to be ready for the 2014 FIFA World Cup, connecting the city to **Congonhas Airport**, and faced extensive delays over more than a decade before finally opening. It is a monorail line with approximately 14 stations and is notable for being the first line in the São Paulo Metro system to include a branch (bifurcation).",
+    "reference_answer": "Line 17 (Gold) of the São Paulo Metro is the monorail line matching this description. Originally planned as a transportation project for the 2014 FIFA World Cup, it faced numerous delays and contract disputes, pushing its opening from 2013 to 2026. The line has 14 stations, running from São Paulo-Morumbi to Jabaquara, with a branch to Congonhas station serving São Paulo/Congonhas Airport. It is the first line in the São Paulo Metro system to feature a branch [Line 17 (São Paulo Metro)].",
+    "closed_book_judge": {
+      "accuracy": 2,
+      "faithfulness": 2,
+      "citations": 0,
+      "refusal_calibration": 1,
+      "premise_handling": 2,
+      "overall_pass": false,
+      "failure_modes": [
+        "missing_citation",
+        "no_search"
+      ],
+      "comment": "Answer is factually correct but lacks any citations or sources, and no articles were fetched."
+    }
+  },
+  "rail-07": {
+    "fingerprint": "7034487080631b78",
+    "closed_book_answer": "I need to be transparent: my training data has a cutoff, and April 22, 2026 is beyond what I can reliably know about. I cannot confirm which line opened on that specific date or verify the claims about it being the first inter-provincial subway in its host city and second in mainland China overall.\n\nI should not fabricate an answer to this question. If this event occurred in 2026, it falls outside my knowledge cutoff and I cannot provide accurate information about it.",
+    "reference_answer": "Line S2 of the Nanjing Metro is the suburban rapid transit line that opened on 22 April 2026 at 10:00. It became the first inter-provincial subway in Nanjing and the second in mainland China, after Shanghai Metro Line 11 connecting Shanghai and Suzhou. It is also the first subway line in mainland China to be jointly constructed, managed, and operated by two provinces, linking Nanjing (Jiangsu) and Ma'anshan (Anhui) [Line S2 (Nanjing Metro)].",
+    "closed_book_judge": {
+      "accuracy": 0,
+      "faithfulness": 2,
+      "citations": 0,
+      "refusal_calibration": 1,
+      "premise_handling": 2,
+      "overall_pass": false,
+      "failure_modes": [
+        "over_refused",
+        "no_search",
+        "missing_citation"
+      ],
+      "comment": "The system refused instead of searching Wikipedia, where the Line S2 (Nanjing Metro) article exists and would have provided the answer."
+    }
+  },
+  "rail-08": {
+    "fingerprint": "eb8217934c35a1b7",
+    "closed_book_answer": "My training data doesn't include detailed information about this specific Ningbo rapid transit line that opened on January 16, 2026. While I have knowledge of Ningbo's metro system expansion plans, I cannot confirm the specific details about this particular line (its number/name, stations, and specifications you've described) as this event falls within or beyond my reliable knowledge cutoff period, and I don't want to fabricate a line designation.\n\nIf you could share the line number, I'd be happy to discuss what I might know about it from planning stages.",
+    "reference_answer": "Line 6 of Ningbo Rail Transit opened on January 16, 2026. It runs from Gulin to Honglian with 23 underground stations spanning 39.6 km, built with a total investment of 31.53 billion RMB. Construction began on December 28, 2022 [Line 6 (Ningbo Rail Transit)].",
+    "closed_book_judge": {
+      "accuracy": 0,
+      "faithfulness": 2,
+      "citations": 0,
+      "refusal_calibration": 0,
+      "premise_handling": 2,
+      "overall_pass": false,
+      "failure_modes": [
+        "over_refused",
+        "no_search",
+        "missing_citation",
+        "incomplete"
+      ],
+      "comment": "The system refused to answer and did not search Wikipedia, despite the Line 6 article being available."
+    }
+  },
+  "rail-09": {
+    "fingerprint": "e68a7cf555b2d675",
+    "reference_answer": "The GRU Airport People Mover connects the São Paulo/Guarulhos International Airport to the nearby CPTM railway station. It is approximately 2.6 km (1.6 mi) long with 4 stations, beginning at the Aeroporto-Guarulhos station (with connection to Line 13-Jade) and continuing to separate stations at each of the three terminals. It opened to airport employees on December 3, 2025, and to the public on February 20, 2026 [GRU Airport People Mover].",
+    "closed_book_answer": "You're describing the **VEM (Veículo Especial de Médio Capacidade)** people-mover line connecting **Guarulhos International Airport (GRU)** to the **CPTM Line 13 (Jade)** station at **Aeroporto Guarulhos**. However, let me be precise about what I know.\n\nThe connection between Guarulhos International Airport and CPTM's Line 13 via an automated people-mover (APM) was a long-planned project. The specific details you mention — ~2.6 km, 4 stations, employee opening December 3, 2025, public opening February 20, 2026 — fall after or right at the edge of my training data, and I cannot confirm all those precise details with certainty.\n\nBased on what you've described, this is the **Airport People Mover (APM)** at **Guarulhos (GRU)** connecting the airport terminals to the **CPTM Line 13 Jade** rail station. If you have a specific name for the line, I'd defer to your source, as the exact operational dates and branding may not be fully in my training data.",
+    "closed_book_judge": {
+      "accuracy": 1,
+      "faithfulness": 1,
+      "citations": 0,
+      "refusal_calibration": 1,
+      "premise_handling": 1,
+      "overall_pass": false,
+      "failure_modes": [
+        "no_search",
+        "missing_citation",
+        "hallucinated"
+      ],
+      "comment": "System failed to search Wikipedia, didn't confirm the GRU Airport People Mover name, invented a 'VEM' acronym, and provided no citations."
+    }
+  },
+  "rail-10": {
+    "fingerprint": "5696755265e01321",
+    "closed_book_answer": "Based on the description you've provided—a high-speed railway in Zhejiang province operated by China Railway Shanghai Group, approximately 64.5 km long, maximum speed of 250 km/h, about 32% in tunnels, connecting Jinhua and Jiande with four stations, and planned for 2026—this matches the **Jinhua–Jiande Railway** (金华至建德铁路, also referred to as the Jin-Jian Railway).",
+    "reference_answer": "The railway line matching all these criteria is the **Jinhua–Jiande high-speed railway** (Jinjian railway; 金建铁路) [Jinhua–Jiande high-speed railway].\n\nIt is located in Zhejiang, China, and operated by China Railway Shanghai Group. The line is 64.5 km long with a maximum speed of 250 km/h, and approximately 32% of its length runs through tunnels. It opened on 14 February 2026, after construction began on 7 January 2020.\n\nThe four stations along the route are:\n- Jinhua (southern terminus)\n- Lanxi East\n- Dayang\n- Jiande (northern terminus) [Jinhua–Jiande high-speed railway]",
+    "closed_book_judge": {
+      "accuracy": 2,
+      "faithfulness": 1,
+      "citations": 0,
+      "refusal_calibration": 1,
+      "premise_handling": 2,
+      "overall_pass": false,
+      "failure_modes": [
+        "missing_citation",
+        "no_search",
+        "incomplete"
+      ],
+      "comment": "Correctly identifies the Jinhua–Jiande Railway but provides no citations, no Sources list, and did not actually fetch the Wikipedia article; also omits the four station names and key dates."
+    }
+  },
+  "rail-11": {
+    "fingerprint": "9c83b6780282b3dc",
+    "closed_book_answer": "I need to be transparent: I don't have reliable information about railway lines that opened in 2026, as my training data has a cutoff and 2026 is beyond or at the edge of what I have comprehensive documentation on. I cannot access Wikipedia or any external sources.\n\nI should not fabricate specific line names, lengths, or details about 2026 railway openings. If I were to provide an answer, I would risk making up information that sounds plausible but is incorrect.\n\n**My honest answer: I don't know.** I cannot reliably answer this question about 2026-opened railway lines documented on Wikipedia without access to that source or verified training data covering those specific openings.\n\nIf you have access to Wikipedia, I'd suggest checking the \"List of railway lines opened in 2026\" article directly.",
+    "reference_answer": "Among the 2026-opened lines in the excerpts:\n\n- Jinhua–Jiande high-speed railway: 64.5 km [Jinhua–Jiande high-speed railway]\n- Line 6 (Ningbo Rail Transit): 39.6 km, entirely underground [Line 6 (Ningbo Rail Transit)]\n- Red Line (Mumbai Metro) extension: 31.045 km total line [Red Line (Mumbai Metro)]\n- Line 5 Eglinton: 19 km [Line 5 Eglinton]\n\nThe longest is the **Jinhua–Jiande high-speed railway at 64.5 km (40.1 mi)** [Jinhua–Jiande high-speed railway]. The tie-breaker (entirely underground route) does not apply, as there is no tie, but Ningbo Line 6 is the only fully underground line listed.",
+    "closed_book_judge": {
+      "accuracy": 0,
+      "faithfulness": 2,
+      "citations": 0,
+      "refusal_calibration": 0,
+      "premise_handling": 2,
+      "overall_pass": false,
+      "failure_modes": [
+        "over_refused",
+        "no_search",
+        "missing_citation"
+      ],
+      "comment": "The system refused to answer and did not fetch any Wikipedia articles, despite the information being available on Wikipedia."
+    }
+  },
+  "rail-12": {
+    "fingerprint": "d7dd66e6d12c62a3",
+    "closed_book_answer": "I don't have reliable information about railway lines documented on Wikipedia as opening in 2026, since my knowledge cutoff is July 2025 and many 2026 opening dates would either not yet be confirmed or not yet documented at the time of my training. I cannot access Wikipedia to check current documentation.\n\nI cannot answer this question accurately without risking fabrication. If you need this information, I'd recommend checking Wikipedia directly, for example the \"List of railway lines opening in 2026\" or similar articles.",
+    "reference_answer": "Among the 2026-opened railway lines in the excerpts, Line 6 of Ningbo Rail Transit has the earliest 2026 opening date, opening on **16 January 2026** [Line 6 (Ningbo Rail Transit)]. Other documented 2026 openings — Jinhua–Jiande high-speed railway (14 February 2026) [Jinhua–Jiande high-speed railway], Line 5 Eglinton (8 February 2026) [Line 5 Eglinton], and the GRU Airport People Mover (20 February 2026) [GRU Airport People Mover] — all opened later. Line 6 is located in Ningbo, Zhejiang, mainland China [Line 6 (Ningbo Rail Transit)].",
+    "closed_book_judge": {
+      "accuracy": 0,
+      "faithfulness": 2,
+      "citations": 0,
+      "refusal_calibration": 1,
+      "premise_handling": 2,
+      "overall_pass": false,
+      "failure_modes": [
+        "no_search",
+        "over_refused",
+        "missing_citation"
+      ],
+      "comment": "The system refused instead of fetching Wikipedia articles, missing the answer (Line 6 Ningbo Rail Transit, 16 January 2026)."
+    }
+  },
+  "rail-13": {
+    "fingerprint": "2975a4fb483a1b16",
+    "closed_book_answer": "I need to be straightforward here: I don't have reliable, detailed knowledge of all railway lines documented on Wikipedia as opening in 2026, particularly since 2026 is beyond my training cutoff (or at the edge of it), and I cannot access Wikipedia or the internet to verify such a list.\n\nI cannot fabricate an answer to this question. If I were to name a specific line, I would be guessing or hallucinating details that I cannot verify from my training data.\n\n**My honest answer:** I don't know. This question requires access to a specific, curated Wikipedia list of 2026-opened railway lines with details about when previous passenger service ended on each — information I cannot reliably retrieve from my parametric knowledge, especially for events in/around 2026.\n\nIf you have access to Wikipedia, I'd suggest searching \"2026 in rail transport\" or similar pages to find the answer.",
+    "reference_answer": "Based on the excerpts, two 2026-opened lines reinstated passenger service:\n\n- **Camp Hill line** [Camp Hill line]: Local passenger services ended in 1941 (confirmed permanently closed in 1946); reopened 7 April 2026.\n- **Lausanne tramway** Line T1 [Lausanne tramway]: The former tram system closed in 1964; reopening late 2026.\n\nThe Camp Hill line's previous local passenger service ended earliest (1941). It is also located in the United Kingdom (Birmingham), satisfying the tie-breaker.\n\n**Answer: The Camp Hill line** [Camp Hill line].",
+    "closed_book_judge": {
+      "accuracy": 0,
+      "faithfulness": 2,
+      "citations": 0,
+      "refusal_calibration": 0,
+      "premise_handling": 2,
+      "overall_pass": false,
+      "failure_modes": [
+        "over_refused",
+        "no_search",
+        "missing_citation"
+      ],
+      "comment": "The system refused to answer and did not perform any search, when the correct answer (Camp Hill line) was retrievable from Wikipedia."
+    }
+  },
+  "rail-14": {
+    "fingerprint": "0bbe619c18179f44",
+    "closed_book_answer": "I need to be careful here. Let me think through what I know.\n\nThe Eglinton Crosstown LRT in Toronto used tunnel boring machines. I'm aware that some TBMs on Toronto transit projects were named after local rivers or figures. The Crosstown project did use TBMs, but I need to be precise about the names Dennis, Lea, Don, and Humber.\n\n\"Don\" and \"Humber\" are clearly Toronto rivers. \"Dennis\" and \"Lea\" together — I'm being asked to identify the Canadian poet these two names pay tribute to.\n\n**Dennis Lee** is a well-known Canadian poet — the names \"Dennis\" and \"Lea\" (a variant spelling of \"Lee\") together form his name. Dennis Lee is famous for his children's poetry (e.g., *Alligator Pie*) but also for serious poetry.\n\nHowever, I must be honest: I'm not certain I have reliable access to the specific content of the Wikipedia article on Dennis Lee, including his exact birth year as stated there. From my training data, Dennis Lee was born in **1939**. He is most associated with **children's poetry** (though he also wrote serious literary poetry).\n\nTo be transparent: I'm drawing on my parametric knowledge here, not a live Wikipedia lookup. According to what I know, Dennis Lee was born in **1939** and is most associated with **children's literature/poetry**.",
+    "reference_answer": "According to the Wikipedia article on Dennis Lee, the poet honored by the tunnel boring machine names \"Dennis\" and \"Lea\" is Dennis Beynon Lee, born in 1939 [Dennis Lee (poet)]. While he is a poet, teacher, editor, and critic, he is most associated with children's poetry/rhymes, being especially well known for his book of children's rhymes *Alligator Pie* [Dennis Lee (poet)].",
+    "closed_book_judge": {
+      "accuracy": 2,
+      "faithfulness": 2,
+      "citations": 0,
+      "refusal_calibration": 1,
+      "premise_handling": 2,
+      "overall_pass": false,
+      "failure_modes": [
+        "no_search",
+        "missing_citation"
+      ],
+      "comment": "Answer is factually correct but relies on parametric knowledge without fetching the Wikipedia article or providing citations."
+    }
+  },
+  "rail-15": {
+    "fingerprint": "c621640ed4c96888",
+    "closed_book_answer": "I need to be transparent here: I don't have reliable, specific data about railway/transit lines documented on Wikipedia as opening in 2026. My training data has a cutoff of early 2025, and while I have some information about planned transit projects, I don't have a comprehensive, accurate list of all lines documented on Wikipedia as opening in 2026 with their station counts.\n\nIf I were to attempt an answer, I would risk fabricating specific details about station counts and line names, which would be misleading.\n\n**What I recommend:** Check Wikipedia directly by searching for something like \"List of railway lines opening in 2026\" or browsing the \"2026 in rail transport\" article, which typically catalogs new line openings with station counts.\n\nI cannot reliably answer this question without access to current Wikipedia data.",
+    "reference_answer": "Among the 2026-opened lines in the excerpts:\n\n- Line 5 Eglinton (Toronto): 25 stations, opened February 8, 2026 [Line 5 Eglinton]\n- Line 6 Ningbo Rail Transit: 23 stations, opened January 16, 2026 [Line 6 (Ningbo Rail Transit)]\n- Red Line (Mumbai Metro) Phase 1 of Line 9 extension: 3 new stations (Dahisar East to Kashigaon, with Pandurang Wadi and Miragaon), opened April 7–8, 2026 — though the full Red Line has 22 stations [Red Line (Mumbai Metro)]\n- GRU Airport People Mover: 4 stations, opened to public February 20, 2026 [GRU Airport People Mover]\n\nThe longest is Line 5 Eglinton (25 stations) and the shortest is the GRU Airport People Mover (4 stations), a difference of **21 stations**.",
+    "closed_book_judge": {
+      "accuracy": 0,
+      "faithfulness": 1,
+      "citations": 0,
+      "refusal_calibration": 0,
+      "premise_handling": 2,
+      "overall_pass": false,
+      "failure_modes": [
+        "no_search",
+        "over_refused",
+        "missing_citation"
+      ],
+      "comment": "The system refused to attempt the question and performed no searches, despite the relevant Wikipedia articles being available."
+    }
+  },
+  "rail-16": {
+    "fingerprint": "83a2cedf2fdb5137",
+    "closed_book_answer": "My training data doesn't include detailed information about a Paris metro line opening on February 14, 2026. While I have knowledge of planned extensions and new lines in the Grand Paris Express project (such as Lines 15, 16, 17, and 18), I cannot confirm the specific details you're describing about a February 14, 2026 opening with a 39.6 km main span. This event may have occurred after my knowledge cutoff or the specific details aren't in my training data.",
+    "reference_answer": "The excerpts do not identify a Paris, France metro line meeting this description. The 39.6 km line opening in 2026 mentioned is Line 6 of Ningbo Rail Transit in Ningbo, Zhejiang, China, which opened on 16 January 2026 [Line 6 (Ningbo Rail Transit)]. The line that opened on 14 February 2026 in the excerpts is the Jinhua–Jiande high-speed railway in Zhejiang, China, which is 64.5 km long [Jinhua–Jiande high-speed railway]. Neither is in Paris.",
+    "closed_book_judge": {
+      "accuracy": 0,
+      "faithfulness": 1,
+      "citations": 0,
+      "refusal_calibration": 1,
+      "premise_handling": 0,
+      "overall_pass": false,
+      "failure_modes": [
+        "false_premise_accepted",
+        "missing_citation",
+        "no_search",
+        "missed_refusal"
+      ],
+      "comment": "The system failed to search Wikipedia and didn't identify the false premise—the 39.6 km figure is Ningbo Line 6 and Feb 14, 2026 is the Jinhua–Jiande railway, neither in Paris."
+    }
+  },
+  "rail-17": {
+    "fingerprint": "8a3c18a0667cb630",
+    "closed_book_answer": "I need to be careful here. My training data has a cutoff, and while I have some information about planned Chinese high-speed rail projects, I cannot reliably confirm the specific details of which 2026 opening line meets exactly those criteria (350 km/h max speed, over 200 km long) without risking fabrication.\n\nChina has numerous high-speed rail lines planned or under construction for opening around 2026, and I don't want to guess incorrectly. Could you provide more context, or are you looking for a specific line you already have in mind? If you can share additional details, I'm happy to help clarify what I know.",
+    "reference_answer": "The provided Wikipedia excerpts do not answer this question. The only 2026 high-speed railway line mentioned is the Jinhua–Jiande high-speed railway, which is only 64.5 km long with a maximum speed of 250 km/h, not matching the criteria of over 200 km long and 350 km/h [Jinhua–Jiande high-speed railway].",
+    "closed_book_judge": {
+      "accuracy": 1,
+      "faithfulness": 2,
+      "citations": 0,
+      "refusal_calibration": 1,
+      "premise_handling": 1,
+      "overall_pass": false,
+      "failure_modes": [
+        "no_search",
+        "missing_citation"
+      ],
+      "comment": "System refused to fabricate but didn't search Wikipedia or identify the false premise via the Jinhua–Jiande article."
+    }
+  },
+  "rail-18": {
+    "fingerprint": "d1db3dba9ef8e739",
+    "closed_book_answer": "You're describing the **Camp Hill Line** (also known as the Camp Hill chord or Camp Hill railway line) in Birmingham.\n\nThis line runs between **Kings Norton** and **Birmingham New Street** (the city's primary central station), passing through areas including Moseley and Camp Hill. It was historically used primarily by freight traffic and some longer-distance passenger services for decades after regular local passenger services ceased, and plans have been in place to reopen it to regular passenger services.\n\nThe ELR (Engineer's Line Reference) designation you mention — covering the St Andrews Junction to Kings Norton line — corresponds to this route, and the reopening (to passenger services) has been associated with the **2026** timeframe as part of wider West Midlands rail improvement plans.\n\nSo the answer is the **Camp Hill Line**.",
+    "reference_answer": "The Camp Hill line is the railway line in Birmingham that reopened on 7 April 2026, running between Kings Norton and Birmingham New Street (the city's primary central station). For over 80 years prior—from when local passenger services ended in the 1940s until 2026—it was used primarily by freight trains and some longer-distance passenger trains. Its official ELR designation is the St Andrews Junction to Kings Norton line [Camp Hill line].",
+    "closed_book_judge": {
+      "accuracy": 2,
+      "faithfulness": 2,
+      "citations": 0,
+      "refusal_calibration": 1,
+      "premise_handling": 2,
+      "overall_pass": false,
+      "failure_modes": [
+        "missing_citation",
+        "no_search"
+      ],
+      "comment": "Correctly identifies the Camp Hill Line but provides no inline citations or Sources list and appears to have done no actual article fetching."
+    }
+  },
+  "rail-19": {
+    "fingerprint": "e3b28f0add71cef7",
+    "closed_book_answer": "I need to be straightforward here: my training data has a cutoff of early 2025, and I don't have reliable information about transit lines that opened in 2026. I cannot accurately document which 2026-opened lines exist, their station counts, or apply the tiebreaker condition without risking fabrication.\n\nI don't have this information and cannot reliably answer the question.",
+    "reference_answer": "Based on the excerpts, the candidates opened in 2026 are:\n\n- Line 5 Eglinton (Toronto): 25 stations, opened February 8, 2026 [Line 5 Eglinton]\n- Line 6 Ningbo: 23 stations, opened January 16, 2026 [Line 6 (Ningbo Rail Transit)]\n- Red Line (Mumbai) Phase 1 of Line 9 extension: 3 new stations on April 7–8, 2026 [Red Line (Mumbai Metro)]\n\nLine 5 Eglinton has the highest count at 25 stations. It also satisfies the tie-breaker: it \"uses standard gauge rather than the broad Toronto gauge used by the three older heavy rail subway lines\" [Line 5 Eglinton].\n\n**Answer: Line 5 Eglinton (the Eglinton Crosstown LRT) in Toronto.**",
+    "closed_book_judge": {
+      "accuracy": 0,
+      "faithfulness": 2,
+      "citations": 0,
+      "refusal_calibration": 0,
+      "premise_handling": 2,
+      "overall_pass": false,
+      "failure_modes": [
+        "over_refused",
+        "no_search",
+        "missing_citation"
+      ],
+      "comment": "The system refused without attempting to search Wikipedia, where this information is documented; it should have retrieved and answered Line 5 Eglinton."
+    }
+  },
+  "rail-20": {
+    "fingerprint": "b77411d580fa1098",
+    "closed_book_answer": "I need to be straightforward here: I don't have access to Wikipedia or any specific \"set\" of 2026-opened railway/transit lines you're referring to. You haven't provided me with a dataset or list to analyze.\n\nMy training data has a cutoff, and even within that data, I don't have a compiled, reliable inventory of every Wikipedia article about railway/transit lines opened in 2026 (which is also still in the future or very recent relative to my knowledge).\n\n**To answer your question accurately, I would need you to provide the specific list/set of lines you're referring to.** Once you share that list (with their Wikipedia-documented construction-start dates), I can identify which began construction earliest and which began latest.\n\nCould you share the set of lines you have in mind?",
+    "reference_answer": "Among the lines with explicit construction-start dates:\n\n- **Earliest**: Line 5 Eglinton (Toronto), with first-phase construction beginning in **2011** [Line 5 Eglinton].\n- **Latest**: Line 6 (Ningbo Rail Transit), with construction starting on **28 December 2022** [Line 6 (Ningbo Rail Transit)].\n\nFor reference, the other lines fall in between: the Jinhua–Jiande high-speed railway began construction on 7 January 2020 [Jinhua–Jiande high-speed railway], and Line S2 (Nanjing Metro) began construction on 30 December 2020 (Ma'anshan section) / 28 December 2021 (Nanjing section) [Line S2 (Nanjing Metro)].",
+    "closed_book_judge": {
+      "accuracy": 0,
+      "faithfulness": 2,
+      "citations": 0,
+      "refusal_calibration": 0,
+      "premise_handling": 2,
+      "overall_pass": false,
+      "failure_modes": [
+        "no_search",
+        "over_refused",
+        "missing_citation"
+      ],
+      "comment": "The system refused to attempt the task and performed no searches, despite the question being answerable via Wikipedia lookups."
+    }
   }
 }

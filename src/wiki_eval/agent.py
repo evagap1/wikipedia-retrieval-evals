@@ -124,7 +124,9 @@ def run_agent(
     # max_retries lets the SDK honor the rate-limit Retry-After header, which is
     # both correct (uses the server's hint, not a guessed exponential) and fast.
     client = client or anthropic.Anthropic(
-        api_key=os.environ["ANTHROPIC_API_KEY"], max_retries=6
+        api_key=os.environ["ANTHROPIC_API_KEY"],
+        max_retries=4,
+        timeout=120.0,
     )
 
     messages: list[dict[str, Any]] = [{"role": "user", "content": question}]
