@@ -177,6 +177,27 @@ A few infrastructure changes were forced by reality during the iteration:
 - **`closed_book_judge` caching.** The judge call that grades Track A's answer is deterministic per case (no agent dependency). It was being recomputed on every prompt version. Caching it cut ~30% of judge calls per backfill run.
 - **Process-level parallelism beats thread-level on this workload.** Four parallel processes (one per `(prompt, file)` pair), each with `workers=4`, completes the 80-case heldout backfill in **3m34s** — a 16x speedup over `workers=1`. Per-process retry state is isolated, so a rate-limit hiccup in one file doesn't block the others.
 
+## Build timeline
+
+Approximate wall-clock per phase, reconstructed from session timestamps (2026-04-27 16:54Z → 2026-04-28 02:32Z, with ~3h of overnight idle while batch eval runs ran in the background that is not counted below).
+
+| Phase | What got built | Wall-clock |
+|---|---|---:|
+| Initial design + agent + 40-case suite | 3-track architecture, agent loop, judge rubric, post-cutoff discovery script, `test_cases.jsonl` (40 cases), v1 prompt | ~1h 25m |
+| Track A closed-book baseline + comparison report | `closed_book_answer()`, summary table, all-40 Track A run | ~25m |
+| Domain evals: movies + bridges | discovery scripts, fact extraction, 22 movie cases + 20 bridge cases, v1 runs | ~40m |
+| Saturated evals: stubs + earthquakes | 2 datasets generated; both hit ~100% v1 pass and got dropped from active iteration | ~35m |
+| Skills + DESIGN.md v1 + README v1 | `.claude/skills/{run-eval,add-test-case,tune-prompt}`, initial design writeup | ~12m |
+| Prompt iteration v2 + auto-improver + v3/v4/v5 | v2 hand-authored, `improve_prompt.py` meta-agent, v3/v4/v5 generated and graded on dev (3 datasets × 4 versions) | ~1h 30m |
+| Heldout suite: songs + railway lines | 2 discovery scripts + 40 hand-authored cases (after detours through tunnels and highways categories that proved too thin) | ~45m |
+| v6 prompt + heldout grading | v6 manual authoring with verbatim-values rule, `Verify before answering` self-check; v1 + v6 graded on heldout | ~35m |
+| Performance fixes + remaining backfills | HTTP timeouts on both clients, `closed_book_judge` cache, 4-process parallelism — 80-case backfill in **3m 34s** | ~10m |
+| CLI productionization | `wiki-eval ask` defaulted to v3, README rewritten, end-to-end smoke tests | ~10m |
+| DESIGN.md update with findings | 6×5 results matrix, prompt-iteration story, auto-improver section, performance lessons, next steps | ~30m |
+| Commits, push, transcript export, doc polish | final commits + Co-Authored-By attribution, claude-code-transcripts → 401-page PDF | ~25m |
+
+**Total active engineering time: ~6h 30m**, excluding idle time.
+
 ## What I'd build next
 
 Evaluation systems often fail because they test simple, single-hop questions. The first two items below are about closing that coverage gap; the rest are system-level improvements driven by what the existing evals already surface.
